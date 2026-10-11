@@ -1,0 +1,1 @@
+File example : 01_eda, 02_det_train, 03_ocr_train, 04_eval
