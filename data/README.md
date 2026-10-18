@@ -4,45 +4,27 @@ A curated collection of benchmark datasets for Bangla Automatic License Plate Re
 
 ---
 
-## 📊 Dataset Overview
+## Sources and licences
+| source | dataset | licence |
+|---|---|---|
+| anpr | Bangladesh ANPR Dataset (Kaggle mahedifindsdataset) | CC BY 4.0 |
+| bdalpdr | BD-ALPDR (Nooruddin et al.) - team Drive | CC BY-NC-SA 4.0 |
+| blpd | BLPD (Sarker & Alam, PLOS One 2026; Kaggle ferozahmedds / GitHub prosensarker4/BLPD) | Apache-2.0 (Kaggle copy) |
+| blpd_ext | BLPD external validation photos (Sarker & Alam 2026) | Apache-2.0 (Kaggle copy) |
+| diu | Vehicle License Plate Detection Dataset (DIU, Mendeley nntnnzffw4) - team Drive | CC BY 4.0 |
+| foggy_bd | Foggy License Plates Worldwide, Bangladesh part (Mendeley rgpddwxrx5) - team Drive | CC BY 4.0 |
+| kuet | Bangladeshi License Plate Recognition Dataset (Hossain & Hassan, KUET; Kaggle syednahinhossain) | Apache-2.0 |
+| lpd4k | Roboflow lpd4k (Kaggle tarakuzzamanfaysal bangla-license-plate-yolov9) | CC BY 4.0 |
+| lpdba | Bangla LPDB-A (Shomee & Sams, DICTA 2021; YOLO copy Kaggle arstrxshad) | CC BY 4.0 |
+| mahedi | Bangladesh Vehicle Number Plate Detection Dataset (Kaggle mahedifindsdataset) | CC BY 4.0 |
+| nightlpbd | NightLPBD (Hasan & Ahsan, IEEE COMPAS 2025; Kaggle thasan3003) | CC BY 4.0 |
+| ridoykj | Bangladeshi Vehicle Number Plates (Kaggle ridoykj) | CC BY-NC-SA 4.0 |
+| towniyan | Bangladeshi Cars with Number Plates Visible (Kaggle towniyan) | CC0 1.0 |
+| tusar | Bangla License Plate (Tusar et al., IICAIET 2022; Kaggle mahmudolhasantushar) | CC BY-NC-SA 4.0 |
+| zenodo25k | Bangla License Plate Dataset 2.5k (Zenodo 7110401) - team Drive | CC BY 4.0 |
 
-| Dataset | Size | Key Notes & Coverage | License | Direct Link |
-| :--- | :--- | :--- | :--- | :--- |
-| **Bangla License Plate Dataset 2.5k** *(Zenodo, 2022)* | 5,259 images | Standard train/test split for detector benchmarking | CC BY 4.0 | [Zenodo Record](https://zenodo.org/records/7110401) |
-| **Vehicle License Plate Detection Dataset** *(Mendeley / DIU, 2025)* | 2,947 images (5 classes) | Real-world traffic scenes from Dhaka, Ashulia, and Narsingdi | CC BY 4.0 | [Mendeley Data](https://data.mendeley.com/datasets/nntnnzffw4/3) |
-| **Foggy License Plates Worldwide** *(Mendeley)* | 4,420 images (2,754 BD) | Heavy fog and low-visibility conditions; robustness benchmarking | Open Access | [Mendeley Data](https://data.mendeley.com/datasets/rgpddwxrx5/1) |
-| **BD-ALPDR** | 725 images | Multi-view vehicle imagery captured across 6 distinct angles | CC BY-NC-SA 4.0 | [Project Page](https://bdalpdr.github.io/) • [GitHub](https://github.com/snooruddin/BD-ALPDR) |
-
----
-
-## 🗂️ Dataset Details
-
-### 1. Bangla License Plate Dataset 2.5k (Zenodo, 2022)
-* **Volume:** 5,259 images
-* **Split:** Pre-partitioned into training and testing sets.
-* **Intended Use:** Baseline training and evaluation for vehicle detection and plate localization models.
-* **Access:** [Download via Zenodo](https://zenodo.org/records/7110401)
-
-### 2. Vehicle License Plate Detection Dataset (DIU / Mendeley, 2025)
-* **Volume:** 2,947 annotated images across 5 distinct vehicle classes.
-* **Geographical Scope:** Urban and suburban road networks across Dhaka, Ashulia, and Narsingdi.
-* **Intended Use:** Vehicle bounding box regression, category classification, and license plate segmentation in dense South Asian traffic.
-* **Access:** [Download via Mendeley Data](https://data.mendeley.com/datasets/nntnnzffw4/3)
-
-### 3. Foggy License Plates Worldwide (Mendeley)
-* **Volume:** 4,420 total images, containing **2,754 Bangladeshi license plates**.
-* **Conditions:** Captured under adverse weather, synthetic/natural fog, haze, and low-contrast lighting.
-* **Intended Use:** Stress-testing detection and character recognition pipelines for environmental robustness.
-* **Access:** [Download via Mendeley Data](https://data.mendeley.com/datasets/rgpddwxrx5/1)
-
-### 4. BD-ALPDR
-* **Volume:** 725 curated images.
-* **Feature:** Multi-perspective captures covering 6 distinct camera angles.
-* **Intended Use:** Perspective-invariant plate extraction, rectification, and alphanumeric character segmentation.
-* **Access:** [GitHub Repository](https://github.com/snooruddin/BD-ALPDR) | [Official Homepage](https://bdalpdr.github.io/)
-
----
-
+Respect each source's licence (several are **non-commercial**, CC BY-NC-SA). Cite the original datasets when you publish.
+Our build scripts are in the team repo (`_dataset_build/scripts`).
 ## ⚖️ Usage & Licensing Notice
 
 * Ensure compliance with the respective licenses when using these datasets for research or production:
