@@ -1,0 +1,61 @@
+{
+ "date": "2026-10-24",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "cpu": "Intel(R) Core(TM) Ultra 7 265K",
+ "torch": "2.13.0+cu130",
+ "ultralytics": "8.4.170",
+ "cv2": "5.0.0",
+ "dataset": "1.1",
+ "files": {
+  "best_chars_v8n.pt": 6892650,
+  "best_crnn_fp16.pt": 15411709
+ },
+ "test": {
+  "plates": 651,
+  "chars_v8n_exact_%": 86.79,
+  "chars_v8n_kaggle_exact_%": 86.79,
+  "chars_v8n_same_text_as_kaggle": 651,
+  "crnn_fp16_exact_%": 73.43,
+  "crnn_fp32_exact_%": 73.43,
+  "crnn_kaggle_exact_%": 73.43,
+  "crnn_fp16_same_text_as_fp32": 649,
+  "crnn_fp16_same_text_as_kaggle": 648,
+  "crnn_fp16_vs_fp32_max_logit_diff": 0.01143,
+  "fallback_exact_%": 88.63,
+  "fallback_kaggle_preds_exact_%": 88.63,
+  "fallback_crnn_called": 46
+ },
+ "val": {
+  "plates": 766,
+  "chars_v8n_exact_%": 82.38,
+  "chars_v8n_kaggle_exact_%": 82.38,
+  "chars_v8n_same_text_as_kaggle": 766,
+  "crnn_fp16_exact_%": 62.27,
+  "crnn_fp32_exact_%": 62.27,
+  "crnn_kaggle_exact_%": 62.27,
+  "crnn_fp16_same_text_as_fp32": 766,
+  "crnn_fp16_same_text_as_kaggle": 766,
+  "crnn_fp16_vs_fp32_max_logit_diff": 0.02144,
+  "fallback_exact_%": 84.99,
+  "fallback_kaggle_preds_exact_%": 84.99,
+  "fallback_crnn_called": 92
+ },
+ "timing_gpu": {
+  "plates": 200,
+  "ms_mean": 5.82,
+  "ms_median": 5.22,
+  "ms_mean_chars_only": 5.49,
+  "crnn_called": 12,
+  "plates_per_s": 171.9
+ },
+ "timing_cpu": {
+  "plates": 200,
+  "ms_mean": 12.06,
+  "ms_median": 10.99,
+  "ms_mean_chars_only": 11.39,
+  "crnn_called": 12,
+  "plates_per_s": 82.9,
+  "threads": 8
+ },
+ "note": "timing: whole OCR reader per plate (image in memory, batch 1, square 320 letterbox as in the kit), first 200 test crops after 20 warm-up plates"
+}
