@@ -1,0 +1,65 @@
+{
+ "kuet": {
+  "photos": 540,
+  "mAP50": 99.0,
+  "mAP50-95": 73.2,
+  "matched_plates": 386,
+  "mean_iou": 86.0,
+  "median_w_ratio": 1.004,
+  "median_h_ratio": 1.017
+ },
+ "lpdba": {
+  "photos": 205,
+  "mAP50": 98.2,
+  "mAP50-95": 54.3,
+  "matched_plates": 206,
+  "mean_iou": 79.6,
+  "median_w_ratio": 0.971,
+  "median_h_ratio": 0.954
+ },
+ "mahedi": {
+  "photos": 32,
+  "mAP50": 99.0,
+  "mAP50-95": 58.6,
+  "matched_plates": 32,
+  "mean_iou": 79.0,
+  "median_w_ratio": 0.97,
+  "median_h_ratio": 1.026
+ },
+ "nightlpbd": {
+  "photos": 60,
+  "mAP50": 98.2,
+  "mAP50-95": 67.6,
+  "matched_plates": 51,
+  "mean_iou": 84.9,
+  "median_w_ratio": 1.02,
+  "median_h_ratio": 0.991
+ },
+ "ridoykj": {
+  "photos": 274,
+  "mAP50": 99.5,
+  "mAP50-95": 24.2,
+  "matched_plates": 274,
+  "mean_iou": 62.3,
+  "median_w_ratio": 1.189,
+  "median_h_ratio": 1.362
+ },
+ "towniyan": {
+  "photos": 13,
+  "mAP50": 99.5,
+  "mAP50-95": 71.0,
+  "matched_plates": 18,
+  "mean_iou": 86.6,
+  "median_w_ratio": 1.029,
+  "median_h_ratio": 1.053
+ },
+ "tusar": {
+  "photos": 29,
+  "mAP50": 91.5,
+  "mAP50-95": 52.8,
+  "matched_plates": 27,
+  "mean_iou": 80.7,
+  "median_w_ratio": 1.008,
+  "median_h_ratio": 1.095
+ }
+}
