@@ -1,0 +1,213 @@
+6.7s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.7s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.7s 3 0.00s - to python to disable frozen modules.
+6.7s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.3s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.3s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.3s 7 0.00s - to python to disable frozen modules.
+7.3s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+10.7s 9 [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/46.7 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m46.7/46.7 kB[0m [31m1.9 MB/s[0m eta [36m0:00:00[0m
+11.5s 10 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.4 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━[0m [32m0.9/1.4 MB[0m [31m27.5 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.4/1.4 MB[0m [31m21.9 MB/s[0m eta [36m0:00:00[0m
+11.5s 11 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/320.8 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m320.8/320.8 kB[0m [31m9.9 MB/s[0m eta [36m0:00:00[0m
+11.6s 12 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/97.6 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m97.6/97.6 kB[0m [31m5.5 MB/s[0m eta [36m0:00:00[0m
+21.3s 13 [?25htorch 2.11.0+cu128 | GPUs: ['Tesla T4', 'Tesla T4']
+21.3s 14 ====================================================================================================
+21.3s 15 FULL RUN (FAST = False): planned about 4 h. A training job that ends after a few minutes FAILED:
+21.3s 16 read the '----- ... failed' lines below the cell and logs/<run>.log.
+21.3s 17 ====================================================================================================
+21.4s 18 Writing /kaggle/working/lprkit/common.py
+21.4s 19 Writing /kaggle/working/lprkit/vocab.py
+21.4s 20 Writing /kaggle/working/lprkit/metrics.py
+21.4s 21 Writing /kaggle/working/lprkit/report.py
+21.4s 22 Writing /kaggle/working/lprkit/det.py
+21.5s 23 Writing /kaggle/working/lprkit/rec.py
+21.5s 24 Writing /kaggle/working/lprkit/seq.py
+21.5s 25 Writing /kaggle/working/lprkit/ved.py
+21.5s 26 Writing /kaggle/working/lprkit/p08_train.py
+21.5s 27 Writing /kaggle/working/lprkit/p08_chars.py
+21.6s 28 Writing /kaggle/working/lprkit/p08_plates.py
+21.6s 29 dataset not attached -> downloading it from the team Drive (https://drive.google.com/drive/folders/11psdzW5Cpr7tXwqzqNxNt3LA-qeDSOQl)
+22.8s 30 0.00 / 3.38 GB
+28.3s 31 0.49 / 3.38 GB
+32.8s 32 0.98 / 3.38 GB
+38.6s 33 1.46 / 3.38 GB
+44.5s 34 1.95 / 3.38 GB
+49.7s 35 2.44 / 3.38 GB
+55.3s 36 2.93 / 3.38 GB
+60.5s 37 unpacking ...
+83.5s 38 dataset ready: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+83.7s 39 dataset: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+83.7s 40 det|test|human                           1153
+83.7s 41 det|train|auto                           4507
+83.7s 42 det|train|human                          4067
+83.7s 43 det|val|human                            896
+83.7s 44 e2e|test                                 204
+83.7s 45 extras_fog|test                          26
+83.7s 46 extras_fog|train                         267
+83.7s 47 extras_fog|val                           59
+83.7s 48 leaky_kuet|detection|fair_test           540
+83.7s 49 leaky_kuet|detection|fair_train          1758
+83.7s 50 leaky_kuet|detection|fair_val            311
+83.7s 51 leaky_kuet|detection|test|copy           27
+83.7s 52 leaky_kuet|detection|test|unique         526
+83.7s 53 leaky_kuet|detection|test_clean          474
+83.7s 54 leaky_kuet|detection|test_dup            79
+83.7s 55 leaky_kuet|detection|train|copy          3752
+83.7s 56 leaky_kuet|detection|train|unique        1868
+83.7s 57 leaky_kuet|detection|val|copy            26
+83.7s 58 leaky_kuet|detection|val|unique          251
+83.7s 59 leaky_kuet|recognition|fair_left_out_same_plate_as_test 315
+83.7s 60 leaky_kuet|recognition|fair_test         194
+83.7s 61 leaky_kuet|recognition|fair_train        660
+83.7s 62 leaky_kuet|recognition|fair_val          122
+83.7s 63 leaky_kuet|recognition|test|unique       194
+83.7s 64 leaky_kuet|recognition|test_clean        80
+83.7s 65 leaky_kuet|recognition|test_dup          114
+83.7s 66 leaky_kuet|recognition|train|copy        2613
+83.7s 67 leaky_kuet|recognition|train|unique      778
+83.7s 68 leaky_kuet|recognition|val|copy          1
+83.7s 69 leaky_kuet|recognition|val|unique        319
+83.7s 70 ocr|test|human                           651
+83.7s 71 ocr|train|auto                           2136
+83.7s 72 ocr|train|human                          3471
+83.7s 73 ocr|val|human                            766
+83.7s 74 rec|test|human                           467
+83.7s 75 rec|train|auto                           2136
+83.7s 76 rec|train|auto_verified                  930
+83.7s 77 rec|train|human                          2399
+83.7s 78 rec|val|human                            536
+83.7s 79 path: /tmp/498r_data/BanglaLPR_AllInOne_v1_1/detection
+83.7s 80 train: images/train
+83.7s 81 val: images/val
+83.7s 82 test: images/test
+83.7s 83 nc: 1
+83.7s 84 names:
+83.7s 85 0: "plate"
+83.7s 86 
+83.8s 87 Creating new Ultralytics Settings v0.0.8 file ✅
+83.8s 88 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+83.8s 89 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+247.2s 90 train: 47992 token crops from 5465 plate crops, 99 classes
+247.2s 91 val: 4643 token crops from 536 plate crops, 85 classes
+247.2s 92 test: 4107 token crops from 467 plate crops, 60 classes
+247.2s 93 classes with test crops but no train crop: ['মুন্সিগঞ্জ']
+247.2s 94 saved /tmp/p08_chars/tokens.json
+247.2s 95 
+247.2s 96 [start] cnn28 on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p08_train.py --task paper --model cnn --data /tmp/p08_chars --out /kaggle/working/runs/cnn28 --epochs 40 --max-hours 3 --note paper #8 CNN 28x28, batch 1, Adam 1e-4 (authors' code)
+247.2s 97 [start] resnet50 on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/p08_train.py --task paper --model resnet50 --data /tmp/p08_chars --out /kaggle/working/runs/resnet50 --epochs 30 --max-hours 3.2 --note frozen ResNet-50 150x150, batch 1 (authors' code)
+9397.4s 98 [done]  cnn28 code=0 after 152.5 min
+12217.4s 99 [done]  resnet50 code=0 after 199.5 min
+12217.5s 100 [start] plates_cnn28 on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p08_plates.py --cnn /kaggle/working/runs/cnn28 --name plates_cnn28 --project /kaggle/working/runs
+12217.5s 101 [start] fps_cnn28 on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/p08_train.py --fps-only --out /kaggle/working/runs/cnn28
+12227.5s 102 [done]  fps_cnn28 code=0 after 0.2 min
+12227.5s 103 [start] fps_resnet50 on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/p08_train.py --fps-only --out /kaggle/working/runs/resnet50
+12237.5s 104 [done]  fps_resnet50 code=0 after 0.2 min
+12397.5s 105 [done]  plates_cnn28 code=0 after 3.0 min
+12397.5s 106 cnn28 101 classes | {'last': {'acc_%': 36.67, 'P_%': 13.69, 'R_%': 7.15, 'F1_%': 8.16}, 'best': {'acc_%': 93.08, 'P_%': 38.65, 'R_%': 36.16, 'F1_%': 36.42}} {'fps_bs1': 760.9, 'ms_per_image': 1.31, 'device': 'Tesla T4', 'note': 'model only, batch 1, FP32, measured alone on an idle GPU'}
+12397.5s 107 resnet50 101 classes | {'last': {'acc_%': 92.06, 'P_%': 49.03, 'R_%': 49.02, 'F1_%': 46.41}, 'best': {'acc_%': 92.89, 'P_%': 47.79, 'R_%': 45.08, 'F1_%': 43.9}} {'fps_bs1': 171.5, 'ms_per_image': 5.83, 'device': 'Tesla T4', 'note': 'model only, batch 1, FP32, measured alone on an idle GPU'}
+12397.5s 108 {
+12397.5s 109 "none_paper": {
+12397.5s 110 "plates": 651,
+12397.5s 111 "plate_exact_%": 0.0,
+12397.5s 112 "CER_%": 101.32,
+12397.5s 113 "char_acc_%": 0.0,
+12397.5s 114 "token_acc_%": 23.54,
+12397.5s 115 "WER_%": 100.0,
+12397.5s 116 "similarity_%": 41.86,
+12397.5s 117 "ge95_%": 0.0,
+12397.5s 118 "ge90_%": 0.0
+12397.5s 119 },
+12397.5s 120 "none_fixed": {
+12397.5s 121 "plates": 651,
+12397.5s 122 "plate_exact_%": 0.0,
+12397.5s 123 "CER_%": 71.32,
+12397.5s 124 "char_acc_%": 28.68,
+12397.5s 125 "token_acc_%": 36.4,
+12397.5s 126 "WER_%": 99.94,
+12397.5s 127 "similarity_%": 49.49,
+12397.5s 128 "ge95_%": 1.08,
+12397.5s 129 "ge90_%": 6.3
+12397.5s 130 },
+12397.5s 131 "gfpgan_paper": {
+12397.5s 132 "plates": 651,
+12397.5s 133 "plate_exact_%": 0.0,
+12397.5s 134 "CER_%": 100.6,
+12397.5s 135 "char_acc_%": 0.0,
+12397.5s 136 "token_acc_%": 26.88,
+12397.5s 137 "WER_%": 100.0,
+12397.5s 138 "similarity_%": 44.95,
+12397.5s 139 "ge95_%": 0.0,
+12397.5s 140 "ge90_%": 0.0
+12397.5s 141 },
+12397.5s 142 "gfpgan_fixed": {
+12397.5s 143 "plates": 651,
+12397.5s 144 "plate_exact_%": 0.15,
+12397.5s 145 "CER_%": 66.04,
+12397.5s 146 "char_acc_%": 33.96,
+12397.5s 147 "token_acc_%": 39.09,
+12397.5s 148 "WER_%": 99.97,
+12397.5s 149 "similarity_%": 54.3,
+12397.5s 150 "ge95_%": 1.23,
+12397.5s 151 "ge90_%": 6.91
+12397.5s 152 },
+12397.5s 153 "gt_boxes": {
+12397.5s 154 "plates": 467,
+12397.5s 155 "plate_exact_%": 59.53,
+12397.5s 156 "CER_%": 13.23,
+12397.5s 157 "char_acc_%": 86.77,
+12397.5s 158 "token_acc_%": 91.43,
+12397.5s 159 "WER_%": 16.12,
+12397.5s 160 "similarity_%": 89.32,
+12397.5s 161 "ge95_%": 60.39,
+12397.5s 162 "ge90_%": 70.88,
+12397.5s 163 "crops": 467
+12397.5s 164 }
+12397.5s 165 }
+12397.7s 166 # Paper #8: ours vs. the paper
+12397.7s 167 
+12397.7s 168 | Metric | Paper (page) | cnn28 | resnet50 | plates_cnn28 |
+12397.7s 169 |---|---|---|---|---|
+12397.7s 170 | Classes | 17 (10 digits, 4 letters, 3 region words) (p.3, Table I) | 101 | 101 | 101 |
+12397.7s 171 | Character test accuracy, last epoch (%) | 92.38 (CNN), 87.50 (ResNet-50) (p.4, Table II) | 36.67 | 92.06 | – |
+12397.7s 172 | Character macro precision (%) | 96.67 (CNN), 93.43 (ResNet-50) (p.4, Table II) | 13.69 | 49.03 | – |
+12397.7s 173 | Character macro recall (%) | 91.62 (CNN), 88.27 (ResNet-50) (p.4, Table II) | 7.15 | 49.02 | – |
+12397.7s 174 | Character macro F1 (%) | 94.76 (CNN), 89.84 (ResNet-50) (p.4, Table II) | 8.16 | 46.41 | – |
+12397.7s 175 | Character test accuracy, best-val checkpoint (%) | - | 93.08 | 92.89 | – |
+12397.7s 176 | Best validation accuracy (%) | 98.80 (CNN) (p.4) | 90.20 | 91.71 | – |
+12397.7s 177 | Epochs run | 40 (CNN), 30 (ResNet-50) (p.4-5) | 40 | 25 | – |
+12397.7s 178 | Classifier FPS, batch 1, T4 (model only) | not reported | 760.90 | 171.50 | – |
+12397.7s 179 | Training time (min) | not reported | 151.80 | 198.20 | – |
+12397.7s 180 | Plates: mean similarity, GFP-GAN + x order (%) | 88 (30 plates) (p.5) | – | – | 44.95 |
+12397.7s 181 | Plates with similarity >= 0.95 (%) | 57 (17 of 30) (p.5) | – | – | 0.00 |
+12397.7s 182 | Plates with similarity >= 0.90 (%) | 80 (24 of 30) (p.5) | – | – | 0.00 |
+12397.7s 183 | Plates: mean similarity WITHOUT GFP-GAN (%) | never tested | – | – | 41.86 |
+12397.7s 184 | Plates exact, GFP-GAN + two-line order (%) | not reported | – | – | 0.15 |
+12397.7s 185 | Plates exact, no GFP-GAN + two-line order (%) | - | – | – | 0.00 |
+12397.7s 186 | Plates exact, perfect segmentation (human token boxes) (%) | - | – | – | 59.53 |
+12397.7s 187 | Char accuracy, perfect segmentation (%) | - | – | – | 86.77 |
+12397.7s 188 | GFP-GAN (Real-ESRGAN x2) ms per plate | not reported | – | – | 205.60 |
+12397.7s 189 | Segmentation + CNN ms per plate | not reported | – | – | 6.10 |
+12397.7s 190 
+12397.7s 191 The paper used its own data; our numbers are on the 498R All-in-One test split (different data),
+12397.7s 192 so the comparison shows the direction and size of the gap, not a head-to-head result.
+12397.7s 193 
+12397.7s 194 The paper's 17 classes and 303 test crops (48 are copies of training crops, see the original check) vs our 101 tokens on the grouped split: a harder task, so a lower symbol accuracy is expected. The paper's plate score is the mean difflib SequenceMatcher ratio, which gives partial credit; plate exact is the strict number.
+12397.7s 195 
+12397.7s 196 ## Results by condition: plate readers (plate exact %)
+12397.7s 197 
+12397.7s 198 | Run | all test | clear | night | blurry | fog (real fog copies) | rain (synthetic) |
+12397.7s 199 |---|---|---|---|---|---|---|
+12397.7s 200 | plates_cnn28 | 0.15 | 0.21 | 0.00 | 0.00 | – | – |
+12397.7s 201 
+12397.7s 202 Condition subsets are fixed for the whole team (detection/conditions.json, ocr/conditions.json); rain and detection-fog copies are synthetic.
+12397.7s 203 
+12408.9s 204 packed /kaggle/working/paper08_outputs.zip 241.2 MB
+12408.9s 205 packed /kaggle/working/paper08_results.zip 0.1 MB (no weights: for GitHub weights/)
+12413.7s 206 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+12413.7s 207 cells[i][c] = re.sub('\\\\\|', '|', cell)
+12413.8s 208 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+12413.8s 209 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+12414.6s 210 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+12414.7s 211 [NbConvertApp] Writing 185768 bytes to __notebook__.ipynb
+12417.2s 212 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+12418.2s 213 [NbConvertApp] Writing 1063115 bytes to __results__.html
