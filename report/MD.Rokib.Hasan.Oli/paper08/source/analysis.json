@@ -1,0 +1,1033 @@
+{
+ "run": {
+  "dataset_version": "1.1",
+  "date": "2026-10-22 03:38",
+  "torch": "2.11.0+cu128",
+  "gpus": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "jobs": [
+   {
+    "name": "cnn28",
+    "code": 0,
+    "min": 152.5
+   },
+   {
+    "name": "resnet50",
+    "code": 0,
+    "min": 199.5
+   },
+   {
+    "name": "fps_cnn28",
+    "code": 0,
+    "min": 0.2
+   },
+   {
+    "name": "fps_resnet50",
+    "code": 0,
+    "min": 0.2
+   },
+   {
+    "name": "plates_cnn28",
+    "code": 0,
+    "min": 3.0
+   }
+  ],
+  "total_h": 3.45,
+  "token_crops": {
+   "train": 47992,
+   "val": 4643,
+   "test": 4107
+  },
+  "classes_in_split": {
+   "train": 99,
+   "val": 85,
+   "test": 60
+  },
+  "test_class_without_train": [
+   "মুন্সিগঞ্জ"
+  ]
+ },
+ "classifiers": {
+  "cnn28": {
+   "acc_best_%": 93.08,
+   "acc_last_%": 36.67,
+   "macroF1_best_%": 36.42,
+   "macroF1_last_%": 8.16,
+   "weightedF1_best_%": 92.31,
+   "val_best_%": 90.2,
+   "best_epoch": 5,
+   "epochs_run": 40,
+   "epochs_planned": 40,
+   "train_min": 151.8,
+   "params": 3707157,
+   "params_trainable": 3707157,
+   "fps": 760.9,
+   "ms": 1.31,
+   "groups": {
+    "digits": {
+     "n": 2802,
+     "acc_%": 96.9,
+     "classes_in_test": 10
+    },
+    "Metro": {
+     "n": 371,
+     "acc_%": 97.57,
+     "classes_in_test": 1
+    },
+    "series letters": {
+     "n": 467,
+     "acc_%": 81.8,
+     "classes_in_test": 16
+    },
+    "district words": {
+     "n": 467,
+     "acc_%": 77.94,
+     "classes_in_test": 33
+    }
+   },
+   "classes_with_test_crops": 60,
+   "classes_ge20_test": 21,
+   "test_crops_in_ge20": 3973,
+   "macroF1_ge20_%": 89.06,
+   "acc_ge20_%": 95.42,
+   "classes_rare_test(1-19)": 39,
+   "acc_rare_%": 23.88,
+   "rare_classes_with_0_correct": 33,
+   "acc_lowtrain(<50)_%": 14.58,
+   "n_lowtrain_test_crops": 96,
+   "unseen_in_train_test_classes": [
+    "মুন্সিগঞ্জ"
+   ],
+   "top_confusions": [
+    {
+     "n": 8,
+     "true": "খুলনা",
+     "pred": "ঢাকা"
+    },
+    {
+     "n": 6,
+     "true": "৯",
+     "pred": "১"
+    },
+    {
+     "n": 6,
+     "true": "০",
+     "pred": "৩"
+    },
+    {
+     "n": 6,
+     "true": "যশোর",
+     "pred": "ঢাকা"
+    },
+    {
+     "n": 6,
+     "true": "ট",
+     "pred": "৮"
+    },
+    {
+     "n": 5,
+     "true": "৭",
+     "pred": "মেট্রো"
+    },
+    {
+     "n": 4,
+     "true": "৪",
+     "pred": "ট"
+    },
+    {
+     "n": 4,
+     "true": "মৌলভীবাজার",
+     "pred": "ঢাকা"
+    },
+    {
+     "n": 4,
+     "true": "ব",
+     "pred": "মেট্রো"
+    },
+    {
+     "n": 4,
+     "true": "ট",
+     "pred": "ঢাকা"
+    },
+    {
+     "n": 4,
+     "true": "জামালপুর",
+     "pred": "মেট্রো"
+    },
+    {
+     "n": 4,
+     "true": "ঘ",
+     "pred": "গ"
+    }
+   ],
+   "curve": [
+    {
+     "epoch": 1.0,
+     "train_loss": 0.735,
+     "train_acc": 0.8301,
+     "val_loss": 0.5631,
+     "val_acc": 0.8809
+    },
+    {
+     "epoch": 2.0,
+     "train_loss": 0.4058,
+     "train_acc": 0.9122,
+     "val_loss": 0.5221,
+     "val_acc": 0.8856
+    },
+    {
+     "epoch": 3.0,
+     "train_loss": 0.3743,
+     "train_acc": 0.9193,
+     "val_loss": 0.526,
+     "val_acc": 0.8871
+    },
+    {
+     "epoch": 4.0,
+     "train_loss": 0.3696,
+     "train_acc": 0.9213,
+     "val_loss": 0.6151,
+     "val_acc": 0.8777
+    },
+    {
+     "epoch": 5.0,
+     "train_loss": 0.3684,
+     "train_acc": 0.9202,
+     "val_loss": 0.4918,
+     "val_acc": 0.902
+    },
+    {
+     "epoch": 6.0,
+     "train_loss": 0.3753,
+     "train_acc": 0.9208,
+     "val_loss": 0.5058,
+     "val_acc": 0.8921
+    },
+    {
+     "epoch": 7.0,
+     "train_loss": 0.3857,
+     "train_acc": 0.9175,
+     "val_loss": 0.5363,
+     "val_acc": 0.8975
+    },
+    {
+     "epoch": 8.0,
+     "train_loss": 0.4037,
+     "train_acc": 0.9159,
+     "val_loss": 0.5885,
+     "val_acc": 0.8757
+    },
+    {
+     "epoch": 9.0,
+     "train_loss": 0.4119,
+     "train_acc": 0.9146,
+     "val_loss": 0.57,
+     "val_acc": 0.8945
+    },
+    {
+     "epoch": 10.0,
+     "train_loss": 0.427,
+     "train_acc": 0.9125,
+     "val_loss": 0.6289,
+     "val_acc": 0.8837
+    },
+    {
+     "epoch": 11.0,
+     "train_loss": 0.4296,
+     "train_acc": 0.9126,
+     "val_loss": 0.8292,
+     "val_acc": 0.8604
+    },
+    {
+     "epoch": 12.0,
+     "train_loss": 0.4551,
+     "train_acc": 0.9077,
+     "val_loss": 0.9565,
+     "val_acc": 0.8869
+    },
+    {
+     "epoch": 13.0,
+     "train_loss": 0.4539,
+     "train_acc": 0.9085,
+     "val_loss": 0.7417,
+     "val_acc": 0.879
+    },
+    {
+     "epoch": 14.0,
+     "train_loss": 0.4659,
+     "train_acc": 0.9053,
+     "val_loss": 0.8526,
+     "val_acc": 0.8854
+    },
+    {
+     "epoch": 15.0,
+     "train_loss": 0.49,
+     "train_acc": 0.9031,
+     "val_loss": 0.7941,
+     "val_acc": 0.877
+    },
+    {
+     "epoch": 16.0,
+     "train_loss": 0.4919,
+     "train_acc": 0.9022,
+     "val_loss": 0.7819,
+     "val_acc": 0.8699
+    },
+    {
+     "epoch": 17.0,
+     "train_loss": 0.5401,
+     "train_acc": 0.8942,
+     "val_loss": 0.9436,
+     "val_acc": 0.8585
+    },
+    {
+     "epoch": 18.0,
+     "train_loss": 0.544,
+     "train_acc": 0.8942,
+     "val_loss": 0.8292,
+     "val_acc": 0.8583
+    },
+    {
+     "epoch": 19.0,
+     "train_loss": 0.5524,
+     "train_acc": 0.8925,
+     "val_loss": 0.9136,
+     "val_acc": 0.8744
+    },
+    {
+     "epoch": 20.0,
+     "train_loss": 0.5673,
+     "train_acc": 0.8936,
+     "val_loss": 0.8831,
+     "val_acc": 0.8189
+    },
+    {
+     "epoch": 21.0,
+     "train_loss": 0.6003,
+     "train_acc": 0.8869,
+     "val_loss": 0.9391,
+     "val_acc": 0.8507
+    },
+    {
+     "epoch": 22.0,
+     "train_loss": 0.5847,
+     "train_acc": 0.8853,
+     "val_loss": 0.9243,
+     "val_acc": 0.8389
+    },
+    {
+     "epoch": 23.0,
+     "train_loss": 0.616,
+     "train_acc": 0.8791,
+     "val_loss": 1.3233,
+     "val_acc": 0.7097
+    },
+    {
+     "epoch": 24.0,
+     "train_loss": 0.748,
+     "train_acc": 0.8669,
+     "val_loss": 1.0804,
+     "val_acc": 0.8034
+    },
+    {
+     "epoch": 25.0,
+     "train_loss": 0.6929,
+     "train_acc": 0.8739,
+     "val_loss": 1.073,
+     "val_acc": 0.8546
+    },
+    {
+     "epoch": 26.0,
+     "train_loss": 0.6893,
+     "train_acc": 0.8678,
+     "val_loss": 1.3111,
+     "val_acc": 0.7991
+    },
+    {
+     "epoch": 27.0,
+     "train_loss": 0.755,
+     "train_acc": 0.8595,
+     "val_loss": 1.4986,
+     "val_acc": 0.8327
+    },
+    {
+     "epoch": 28.0,
+     "train_loss": 0.7263,
+     "train_acc": 0.8629,
+     "val_loss": 1.2534,
+     "val_acc": 0.7995
+    },
+    {
+     "epoch": 29.0,
+     "train_loss": 0.8341,
+     "train_acc": 0.8464,
+     "val_loss": 1.3196,
+     "val_acc": 0.7028
+    },
+    {
+     "epoch": 30.0,
+     "train_loss": 0.8529,
+     "train_acc": 0.8361,
+     "val_loss": 2.1853,
+     "val_acc": 0.8096
+    },
+    {
+     "epoch": 31.0,
+     "train_loss": 0.8978,
+     "train_acc": 0.8264,
+     "val_loss": 2.0127,
+     "val_acc": 0.7097
+    },
+    {
+     "epoch": 32.0,
+     "train_loss": 0.9941,
+     "train_acc": 0.8118,
+     "val_loss": 2.2934,
+     "val_acc": 0.7049
+    },
+    {
+     "epoch": 33.0,
+     "train_loss": 1.1584,
+     "train_acc": 0.7807,
+     "val_loss": 1.7343,
+     "val_acc": 0.6659
+    },
+    {
+     "epoch": 34.0,
+     "train_loss": 1.2401,
+     "train_acc": 0.7585,
+     "val_loss": 2.235,
+     "val_acc": 0.4738
+    },
+    {
+     "epoch": 35.0,
+     "train_loss": 1.4093,
+     "train_acc": 0.7202,
+     "val_loss": 2.3839,
+     "val_acc": 0.325
+    },
+    {
+     "epoch": 36.0,
+     "train_loss": 1.5419,
+     "train_acc": 0.7021,
+     "val_loss": 2.7654,
+     "val_acc": 0.6664
+    },
+    {
+     "epoch": 37.0,
+     "train_loss": 1.9762,
+     "train_acc": 0.5556,
+     "val_loss": 3.102,
+     "val_acc": 0.1794
+    },
+    {
+     "epoch": 38.0,
+     "train_loss": 1.8387,
+     "train_acc": 0.6305,
+     "val_loss": 2.2112,
+     "val_acc": 0.4585
+    },
+    {
+     "epoch": 39.0,
+     "train_loss": 1.7061,
+     "train_acc": 0.6689,
+     "val_loss": 3.0886,
+     "val_acc": 0.1794
+    },
+    {
+     "epoch": 40.0,
+     "train_loss": 2.2802,
+     "train_acc": 0.5241,
+     "val_loss": 2.4493,
+     "val_acc": 0.3705
+    }
+   ]
+  },
+  "resnet50": {
+   "acc_best_%": 92.89,
+   "acc_last_%": 92.06,
+   "macroF1_best_%": 43.9,
+   "macroF1_last_%": 46.41,
+   "weightedF1_best_%": 92.75,
+   "val_best_%": 91.71,
+   "best_epoch": 20,
+   "epochs_run": 25,
+   "epochs_planned": 30,
+   "train_min": 198.2,
+   "params": 28679333,
+   "params_trainable": 5171301,
+   "fps": 171.5,
+   "ms": 5.83,
+   "groups": {
+    "digits": {
+     "n": 2802,
+     "acc_%": 95.22,
+     "classes_in_test": 10
+    },
+    "Metro": {
+     "n": 371,
+     "acc_%": 98.92,
+     "classes_in_test": 1
+    },
+    "series letters": {
+     "n": 467,
+     "acc_%": 85.87,
+     "classes_in_test": 16
+    },
+    "district words": {
+     "n": 467,
+     "acc_%": 81.16,
+     "classes_in_test": 33
+    }
+   },
+   "classes_with_test_crops": 60,
+   "classes_ge20_test": 21,
+   "test_crops_in_ge20": 3973,
+   "macroF1_ge20_%": 89.27,
+   "acc_ge20_%": 94.49,
+   "classes_rare_test(1-19)": 39,
+   "acc_rare_%": 45.52,
+   "rare_classes_with_0_correct": 20,
+   "acc_lowtrain(<50)_%": 36.46,
+   "n_lowtrain_test_crops": 96,
+   "unseen_in_train_test_classes": [
+    "মুন্সিগঞ্জ"
+   ],
+   "top_confusions": [
+    {
+     "n": 13,
+     "true": "৩",
+     "pred": "৬"
+    },
+    {
+     "n": 12,
+     "true": "যশোর",
+     "pred": "মেট্রো"
+    },
+    {
+     "n": 11,
+     "true": "২",
+     "pred": "১"
+    },
+    {
+     "n": 9,
+     "true": "৯",
+     "pred": "১"
+    },
+    {
+     "n": 8,
+     "true": "২",
+     "pred": "৭"
+    },
+    {
+     "n": 7,
+     "true": "৩",
+     "pred": "০"
+    },
+    {
+     "n": 6,
+     "true": "৫",
+     "pred": "৭"
+    },
+    {
+     "n": 6,
+     "true": "ট",
+     "pred": "ব"
+    },
+    {
+     "n": 5,
+     "true": "৫",
+     "pred": "১"
+    },
+    {
+     "n": 5,
+     "true": "৪",
+     "pred": "৫"
+    },
+    {
+     "n": 5,
+     "true": "খুলনা",
+     "pred": "ঢাকা"
+    },
+    {
+     "n": 4,
+     "true": "৬",
+     "pred": "মেট্রো"
+    }
+   ],
+   "curve": [
+    {
+     "epoch": 1.0,
+     "train_loss": 12.0395,
+     "train_acc": 0.8454,
+     "val_loss": 21.9088,
+     "val_acc": 0.8016
+    },
+    {
+     "epoch": 2.0,
+     "train_loss": 8.9059,
+     "train_acc": 0.9098,
+     "val_loss": 17.5815,
+     "val_acc": 0.8555
+    },
+    {
+     "epoch": 3.0,
+     "train_loss": 7.2706,
+     "train_acc": 0.9258,
+     "val_loss": 18.3263,
+     "val_acc": 0.8611
+    },
+    {
+     "epoch": 4.0,
+     "train_loss": 6.2551,
+     "train_acc": 0.9379,
+     "val_loss": 16.0761,
+     "val_acc": 0.8839
+    },
+    {
+     "epoch": 5.0,
+     "train_loss": 5.404,
+     "train_acc": 0.9442,
+     "val_loss": 20.04,
+     "val_acc": 0.8731
+    },
+    {
+     "epoch": 6.0,
+     "train_loss": 4.7076,
+     "train_acc": 0.9511,
+     "val_loss": 18.6618,
+     "val_acc": 0.8927
+    },
+    {
+     "epoch": 7.0,
+     "train_loss": 4.5264,
+     "train_acc": 0.9544,
+     "val_loss": 17.6884,
+     "val_acc": 0.8949
+    },
+    {
+     "epoch": 8.0,
+     "train_loss": 4.0413,
+     "train_acc": 0.9572,
+     "val_loss": 19.2209,
+     "val_acc": 0.8934
+    },
+    {
+     "epoch": 9.0,
+     "train_loss": 3.8816,
+     "train_acc": 0.9602,
+     "val_loss": 15.6094,
+     "val_acc": 0.9087
+    },
+    {
+     "epoch": 10.0,
+     "train_loss": 3.4315,
+     "train_acc": 0.9634,
+     "val_loss": 17.9693,
+     "val_acc": 0.9009
+    },
+    {
+     "epoch": 11.0,
+     "train_loss": 3.1876,
+     "train_acc": 0.9663,
+     "val_loss": 19.0679,
+     "val_acc": 0.8882
+    },
+    {
+     "epoch": 12.0,
+     "train_loss": 3.0013,
+     "train_acc": 0.9685,
+     "val_loss": 16.8167,
+     "val_acc": 0.9169
+    },
+    {
+     "epoch": 13.0,
+     "train_loss": 2.924,
+     "train_acc": 0.9687,
+     "val_loss": 17.8662,
+     "val_acc": 0.8986
+    },
+    {
+     "epoch": 14.0,
+     "train_loss": 2.5985,
+     "train_acc": 0.9711,
+     "val_loss": 17.7393,
+     "val_acc": 0.9044
+    },
+    {
+     "epoch": 15.0,
+     "train_loss": 2.468,
+     "train_acc": 0.9727,
+     "val_loss": 17.7091,
+     "val_acc": 0.9134
+    },
+    {
+     "epoch": 16.0,
+     "train_loss": 2.3918,
+     "train_acc": 0.9733,
+     "val_loss": 18.5886,
+     "val_acc": 0.9143
+    },
+    {
+     "epoch": 17.0,
+     "train_loss": 2.4253,
+     "train_acc": 0.9737,
+     "val_loss": 17.8049,
+     "val_acc": 0.9076
+    },
+    {
+     "epoch": 18.0,
+     "train_loss": 2.2952,
+     "train_acc": 0.9743,
+     "val_loss": 18.2902,
+     "val_acc": 0.9169
+    },
+    {
+     "epoch": 19.0,
+     "train_loss": 2.0139,
+     "train_acc": 0.9773,
+     "val_loss": 19.1785,
+     "val_acc": 0.9108
+    },
+    {
+     "epoch": 20.0,
+     "train_loss": 2.0537,
+     "train_acc": 0.9768,
+     "val_loss": 19.5227,
+     "val_acc": 0.9171
+    },
+    {
+     "epoch": 21.0,
+     "train_loss": 1.997,
+     "train_acc": 0.9781,
+     "val_loss": 18.5208,
+     "val_acc": 0.9162
+    },
+    {
+     "epoch": 22.0,
+     "train_loss": 1.8324,
+     "train_acc": 0.98,
+     "val_loss": 18.0511,
+     "val_acc": 0.9166
+    },
+    {
+     "epoch": 23.0,
+     "train_loss": 1.7489,
+     "train_acc": 0.9804,
+     "val_loss": 19.5864,
+     "val_acc": 0.9136
+    },
+    {
+     "epoch": 24.0,
+     "train_loss": 1.7237,
+     "train_acc": 0.9801,
+     "val_loss": 17.8092,
+     "val_acc": 0.9166
+    },
+    {
+     "epoch": 25.0,
+     "train_loss": 1.7483,
+     "train_acc": 0.9808,
+     "val_loss": 21.3302,
+     "val_acc": 0.9074
+    }
+   ]
+  }
+ },
+ "cnn_collapse": {
+  "train_acc_ep5": 0.9202,
+  "train_acc_ep40": 0.5241,
+  "train_loss_min": 0.3684,
+  "train_loss_ep40": 2.2802,
+  "first_epoch_train_loss_up_for_good": 2.0,
+  "steps_per_epoch": 47992,
+  "paper_steps_total_cnn": 51680,
+  "our_steps_to_best": 239960
+ },
+ "plates": {
+  "none_paper": {
+   "plates": 651,
+   "plate_exact_%": 0.0,
+   "CER_%": 101.32,
+   "char_acc_%": 0.0,
+   "token_acc_%": 23.54,
+   "WER_%": 100.0,
+   "similarity_%": 41.86,
+   "ge95_%": 0.0,
+   "ge90_%": 0.0
+  },
+  "none_fixed": {
+   "plates": 651,
+   "plate_exact_%": 0.0,
+   "CER_%": 71.32,
+   "char_acc_%": 28.68,
+   "token_acc_%": 36.4,
+   "WER_%": 99.94,
+   "similarity_%": 49.49,
+   "ge95_%": 1.08,
+   "ge90_%": 6.3
+  },
+  "gfpgan_paper": {
+   "plates": 651,
+   "plate_exact_%": 0.0,
+   "CER_%": 100.6,
+   "char_acc_%": 0.0,
+   "token_acc_%": 26.88,
+   "WER_%": 100.0,
+   "similarity_%": 44.95,
+   "ge95_%": 0.0,
+   "ge90_%": 0.0
+  },
+  "gfpgan_fixed": {
+   "plates": 651,
+   "plate_exact_%": 0.15,
+   "CER_%": 66.04,
+   "char_acc_%": 33.96,
+   "token_acc_%": 39.09,
+   "WER_%": 99.97,
+   "similarity_%": 54.3,
+   "ge95_%": 1.23,
+   "ge90_%": 6.91
+  },
+  "gt_boxes": {
+   "plates": 467,
+   "plate_exact_%": 59.53,
+   "CER_%": 13.23,
+   "char_acc_%": 86.77,
+   "token_acc_%": 91.43,
+   "WER_%": 16.12,
+   "similarity_%": 89.32,
+   "ge95_%": 60.39,
+   "ge90_%": 70.88,
+   "crops": 467
+  }
+ },
+ "plates_ms": {
+  "enhance": 205.6,
+  "read": 6.1,
+  "total": 211.7
+ },
+ "plates_by_condition": {
+  "clear": {
+   "plates": 480,
+   "plate_exact_%": 0.21,
+   "CER_%": 62.4,
+   "char_acc_%": 37.6,
+   "token_acc_%": 42.14,
+   "WER_%": 100.0
+  },
+  "night": {
+   "plates": 65,
+   "plate_exact_%": 0.0,
+   "CER_%": 78.88,
+   "char_acc_%": 21.12,
+   "token_acc_%": 29.46,
+   "WER_%": 100.0
+  },
+  "blurry": {
+   "plates": 112,
+   "plate_exact_%": 0.0,
+   "CER_%": 75.58,
+   "char_acc_%": 24.42,
+   "token_acc_%": 31.7,
+   "WER_%": 99.82
+  }
+ },
+ "gfpgan_paired": {
+  "paper": {
+   "mean_none_%": 41.86,
+   "mean_gfpgan_%": 44.95,
+   "mean_diff_points": 3.09,
+   "gfpgan_better": 345,
+   "gfpgan_worse": 233,
+   "equal": 73,
+   "wilcoxon_p": 9.45e-08,
+   "median_none": 0.4,
+   "median_gfpgan": 0.45
+  },
+  "fixed": {
+   "mean_none_%": 49.49,
+   "mean_gfpgan_%": 54.3,
+   "mean_diff_points": 4.81,
+   "gfpgan_better": 343,
+   "gfpgan_worse": 224,
+   "equal": 84,
+   "wilcoxon_p": 4.21e-11,
+   "median_none": 0.471,
+   "median_gfpgan": 0.538
+  }
+ },
+ "segmentation_counts": {
+  "none_fixed": {
+   "mean_pred_tokens": 11.27,
+   "mean_true_tokens": 8.76,
+   "same_count_%": 2.61,
+   "too_many_%": 90.17,
+   "too_few_%": 7.22,
+   "hist": {
+    "-6": 8,
+    "-5": 5,
+    "-4": 5,
+    "-3": 5,
+    "-2": 10,
+    "-1": 14,
+    "0": 17,
+    "1": 29,
+    "2": 104,
+    "3": 290,
+    "4": 134,
+    "5": 30
+   }
+  },
+  "gfpgan_fixed": {
+   "mean_pred_tokens": 11.11,
+   "mean_true_tokens": 8.76,
+   "same_count_%": 3.23,
+   "too_many_%": 88.63,
+   "too_few_%": 8.14,
+   "hist": {
+    "-6": 10,
+    "-5": 5,
+    "-4": 6,
+    "-3": 3,
+    "-2": 15,
+    "-1": 14,
+    "0": 21,
+    "1": 45,
+    "2": 114,
+    "3": 264,
+    "4": 127,
+    "5": 27
+   }
+  }
+ },
+ "similarity_by_condition": {
+  "clear": {
+   "plates": 480,
+   "none_fixed_sim_%": 51.61,
+   "gfpgan_fixed_sim_%": 57.54
+  },
+  "night": {
+   "plates": 65,
+   "none_fixed_sim_%": 43.51,
+   "gfpgan_fixed_sim_%": 41.22
+  },
+  "blurry": {
+   "plates": 112,
+   "none_fixed_sim_%": 43.63,
+   "gfpgan_fixed_sim_%": 47.11
+  }
+ },
+ "examples": [
+  {
+   "file": "anpr_35acaf81d086.jpg",
+   "true": "খুলনা মেট্রো-ট ১১-১৬৩৬",
+   "none_paper": {
+    "pred": "৬৮১হ১খুলনা৮১থমেট্রো১৬১৩ট",
+    "sim": 0.667
+   },
+   "gfpgan_paper": {
+    "pred": "৬১খুলনাহহ১খুলনা১টমেট্রো১৬৩৬ট",
+    "sim": 0.652
+   },
+   "none_fixed": {
+    "pred": "খুলনা৮মেট্রো১ট১১থ১৬৩",
+    "sim": 0.895
+   },
+   "gfpgan_fixed": {
+    "pred": "খুলনামেট্রোট১১১৬৩৬",
+    "sim": 1.0
+   }
+  },
+  {
+   "file": "lpdba_8573b414d2ab.jpg",
+   "true": "ঢাকা মেট্রো-গ ৩৫-৫৩৭০",
+   "none_paper": {
+    "pred": "খুলনাজ৫৩৮৫মেট্রো৫ঢাকা৩৬৭০০গ",
+    "sim": 0.455
+   },
+   "gfpgan_paper": {
+    "pred": "রাজরাজ১৩৫৫৫০৫মেট্রো৩১৭০০",
+    "sim": 0.537
+   },
+   "none_fixed": {
+    "pred": "৮মেট্রোঢাকা৬গ৩৫৫৩৭০০",
+    "sim": 0.703
+   },
+   "gfpgan_fixed": {
+    "pred": "৫০মেট্রো১৩৫৫৫৩৭০০",
+    "sim": 0.706
+   }
+  },
+  {
+   "file": "anpr_8027753f773c.jpg",
+   "true": "পিরোজপুর-হ ১১-৯১৬০",
+   "none_paper": {
+    "pred": "ঢাকাঢাকা২১১৫গ১রাজ৯ঢাকা১৬০০",
+    "sim": 0.293
+   },
+   "gfpgan_paper": {
+    "pred": "লঢাকা২মেট্রো১৩গ১০৯হ১৬০০",
+    "sim": 0.316
+   },
+   "none_fixed": {
+    "pred": "৫গরাজঢাকা০১১৯১৬০",
+    "sim": 0.516
+   },
+   "gfpgan_fixed": {
+    "pred": "৩গ০হ০১১৯১৬০",
+    "sim": 0.538
+   }
+  },
+  {
+   "file": "nightlpbd_2b3877aecff7.jpg",
+   "true": "ঢাকা মেট্রো-গ ৩৭-৪৪৪৭",
+   "none_paper": {
+    "pred": "৫৫হ৬৫১ঢাকাগ০৫৮ঢাকা৫ঢাকাঢাকা",
+    "sim": 0.227
+   },
+   "gfpgan_paper": {
+    "pred": "৫০হ৬গ৯৬ঢাকা০গ৫গঢাকা৪ল",
+    "sim": 0.316
+   },
+   "none_fixed": {
+    "pred": "ঢাকা",
+    "sim": 0.381
+   },
+   "gfpgan_fixed": {
+    "pred": "ল",
+    "sim": 0.0
+   }
+  }
+ ],
+ "same_test_other_readers": [
+  {
+   "run": "cascade_blpd_weights",
+   "paper": "#2 Cascaded YOLO-based approach for Bangladeshi license plate i",
+   "model": "cascade",
+   "ocr_plate_exact_%": "74.35",
+   "ocr_char_acc_%": "95.23",
+   "fps_hardware": ""
+  },
+  {
+   "run": "lpnr_v12n",
+   "paper": "#2 Cascaded YOLO-based approach for Bangladeshi license plate i",
+   "model": "yolo12n.pt",
+   "ocr_plate_exact_%": "87.71",
+   "ocr_char_acc_%": "97.85",
+   "fps_hardware": "Tesla T4, batch 1 (OCR ms/plate 23.55)"
+  }
+ ],
+ "enh_examples": [
+  "runs/plates_cnn28/enh_anpr_0142111c1238.png",
+  "runs/plates_cnn28/enh_anpr_02be4603d6d1.png",
+  "runs/plates_cnn28/enh_anpr_02ed2068199b.png",
+  "runs/plates_cnn28/enh_anpr_039ecae53033.png",
+  "runs/plates_cnn28/enh_anpr_04f6bbb6764c.png",
+  "runs/plates_cnn28/enh_anpr_0504dce51a97.png",
+  "runs/plates_cnn28/enh_anpr_070d0f167046.png",
+  "runs/plates_cnn28/enh_anpr_070d5811ae97.png"
+ ]
+}
