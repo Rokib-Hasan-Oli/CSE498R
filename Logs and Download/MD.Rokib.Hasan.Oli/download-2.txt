@@ -1,0 +1,149 @@
+8.5s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.5s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.5s 3 0.00s - to python to disable frozen modules.
+8.5s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.2s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.2s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.2s 7 0.00s - to python to disable frozen modules.
+9.2s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+13.4s 9 [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/46.7 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m46.7/46.7 kB[0m [31m1.8 MB/s[0m eta [36m0:00:00[0m
+14.1s 10 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.4 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━[0m [32m0.9/1.4 MB[0m [31m26.0 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.4/1.4 MB[0m [31m23.9 MB/s[0m eta [36m0:00:00[0m
+14.1s 11 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/97.6 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m97.6/97.6 kB[0m [31m4.2 MB/s[0m eta [36m0:00:00[0m
+25.8s 12 [?25htorch 2.11.0+cu128 | GPUs: ['Tesla T4', 'Tesla T4']
+25.8s 13 ====================================================================================================
+25.8s 14 FULL RUN (FAST = False): planned about 7 h. A training job that ends after a few minutes FAILED:
+25.8s 15 read the '----- ... failed' lines below the cell and logs/<run>.log.
+25.8s 16 ====================================================================================================
+25.8s 17 Writing /kaggle/working/lprkit/common.py
+25.8s 18 Writing /kaggle/working/lprkit/vocab.py
+25.9s 19 Writing /kaggle/working/lprkit/metrics.py
+25.9s 20 Writing /kaggle/working/lprkit/report.py
+25.9s 21 Writing /kaggle/working/lprkit/det.py
+25.9s 22 Writing /kaggle/working/lprkit/rec.py
+25.9s 23 Writing /kaggle/working/lprkit/seq.py
+26.0s 24 Writing /kaggle/working/lprkit/ved.py
+26.0s 25 Writing /kaggle/working/lprkit/p02_cascade.py
+26.0s 26 dataset not attached -> downloading it from the team Drive (https://drive.google.com/drive/folders/11psdzW5Cpr7tXwqzqNxNt3LA-qeDSOQl)
+27.2s 27 0.00 / 3.38 GB
+35.2s 28 0.49 / 3.38 GB
+42.8s 29 0.98 / 3.38 GB
+50.2s 30 1.46 / 3.38 GB
+57.3s 31 1.95 / 3.38 GB
+64.9s 32 2.44 / 3.38 GB
+83.2s 33 2.93 / 3.38 GB
+89.9s 34 unpacking ...
+112.5s 35 dataset ready: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+112.9s 36 dataset: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+112.9s 37 det|test|human                           1153
+112.9s 38 det|train|auto                           4507
+112.9s 39 det|train|human                          4067
+112.9s 40 det|val|human                            896
+112.9s 41 e2e|test                                 204
+112.9s 42 extras_fog|test                          26
+112.9s 43 extras_fog|train                         267
+112.9s 44 extras_fog|val                           59
+112.9s 45 leaky_kuet|detection|fair_test           540
+112.9s 46 leaky_kuet|detection|fair_train          1758
+112.9s 47 leaky_kuet|detection|fair_val            311
+112.9s 48 leaky_kuet|detection|test|copy           27
+112.9s 49 leaky_kuet|detection|test|unique         526
+112.9s 50 leaky_kuet|detection|test_clean          474
+112.9s 51 leaky_kuet|detection|test_dup            79
+112.9s 52 leaky_kuet|detection|train|copy          3752
+112.9s 53 leaky_kuet|detection|train|unique        1868
+112.9s 54 leaky_kuet|detection|val|copy            26
+112.9s 55 leaky_kuet|detection|val|unique          251
+112.9s 56 leaky_kuet|recognition|fair_left_out_same_plate_as_test 315
+112.9s 57 leaky_kuet|recognition|fair_test         194
+112.9s 58 leaky_kuet|recognition|fair_train        660
+112.9s 59 leaky_kuet|recognition|fair_val          122
+112.9s 60 leaky_kuet|recognition|test|unique       194
+112.9s 61 leaky_kuet|recognition|test_clean        80
+112.9s 62 leaky_kuet|recognition|test_dup          114
+112.9s 63 leaky_kuet|recognition|train|copy        2613
+112.9s 64 leaky_kuet|recognition|train|unique      778
+112.9s 65 leaky_kuet|recognition|val|copy          1
+112.9s 66 leaky_kuet|recognition|val|unique        319
+112.9s 67 ocr|test|human                           651
+112.9s 68 ocr|train|auto                           2136
+112.9s 69 ocr|train|human                          3471
+112.9s 70 ocr|val|human                            766
+112.9s 71 rec|test|human                           467
+112.9s 72 rec|train|auto                           2136
+112.9s 73 rec|train|auto_verified                  930
+112.9s 74 rec|train|human                          2399
+112.9s 75 rec|val|human                            536
+112.9s 76 path: /tmp/498r_data/BanglaLPR_AllInOne_v1_1/detection
+112.9s 77 train: images/train
+112.9s 78 val: images/val
+112.9s 79 test: images/test
+112.9s 80 nc: 1
+112.9s 81 names:
+112.9s 82 0: "plate"
+112.9s 83 
+113.2s 84 Creating new Ultralytics Settings v0.0.8 file ✅
+113.2s 85 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+113.2s 86 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+151.8s 87 [start] lpd_v12s on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --model yolo12s.pt --name lpd_v12s --project /kaggle/working/runs --epochs 60 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 5
+151.8s 88 [start] lpnr_v12n on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/rec.py --data /kaggle/working/yaml/recognition_all.yaml --model yolo12n.pt --name lpnr_v12n --project /kaggle/working/runs --epochs 70 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 4
+5882.0s 89 [done]  lpnr_v12n code=0 after 95.5 min
+11082.1s 90 [done]  lpd_v12s code=0 after 182.2 min
+11082.1s 91 [start] cascade_ours on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p02_cascade.py --lpd /kaggle/working/runs/lpd_v12s/weights/best.pt --lpnr /kaggle/working/runs/lpnr_v12n/weights/best.pt --lpnr-imgsz 640 --name cascade_ours --project /kaggle/working/runs
+11082.1s 92 [start] cascade_blpd_weights on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/p02_cascade.py --official --name cascade_blpd_weights --project /kaggle/working/runs
+11132.1s 93 [done]  cascade_ours code=0 after 0.8 min
+11152.1s 94 [done]  cascade_blpd_weights code=0 after 1.2 min
+11152.1s 95 [start] speed_lpd_v12s on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --name lpd_v12s --project /kaggle/working/runs --imgsz 640 --fps-only --trt
+11512.1s 96 [done]  speed_lpd_v12s code=0 after 6.0 min
+11512.1s 97 cascade_ours with_vehicle_stage {'full_plate_exact_%': 85.29, 'char_acc_%': 92.78, 'ms_mean': 93.3} {'blpd_ext': {'plates': 144, 'plate_exact_%': 93.06, 'CER_%': 1.63, 'char_acc_%': 98.37, 'token_acc_%': 99.2, 'WER_%': 1.49}, 'nightlpbd': {'plates': 60, 'plate_exact_%': 66.67, 'CER_%': 22.87, 'char_acc_%': 77.13, 'token_acc_%': 75.59, 'WER_%': 25.37}}
+11512.1s 98 cascade_ours plate_detector_only {'full_plate_exact_%': 86.76, 'char_acc_%': 94.89, 'ms_mean': 36.2} {'blpd_ext': {'plates': 144, 'plate_exact_%': 93.75, 'CER_%': 1.5, 'char_acc_%': 98.5, 'token_acc_%': 99.2, 'WER_%': 1.49}, 'nightlpbd': {'plates': 60, 'plate_exact_%': 70.0, 'CER_%': 15.21, 'char_acc_%': 84.79, 'token_acc_%': 83.66, 'WER_%': 17.54}}
+11512.1s 99 cascade_blpd_weights with_vehicle_stage {'full_plate_exact_%': 78.43, 'char_acc_%': 88.18, 'ms_mean': 96.4} {'blpd_ext': {'plates': 144, 'plate_exact_%': 95.14, 'CER_%': 1.07, 'char_acc_%': 98.93, 'token_acc_%': 98.8, 'WER_%': 1.94}, 'nightlpbd': {'plates': 60, 'plate_exact_%': 38.33, 'CER_%': 41.92, 'char_acc_%': 58.08, 'token_acc_%': 52.36, 'WER_%': 48.13}}
+11512.1s 100 cascade_blpd_weights plate_detector_only {'full_plate_exact_%': 77.94, 'char_acc_%': 88.84, 'ms_mean': 38.9} {'blpd_ext': {'plates': 144, 'plate_exact_%': 93.75, 'CER_%': 1.54, 'char_acc_%': 98.46, 'token_acc_%': 98.63, 'WER_%': 2.24}, 'nightlpbd': {'plates': 60, 'plate_exact_%': 40.0, 'CER_%': 38.08, 'char_acc_%': 61.92, 'token_acc_%': 55.31, 'WER_%': 46.27}}
+11512.3s 101 # Paper #2: ours vs. the paper
+11512.3s 102 
+11512.3s 103 | Metric | Paper (page) | lpd_v12s | lpnr_v12n | cascade_ours | cascade_blpd_weights |
+11512.3s 104 |---|---|---|---|---|---|
+11512.3s 105 | LPD precision | 0.986 (p.23, Table 7) | 96.7 | – | – | – |
+11512.3s 106 | LPD recall | 0.965 (p.23, Table 7) | 96.2 | – | – | – |
+11512.3s 107 | LPD mAP50 | 0.963 (p.23, Table 7) | 98.9 | – | – | – |
+11512.3s 108 | LPD mAP50-95 | 0.685 (p.23, Table 7) | 46.2 | – | – | – |
+11512.3s 109 | LPNR mAP50 | 0.949 (p.25, Table 9) | – | 97.1 | – | – |
+11512.3s 110 | LPNR mAP50-95 | 0.767 (p.25, Table 9) | – | 66.6 | – | – |
+11512.3s 111 | OCR test crops: plate exact (%) | - | – | 87.71 | – | 74.35 |
+11512.3s 112 | Cascade: plate found (%) | 100 (p.34, Table 10) | – | – | 93.14 | 88.24 |
+11512.3s 113 | Cascade: full-plate exact (%) | 95.33 (p.34, Table 10) | – | – | 85.29 | 78.43 |
+11512.3s 114 | Cascade: char-wise accuracy (%) | 98.82 (p.34, Table 10) | – | – | 92.78 | 88.18 |
+11512.3s 115 | Cascade: Levenshtein similarity (%) | 99.57 (p.34, Table 10) | – | – | 90.84 | 84.65 |
+11512.3s 116 | Cascade ms per photo (mean) | 117.16 (RTX 3050) (p.34, Table 11) | – | – | 93.30 | 96.40 |
+11512.3s 117 | Without the vehicle stage: exact (%) | - | – | – | 86.76 | 77.94 |
+11512.3s 118 | LPD FPS, T4 FP16, batch 1 | - | 7.10 | – | – | – |
+11512.3s 119 | Training time (min) | LPD 145, LPNR 261 (Colab T4) (p.17-18, p.24) | 178.40 | 94.40 | – | – |
+11512.3s 120 
+11512.3s 121 The paper used its own data; our numbers are on the 498R All-in-One test split (different data),
+11512.3s 122 so the comparison shows the direction and size of the gap, not a head-to-head result.
+11512.3s 123 
+11512.3s 124 `cascade_blpd_weights` -> `e2e.*.by_source.blpd_ext` is the paper's own external set read with the paper's own weights (direct check of Table 10). Note: BLPD's external photos are near-duplicates of public LPDB-A images.
+11512.3s 125 
+11512.3s 126 ## Results by condition: detectors (test mAP50 %)
+11512.3s 127 
+11512.3s 128 | Run | all test | clear | night | blurry | small plates | rain (synthetic) | fog (synthetic) | false alarms on plate-free photos (%) |
+11512.3s 129 |---|---|---|---|---|---|---|---|---|
+11512.3s 130 | lpd_v12s | 98.9 | 99.2 | 98.4 | 99.2 | 93.2 | 83.1 | 97.5 | 10.00 |
+11512.3s 131 
+11512.3s 132 ## Results by condition: plate readers (plate exact %)
+11512.3s 133 
+11512.3s 134 | Run | all test | clear | night | blurry | fog (real fog copies) | rain (synthetic) |
+11512.3s 135 |---|---|---|---|---|---|---|
+11512.3s 136 | lpnr_v12n | 87.71 | 90.42 | 83.08 | 79.46 | 76.92 | 74.50 |
+11512.3s 137 
+11512.3s 138 Condition subsets are fixed for the whole team (detection/conditions.json, ocr/conditions.json); rain and detection-fog copies are synthetic.
+11512.3s 139 
+11519.3s 140 packed /kaggle/working/paper02_outputs.zip 139.1 MB
+11519.4s 141 packed /kaggle/working/paper02_results.zip 2.3 MB (no weights: for GitHub weights/)
+11524.4s 142 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+11524.4s 143 cells[i][c] = re.sub('\\\\\|', '|', cell)
+11524.6s 144 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+11524.6s 145 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+11525.5s 146 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+11525.6s 147 [NbConvertApp] Writing 147749 bytes to __notebook__.ipynb
+11528.2s 148 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+11529.2s 149 [NbConvertApp] Writing 905391 bytes to __results__.html

@@ -1,0 +1,169 @@
+7.7s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.7s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.7s 3 0.00s - to python to disable frozen modules.
+7.7s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.3s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.3s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.3s 7 0.00s - to python to disable frozen modules.
+8.3s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.3s 9 [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/46.7 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m46.7/46.7 kB[0m [31m1.2 MB/s[0m eta [36m0:00:00[0m
+12.9s 10 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.4 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━[0m [32m0.8/1.4 MB[0m [31m24.8 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.4/1.4 MB[0m [31m20.8 MB/s[0m eta [36m0:00:00[0m
+12.9s 11 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/97.6 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m97.6/97.6 kB[0m [31m5.0 MB/s[0m eta [36m0:00:00[0m
+23.4s 12 [?25htorch 2.11.0+cu128 | GPUs: ['Tesla T4', 'Tesla T4']
+23.4s 13 ====================================================================================================
+23.4s 14 FULL RUN (FAST = False): planned about 4 h. A training job that ends after a few minutes FAILED:
+23.4s 15 read the '----- ... failed' lines below the cell and logs/<run>.log.
+23.4s 16 ====================================================================================================
+23.5s 17 Writing /kaggle/working/lprkit/common.py
+23.5s 18 Writing /kaggle/working/lprkit/vocab.py
+23.5s 19 Writing /kaggle/working/lprkit/metrics.py
+23.5s 20 Writing /kaggle/working/lprkit/report.py
+23.5s 21 Writing /kaggle/working/lprkit/det.py
+23.6s 22 Writing /kaggle/working/lprkit/rec.py
+23.6s 23 Writing /kaggle/working/lprkit/seq.py
+23.6s 24 Writing /kaggle/working/lprkit/ved.py
+23.6s 25 Writing /kaggle/working/lprkit/p24_fusion.py
+23.7s 26 dataset not attached -> downloading it from the team Drive (https://drive.google.com/drive/folders/11psdzW5Cpr7tXwqzqNxNt3LA-qeDSOQl)
+24.9s 27 0.00 / 3.38 GB
+32.6s 28 0.49 / 3.38 GB
+38.6s 29 0.98 / 3.38 GB
+45.4s 30 1.46 / 3.38 GB
+53.4s 31 1.95 / 3.38 GB
+68.2s 32 2.44 / 3.38 GB
+77.0s 33 2.93 / 3.38 GB
+84.4s 34 unpacking ...
+105.6s 35 dataset ready: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+105.9s 36 dataset: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+105.9s 37 det|test|human                           1153
+105.9s 38 det|train|auto                           4507
+105.9s 39 det|train|human                          4067
+105.9s 40 det|val|human                            896
+105.9s 41 e2e|test                                 204
+105.9s 42 extras_fog|test                          26
+105.9s 43 extras_fog|train                         267
+105.9s 44 extras_fog|val                           59
+105.9s 45 leaky_kuet|detection|fair_test           540
+105.9s 46 leaky_kuet|detection|fair_train          1758
+105.9s 47 leaky_kuet|detection|fair_val            311
+105.9s 48 leaky_kuet|detection|test|copy           27
+105.9s 49 leaky_kuet|detection|test|unique         526
+105.9s 50 leaky_kuet|detection|test_clean          474
+105.9s 51 leaky_kuet|detection|test_dup            79
+105.9s 52 leaky_kuet|detection|train|copy          3752
+105.9s 53 leaky_kuet|detection|train|unique        1868
+105.9s 54 leaky_kuet|detection|val|copy            26
+105.9s 55 leaky_kuet|detection|val|unique          251
+105.9s 56 leaky_kuet|recognition|fair_left_out_same_plate_as_test 315
+105.9s 57 leaky_kuet|recognition|fair_test         194
+105.9s 58 leaky_kuet|recognition|fair_train        660
+105.9s 59 leaky_kuet|recognition|fair_val          122
+105.9s 60 leaky_kuet|recognition|test|unique       194
+105.9s 61 leaky_kuet|recognition|test_clean        80
+105.9s 62 leaky_kuet|recognition|test_dup          114
+105.9s 63 leaky_kuet|recognition|train|copy        2613
+105.9s 64 leaky_kuet|recognition|train|unique      778
+105.9s 65 leaky_kuet|recognition|val|copy          1
+105.9s 66 leaky_kuet|recognition|val|unique        319
+105.9s 67 ocr|test|human                           651
+105.9s 68 ocr|train|auto                           2136
+105.9s 69 ocr|train|human                          3471
+105.9s 70 ocr|val|human                            766
+105.9s 71 rec|test|human                           467
+105.9s 72 rec|train|auto                           2136
+105.9s 73 rec|train|auto_verified                  930
+105.9s 74 rec|train|human                          2399
+105.9s 75 rec|val|human                            536
+105.9s 76 path: /tmp/498r_data/BanglaLPR_AllInOne_v1_1/detection
+105.9s 77 train: images/train
+105.9s 78 val: images/val
+105.9s 79 test: images/test
+105.9s 80 nc: 1
+105.9s 81 names:
+105.9s 82 0: "plate"
+105.9s 83 
+106.0s 84 Creating new Ultralytics Settings v0.0.8 file ✅
+106.0s 85 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+106.0s 86 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+145.6s 87 [start] chars_v8n on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/rec.py --data /kaggle/working/yaml/recognition_all.yaml --model yolov8n.pt --name chars_v8n --project /kaggle/working/runs --epochs 100 --imgsz 320 --batch 32 --fraction 1.0 --max-hours 2.5
+145.6s 88 [start] crnn on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/seq.py --model crnn --name crnn --project /kaggle/working/runs --epochs 60
+1615.7s 89 [done]  crnn code=0 after 24.5 min
+1615.7s 90 [start] vitstr on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/seq.py --model vitstr --name vitstr --project /kaggle/working/runs --epochs 60
+3125.7s 91 [done]  vitstr code=0 after 25.2 min
+3305.7s 92 [done]  chars_v8n code=0 after 52.7 min
+3305.7s 93 [start] slot on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/seq.py --model slot --name slot --project /kaggle/working/runs --epochs 100
+4745.8s 94 [done]  slot code=0 after 24.0 min
+4745.9s 95 [start] fusion on GPU None: /usr/bin/python3 /kaggle/working/lprkit/p24_fusion.py --runs /kaggle/working/runs/chars_v8n /kaggle/working/runs/slot /kaggle/working/runs/crnn /kaggle/working/runs/vitstr --name fusion --project /kaggle/working/runs
+4765.9s 96 [done]  fusion code=0 after 0.3 min
+4765.9s 97 Test plates: 651, val plates: 766. "vs chars_v8n": the val-best single model; fixed / broken = test plates the row gets right / wrong where chars_v8n does not, p = exact McNemar. ms: summed per plate; fallback = average (helpers only run on some plates).
+4765.9s 98 
+4765.9s 99 | models | rule | val exact % | test exact % | test CER % | fixed / broken vs chars_v8n (p) | ms/plate |
+4765.9s 100 |---|---|---|---|---|---|---|
+4765.9s 101 | chars_v8n | single | 82.38 | 86.79 | 2.51 |  | 9.36 |
+4765.9s 102 | slot | single | 47.65 | 57.6 | 11.42 |  | 1.15 |
+4765.9s 103 | crnn | single | 62.27 | 73.43 | 5.53 |  | 6.47 |
+4765.9s 104 | vitstr | single | 20.63 | 20.89 | 24.33 |  | 10.18 |
+4765.9s 105 | chars_v8n + crnn + vitstr | fallback | 85.12 | 88.63 | 2.73 | 12 / 0 (p 0.0005) | 10.54 (helpers on 7.07 %) |
+4765.9s 106 | chars_v8n + crnn | fallback | 84.99 | 88.63 | 2.69 | 12 / 0 (p 0.0005) | 9.82 (helpers on 7.07 %) |
+4765.9s 107 | chars_v8n + crnn | MV-BM+format | 84.99 | 88.63 | 2.69 | 12 / 0 (p 0.0005) | 15.83 |
+4765.9s 108 | chars_v8n + crnn + vitstr | MV-BM+format | 84.99 | 88.33 | 2.75 | 12 / 2 (p 0.0129) | 26.01 |
+4765.9s 109 | chars_v8n + slot + crnn | fallback | 84.86 | 88.63 | 2.74 | 12 / 0 (p 0.0005) | 9.9 (helpers on 7.07 %) |
+4765.9s 110 | chars_v8n + slot + crnn + vitstr | fallback | 84.86 | 88.48 | 2.78 | 11 / 0 (p 0.001) | 10.62 (helpers on 7.07 %) |
+4765.9s 111 | chars_v8n + slot + crnn | MV-BM+format | 84.07 | 87.4 | 2.81 | 12 / 8 (p 0.5034) | 16.98 |
+4765.9s 112 | chars_v8n + slot | fallback | 83.55 | 87.71 | 2.52 | 6 / 0 (p 0.0312) | 9.44 (helpers on 7.07 %) |
+4765.9s 113 | chars_v8n + slot + vitstr | fallback | 83.55 | 87.71 | 3.02 | 6 / 0 (p 0.0312) | 10.16 (helpers on 7.07 %) |
+4765.9s 114 | chars_v8n + slot | MV-BM+format | 83.55 | 87.71 | 2.52 | 6 / 0 (p 0.0312) | 10.51 |
+4765.9s 115 | chars_v8n + slot + crnn + vitstr | MV-BM+format | 83.55 | 87.1 | 2.86 | 11 / 9 (p 0.8238) | 27.16 |
+4765.9s 116 | chars_v8n + vitstr | fallback | 83.03 | 87.1 | 3.32 | 2 / 0 (p 0.5) | 10.08 (helpers on 7.07 %) |
+4765.9s 117 | chars_v8n + vitstr | MV-BM+format | 83.03 | 87.1 | 3.32 | 2 / 0 (p 0.5) | 19.54 |
+4765.9s 118 | chars_v8n + slot + vitstr | MV-BM+format | 82.9 | 87.4 | 3.04 | 6 / 2 (p 0.2891) | 20.69 |
+4765.9s 119 | chars_v8n + slot + crnn | MV-BM | 82.64 | 86.33 | 2.52 | 5 / 8 (p 0.5811) | 16.98 |
+4765.9s 120 
+4765.9s 121 - Best single on val: chars_v8n, test 86.79 %.
+4765.9s 122 - Chosen on val (all rules): chars_v8n + crnn + vitstr, fallback: val 85.12 %, test 88.63 % (+1.84 pp vs chars_v8n; fixed 12, broken 0, exact McNemar p = 0.0005), 10.54 ms per plate (helpers run on 7.07 % of the test plates).
+4765.9s 123 - Best of the paper's rules: chars_v8n + slot + crnn, MV-BM: val 82.64 %, test 86.33 % (-0.46 pp vs chars_v8n; fixed 5, broken 8, exact McNemar p = 0.5811), 16.98 ms per plate.
+4765.9s 124 - Best fallback: chars_v8n + crnn + vitstr, fallback: val 85.12 %, test 88.63 % (+1.84 pp vs chars_v8n; fixed 12, broken 0, exact McNemar p = 0.0005), 10.54 ms per plate (helpers run on 7.07 % of the test plates).
+4765.9s 125 - Oracle (any model right): test 90.02 %.
+4765.9s 126 
+4766.1s 127 # Paper #24: ours vs. the paper
+4766.1s 128 
+4766.1s 129 | Metric | Paper (page) | chars_v8n | slot | crnn | vitstr | fusion |
+4766.1s 130 |---|---|---|---|---|---|---|
+4766.1s 131 | Single model plate exact (%) | best single 92.4 (ViTSTR-Base, intra) (p.9, Table 3) | 86.79 | 57.60 | 73.43 | 20.89 | – |
+4766.1s 132 | Single model ms per plate | - | 9.36 | 1.15 | 6.47 | 10.18 | – |
+4766.1s 133 | Best fusion of the paper's rules (chosen on val), test exact (%) | 97.6 (MV-HC, top 8) (p.9, Table 3) | – | – | – | – | 86.33 |
+4766.1s 134 | Paper-rule fusion vs best single: exact McNemar p | - | – | – | – | – | 0.58 |
+4766.1s 135 | Best fusion, any rule incl. MV-BM+format / fallback (chosen on val), test exact (%) | not in the paper | – | – | – | – | 88.63 |
+4766.1s 136 | Chosen fusion rule | - | – | – | – | – | fallback |
+4766.1s 137 | Gain over the best single model (pp) | +5.2 intra, +2.7 cross (p.9-11) | – | – | – | – | 1.84 |
+4766.1s 138 | Plates the chosen fusion fixes vs the best single | - | – | – | – | – | 12 |
+4766.1s 139 | Plates it breaks vs the best single | - | – | – | – | – | 0 |
+4766.1s 140 | Chosen fusion vs best single: exact McNemar p | - | – | – | – | – | 0.0005 |
+4766.1s 141 | Fusion ms per plate (sum; fallback: average) | 59.7 (top 8, RTX 8000) (p.12, Table 6) | – | – | – | – | 10.54 |
+4766.1s 142 | Fallback: test plates that run the helpers (%) | - | – | – | – | – | 7.07 |
+4766.1s 143 | Oracle: any model right (%) | - | – | – | – | – | 90.02 |
+4766.1s 144 | Training time (min) | not reported | 52.10 | 23.70 | 23.90 | 24.50 | – |
+4766.1s 145 
+4766.1s 146 The paper used its own data; our numbers are on the 498R All-in-One test split (different data),
+4766.1s 147 so the comparison shows the direction and size of the gap, not a head-to-head result.
+4766.1s 148 
+4766.1s 149 ## Results by condition: plate readers (plate exact %)
+4766.1s 150 
+4766.1s 151 | Run | all test | clear | night | blurry | fog (real fog copies) | rain (synthetic) |
+4766.1s 152 |---|---|---|---|---|---|---|
+4766.1s 153 | chars_v8n | 86.79 | 90.83 | 80.00 | 74.11 | 80.77 | 75.88 |
+4766.1s 154 | crnn | 73.43 | 77.50 | 61.54 | 64.29 | 50.00 | 67.13 |
+4766.1s 155 | slot | 57.60 | 62.29 | 27.69 | 54.46 | 42.31 | 51.46 |
+4766.1s 156 | vitstr | 20.89 | 23.33 | 4.62 | 19.64 | 0.00 | 17.97 |
+4766.1s 157 
+4766.1s 158 Condition subsets are fixed for the whole team (detection/conditions.json, ocr/conditions.json); rain and detection-fog copies are synthetic.
+4766.1s 159 
+4771.9s 160 packed /kaggle/working/paper24_outputs.zip 124.0 MB
+4771.9s 161 packed /kaggle/working/paper24_results.zip 1.2 MB (no weights: for GitHub weights/)
+4776.9s 162 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+4776.9s 163 cells[i][c] = re.sub('\\\\\|', '|', cell)
+4777.1s 164 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+4777.1s 165 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+4777.9s 166 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+4778.0s 167 [NbConvertApp] Writing 154494 bytes to __notebook__.ipynb
+4780.4s 168 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+4781.3s 169 [NbConvertApp] Writing 924071 bytes to __results__.html

@@ -98,7 +98,7 @@ Status: ✅ done on dataset v1.1 · ☑️ done on v1.0 and still valid · 🔁 
 
 | # | Paper | Status | Main result (our data) | Files |
 |---|---|---|---|---|
-| 1 | A Robust Deep Learning Framework for Bangla License Plate Recognition Using YOLO and Vision-Language OCR | ⬜ | – | – |
+| 1 | A Robust Deep Learning Framework for Bangla License Plate Recognition Using YOLO and Vision-Language OCR | ⬜ | Precision: **95.80%**; Recall: **94.67%**; mAP@50: **96.50%**; mAP@50-95: **44.46%**|
 | 10 | BLPnet: A new DNN model and Bengali OCR engine for Automatic License Plate Recognition | ⬜ | – | – |
 | 22 | Advancing Vehicle Plate Recognition: Multitasking Visual Language Models with VehiclePaliGemma | ⬜ | – | – |
 | 31 | Scene Text Recognition with Permuted Autoregressive Sequence Models (PARSeq) | ⬜ | – | – |

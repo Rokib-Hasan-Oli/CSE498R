@@ -11,7 +11,7 @@ keep it, is `paperNN_run.log`.
 | [MD.Rokib.Hasan.Oli](MD.Rokib.Hasan.Oli/) | paper02, paper06, paper08, paper23, paper24 (+ `.log` files) |
 | [Md.Yousuf](Md.Yousuf/) | paper03, paper20, paper27, paper28 |
 | [Md.Rakibul.Hasan](Md.Rakibul.Hasan/) | paper11 |
-| Tashfia.Adiba.Zaman.Nizhum | none yet |
+| Tashfia.Adiba.Zaman.Nizhum | paper1, paper10, paper31,paper32 |
 
 How to get the file from Kaggle: open your notebook version → **File → Download notebook** (or the ⋮ menu of the
 version → Download). See [CONTRIBUTING.md](../CONTRIBUTING.md).
