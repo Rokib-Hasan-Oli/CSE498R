@@ -1,0 +1,263 @@
+8.0s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.0s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.0s 3 0.00s - to python to disable frozen modules.
+8.0s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.6s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.6s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.6s 7 0.00s - to python to disable frozen modules.
+8.6s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+23.1s 9 torch 2.11.0+cu128 | GPUs: ['Tesla T4', 'Tesla T4']
+23.1s 10 ====================================================================================================
+23.1s 11 FULL RUN (FAST = False): planned about 2 h. A training job that ends after a few minutes FAILED:
+23.1s 12 read the '----- ... failed' lines below the cell and logs/<run>.log.
+23.1s 13 ====================================================================================================
+23.1s 14 Writing /kaggle/working/lprkit/common.py
+23.1s 15 Writing /kaggle/working/lprkit/vocab.py
+23.2s 16 Writing /kaggle/working/lprkit/metrics.py
+23.2s 17 Writing /kaggle/working/lprkit/report.py
+23.2s 18 Writing /kaggle/working/lprkit/det.py
+23.2s 19 Writing /kaggle/working/lprkit/rec.py
+23.2s 20 Writing /kaggle/working/lprkit/seq.py
+23.3s 21 Writing /kaggle/working/lprkit/ved.py
+23.3s 22 Writing /kaggle/working/lprkit/p19_legibility.py
+23.3s 23 dataset not attached -> downloading it from the team Drive (https://drive.google.com/drive/folders/11psdzW5Cpr7tXwqzqNxNt3LA-qeDSOQl)
+24.5s 24 0.00 / 3.38 GB
+35.7s 25 0.49 / 3.38 GB
+46.2s 26 0.98 / 3.38 GB
+56.1s 27 1.46 / 3.38 GB
+77.3s 28 1.95 / 3.38 GB
+87.6s 29 2.44 / 3.38 GB
+99.6s 30 2.93 / 3.38 GB
+109.7s 31 unpacking ...
+134.9s 32 dataset ready: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+135.2s 33 dataset: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+135.2s 34 det|test|human                           1153
+135.2s 35 det|train|auto                           4507
+135.2s 36 det|train|human                          4067
+135.2s 37 det|val|human                            896
+135.2s 38 e2e|test                                 204
+135.2s 39 extras_fog|test                          26
+135.2s 40 extras_fog|train                         267
+135.2s 41 extras_fog|val                           59
+135.2s 42 leaky_kuet|detection|fair_test           540
+135.2s 43 leaky_kuet|detection|fair_train          1758
+135.2s 44 leaky_kuet|detection|fair_val            311
+135.2s 45 leaky_kuet|detection|test|copy           27
+135.2s 46 leaky_kuet|detection|test|unique         526
+135.2s 47 leaky_kuet|detection|test_clean          474
+135.2s 48 leaky_kuet|detection|test_dup            79
+135.2s 49 leaky_kuet|detection|train|copy          3752
+135.2s 50 leaky_kuet|detection|train|unique        1868
+135.2s 51 leaky_kuet|detection|val|copy            26
+135.2s 52 leaky_kuet|detection|val|unique          251
+135.2s 53 leaky_kuet|recognition|fair_left_out_same_plate_as_test 315
+135.2s 54 leaky_kuet|recognition|fair_test         194
+135.2s 55 leaky_kuet|recognition|fair_train        660
+135.2s 56 leaky_kuet|recognition|fair_val          122
+135.2s 57 leaky_kuet|recognition|test|unique       194
+135.2s 58 leaky_kuet|recognition|test_clean        80
+135.2s 59 leaky_kuet|recognition|test_dup          114
+135.2s 60 leaky_kuet|recognition|train|copy        2613
+135.2s 61 leaky_kuet|recognition|train|unique      778
+135.2s 62 leaky_kuet|recognition|val|copy          1
+135.2s 63 leaky_kuet|recognition|val|unique        319
+135.2s 64 ocr|test|human                           651
+135.2s 65 ocr|train|auto                           2136
+135.2s 66 ocr|train|human                          3471
+135.2s 67 ocr|val|human                            766
+135.2s 68 rec|test|human                           467
+135.2s 69 rec|train|auto                           2136
+135.2s 70 rec|train|auto_verified                  930
+135.2s 71 rec|train|human                          2399
+135.2s 72 rec|val|human                            536
+135.2s 73 path: /tmp/498r_data/BanglaLPR_AllInOne_v1_1/detection
+135.2s 74 train: images/train
+135.2s 75 val: images/val
+135.2s 76 test: images/test
+135.2s 77 nc: 1
+135.2s 78 names:
+135.2s 79 0: "plate"
+135.2s 80 
+135.4s 81 Creating new Ultralytics Settings v0.0.8 file ✅
+135.4s 82 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+135.4s 83 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+172.3s 84 [start] readers_crnn on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p19_legibility.py reader --family crnn --name readers_crnn --project /kaggle/working/runs
+172.3s 85 [start] readers_slot on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/p19_legibility.py reader --family slot --name readers_slot --project /kaggle/working/runs
+2942.5s 86 [done]  readers_slot code=0 after 46.2 min
+3242.5s 87 [done]  readers_crnn code=0 after 51.2 min
+3242.5s 88 [start] legibility_labels on GPU None: /usr/bin/python3 /kaggle/working/lprkit/p19_legibility.py labels --runs /kaggle/working/runs/readers_crnn /kaggle/working/runs/readers_slot --out /kaggle/working/runs/legibility_labels
+3252.5s 89 [done]  legibility_labels code=0 after 0.2 min
+3252.5s 90 {
+3252.5s 91 "train": {
+3252.5s 92 "perfect": 2630,
+3252.5s 93 "good": 1115,
+3252.5s 94 "poor": 1183,
+3252.5s 95 "illegible": 679
+3252.5s 96 },
+3252.5s 97 "val": {
+3252.5s 98 "perfect": 201,
+3252.5s 99 "good": 162,
+3252.5s 100 "poor": 272,
+3252.5s 101 "illegible": 131
+3252.5s 102 },
+3252.5s 103 "test": {
+3252.5s 104 "perfect": 199,
+3252.5s 105 "good": 178,
+3252.5s 106 "poor": 176,
+3252.5s 107 "illegible": 98
+3252.5s 108 }
+3252.5s 109 }
+3252.5s 110 [start] cls_b4_ema on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p19_legibility.py train --labels /kaggle/working/runs/legibility_labels --task baseline4 --loss ema --name cls_b4_ema --project /kaggle/working/runs --max-hours 1.0
+3252.5s 111 [start] cls_b4_ce on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/p19_legibility.py train --labels /kaggle/working/runs/legibility_labels --task baseline4 --loss ce --name cls_b4_ce --project /kaggle/working/runs --max-hours 1.0
+4002.6s 112 [done]  cls_b4_ema code=0 after 12.5 min
+4002.6s 113 [start] cls_qf_ema on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p19_legibility.py train --labels /kaggle/working/runs/legibility_labels --task quality --loss ema --name cls_qf_ema --project /kaggle/working/runs --max-hours 1.0
+4012.6s 114 [done]  cls_b4_ce code=0 after 12.7 min
+4012.6s 115 [start] cls_qf_ce on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/p19_legibility.py train --labels /kaggle/working/runs/legibility_labels --task quality --loss ce --name cls_qf_ce --project /kaggle/working/runs --max-hours 1.0
+4672.7s 116 [done]  cls_qf_ema code=0 after 11.2 min
+4672.7s 117 [done]  cls_qf_ce code=0 after 11.0 min
+4672.7s 118 cls_b4_ema 51.31 [69.4, 27.56, 44.6, 57.97] 24
+4672.7s 119 cls_b4_ce 51.92 [70.42, 30.66, 45.19, 57.14] 24
+4672.7s 120 cls_qf_ema 71.74 [73.33, 69.93] 22
+4672.7s 121 cls_qf_ce 70.81 [71.47, 70.13] 21
+4672.7s 122 [start] gate on GPU None: /usr/bin/python3 /kaggle/working/lprkit/p19_legibility.py filter --labels /kaggle/working/runs/legibility_labels --cls /kaggle/working/runs/cls_b4_ema /kaggle/working/runs/cls_b4_ce /kaggle/working/runs/cls_qf_ema /kaggle/working/runs/cls_qf_ce --name gate --project /kaggle/working/runs
+4682.7s 123 [done]  gate code=0 after 0.2 min
+4682.7s 124 {
+4682.7s 125 "ocr_confidence": {
+4682.7s 126 "100%": 73.43,
+4682.7s 127 "90%": 79.86,
+4682.7s 128 "80%": 84.45,
+4682.7s 129 "70%": 87.72,
+4682.7s 130 "50%": 91.72,
+4682.7s 131 "wrong_among_rejected_20%": 70.77,
+4682.7s 132 "AURC_error_%": 9.65
+4682.7s 133 },
+4682.7s 134 "cls_b4_ema": {
+4682.7s 135 "100%": 73.43,
+4682.7s 136 "90%": 77.3,
+4682.7s 137 "80%": 80.81,
+4682.7s 138 "70%": 83.55,
+4682.7s 139 "50%": 88.04,
+4682.7s 140 "wrong_among_rejected_20%": 56.15,
+4682.7s 141 "AURC_error_%": 12.1,
+4682.7s 142 "flagged_unsuitable_%_by_condition": {
+4682.7s 143 "night": 78.46,
+4682.7s 144 "blurry": 54.46,
+4682.7s 145 "clear": 49.79
+4682.7s 146 }
+4682.7s 147 },
+4682.7s 148 "cls_b4_ema+ocr_confidence": {
+4682.7s 149 "100%": 73.43,
+4682.7s 150 "90%": 77.65,
+4682.7s 151 "80%": 81.0,
+4682.7s 152 "70%": 83.99,
+4682.7s 153 "50%": 88.65,
+4682.7s 154 "wrong_among_rejected_20%": 56.92,
+4682.7s 155 "AURC_error_%": 11.27
+4682.7s 156 },
+4682.7s 157 "cls_b4_ce": {
+4682.7s 158 "100%": 73.43,
+4682.7s 159 "90%": 77.3,
+4682.7s 160 "80%": 81.0,
+4682.7s 161 "70%": 83.33,
+4682.7s 162 "50%": 88.65,
+4682.7s 163 "wrong_among_rejected_20%": 56.92,
+4682.7s 164 "AURC_error_%": 12.09,
+4682.7s 165 "flagged_unsuitable_%_by_condition": {
+4682.7s 166 "night": 75.38,
+4682.7s 167 "blurry": 53.57,
+4682.7s 168 "clear": 48.75
+4682.7s 169 }
+4682.7s 170 },
+4682.7s 171 "cls_b4_ce+ocr_confidence": {
+4682.7s 172 "100%": 73.43,
+4682.7s 173 "90%": 77.3,
+4682.7s 174 "80%": 81.19,
+4682.7s 175 "70%": 83.99,
+4682.7s 176 "50%": 88.96,
+4682.7s 177 "wrong_among_rejected_20%": 57.69,
+4682.7s 178 "AURC_error_%": 11.3
+4682.7s 179 },
+4682.7s 180 "cls_qf_ema": {
+4682.7s 181 "100%": 73.43,
+4682.7s 182 "90%": 77.13,
+4682.7s 183 "80%": 80.81,
+4682.7s 184 "70%": 83.33,
+4682.7s 185 "50%": 88.65,
+4682.7s 186 "wrong_among_rejected_20%": 56.15,
+4682.7s 187 "AURC_error_%": 13.29,
+4682.7s 188 "flagged_unsuitable_%_by_condition": {
+4682.7s 189 "night": 78.46,
+4682.7s 190 "blurry": 55.36,
+4682.7s 191 "clear": 47.92
+4682.7s 192 }
+4682.7s 193 },
+4682.7s 194 "cls_qf_ema+ocr_confidence": {
+4682.7s 195 "100%": 73.43,
+4682.7s 196 "90%": 77.3,
+4682.7s 197 "80%": 80.81,
+4682.7s 198 "70%": 84.21,
+4682.7s 199 "50%": 88.96,
+4682.7s 200 "wrong_among_rejected_20%": 56.15,
+4682.7s 201 "AURC_error_%": 11.82
+4682.7s 202 },
+4682.7s 203 "cls_qf_ce": {
+4682.7s 204 "100%": 73.43,
+4682.7s 205 "90%": 75.94,
+4682.7s 206 "80%": 78.69,
+4682.7s 207 "70%": 80.92,
+4682.7s 208 "50%": 86.5,
+4682.7s 209 "wrong_among_rejected_20%": 47.69,
+4682.7s 210 "AURC_error_%": 14.72,
+4682.7s 211 "flagged_unsuitable_%_by_condition": {
+4682.7s 212 "night": 73.85,
+4682.7s 213 "blurry": 54.46,
+4682.7s 214 "clear": 53.54
+4682.7s 215 }
+4682.7s 216 },
+4682.7s 217 "cls_qf_ce+ocr_confidence": {
+4682.7s 218 "100%": 73.43,
+4682.7s 219 "90%": 76.45,
+4682.7s 220 "80%": 79.27,
+4682.7s 221 "70%": 81.58,
+4682.7s 222 "50%": 88.34,
+4682.7s 223 "wrong_among_rejected_20%": 50.0,
+4682.7s 224 "AURC_error_%": 13.14
+4682.7s 225 }
+4682.7s 226 }
+4682.9s 227 # Paper #19: ours vs. the paper
+4682.9s 228 
+4682.9s 229 | Metric | Paper (page) | readers_crnn | readers_slot | legibility_labels | cls_b4_ema | cls_b4_ce | cls_qf_ema | cls_qf_ce | gate |
+4682.9s 230 |---|---|---|---|---|---|---|---|---|---|
+4682.9s 231 | 4 classes (Baseline): micro F1 (%), EMA loss | 89.8 (LPLCv2, EMA) (p.5, Table IV) |  |  |  | 51.31 |  |  |  |  |
+4682.9s 232 | 4 classes: micro F1 (%), cross-entropy | 88.7 (+ More Images, no EMA) (p.5, Table IV) |  |  |  |  | 51.92 |  |  |  |
+4682.9s 233 | Per-class F1 perfect / good / poor / illegible (%) | 92.7 / 86.2 / 86.3 / 93.0 (p.5, Table IV) |  |  |  | [69.4, 27.56, 44.6, 57.97] |  |  |  |  |
+4682.9s 234 | Quality Filter: F1 (%), EMA | 96.7 (p.6, Table V) |  |  |  |  |  | 71.74 |  |  |
+4682.9s 235 | Quality Filter: F1 (%), cross-entropy | 96.9 (p.6, Table V) |  |  |  |  |  |  | 70.81 |  |
+4682.9s 236 | Quality Filter read from the 4-class model (%) | - |  |  |  | 71.58 |  |  |  |  |
+4682.9s 237 | Test labels perfect / good / poor / illegible | LPLCv2: 18,425 / 10,180 / 7,520 / 5,362 (all splits) (p.4, Table II) |  |  | {'perfect': 199, 'good': 178, 'poor': 176, 'illegible': 98} |  |  |  |  |  |
+4682.9s 238 | Deployment CRNN: plate exact on all test plates (%) | - |  |  |  |  |  |  |  | 73.43 |
+4682.9s 239 | 80 % accepted by OCR confidence: plate exact (%) | - |  |  |  |  |  |  |  | 84.45 |
+4682.9s 240 | 80 % accepted by the Quality Filter (EMA): plate exact (%) | - |  |  |  |  |  |  |  | 80.81 |
+4682.9s 241 | 80 % accepted by Quality Filter x OCR confidence (%) | - |  |  |  |  |  |  |  | 80.81 |
+4682.9s 242 | Best classifier gate vs OCR confidence at 80 % (pp) | - |  |  |  |  |  |  |  | -3.45 |
+4682.9s 243 | Risk-coverage area, error % (OCR confidence) | - |  |  |  |  |  |  |  | 9.65 |
+4682.9s 244 | Risk-coverage area, error % (Quality Filter EMA) | - |  |  |  |  |  |  |  | 13.29 |
+4682.9s 245 | Classifier ms per crop (T4, batch 1) | not reported | – | – | – | 10.85 | 6.91 | 6.53 | 12.02 | – |
+4682.9s 246 | Epochs run (early stop) | up to 1,000, early stop 20 (p.5) | – | – | – | 24 | 24 | 22 | 21 | – |
+4682.9s 247 | Training time (min) | not reported (RTX 6000 48 GB) (p.5) | 51.00 | 45.60 | – | 12.30 | 12.40 | 11.00 | 10.70 | – |
+4682.9s 248 
+4682.9s 249 The paper used its own data; our numbers are on the 498R All-in-One test split (different data),
+4682.9s 250 so the comparison shows the direction and size of the gap, not a head-to-head result.
+4682.9s 251 
+4682.9s 252 Different labels: the paper's are human legibility judgements on Brazilian traffic-radar plates; ours are OCR-difficulty labels from two cross-fitted readers on Bangla plates, so the F1 rows show the direction only. The useful number for us is the gate: plate exact of the plates we accept vs the OCR's own confidence.
+4682.9s 253 
+4700.7s 254 packed /kaggle/working/paper19_outputs.zip 379.5 MB
+4700.7s 255 packed /kaggle/working/paper19_results.zip 0.7 MB (no weights: for GitHub weights/)
+4705.2s 256 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+4705.2s 257 cells[i][c] = re.sub('\\\\\|', '|', cell)
+4705.4s 258 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+4705.4s 259 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+4706.2s 260 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+4706.3s 261 [NbConvertApp] Writing 175581 bytes to __notebook__.ipynb
+4708.6s 262 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+4709.6s 263 [NbConvertApp] Writing 1026272 bytes to __results__.html
