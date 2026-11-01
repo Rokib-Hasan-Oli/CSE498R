@@ -1,0 +1,246 @@
+{
+ "env": {
+  "torch": "2.13.0+cu130",
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "dataset": "1.1"
+ },
+ "det": {
+  "det_v8n": {
+   "test": {
+    "P": 96.65,
+    "R": 94.15,
+    "mAP50": 97.39,
+    "mAP50-95": 45.0
+   },
+   "test_without_ridoykj": {
+    "P": 96.62,
+    "R": 93.06,
+    "mAP50": 97.71,
+    "mAP50-95": 64.27
+   },
+   "by_source": {
+    "kuet": {
+     "P": 96.78,
+     "R": 96.12,
+     "mAP50": 98.98,
+     "mAP50-95": 72.46
+    },
+    "lpdba": {
+     "P": 98.19,
+     "R": 95.26,
+     "mAP50": 97.93,
+     "mAP50-95": 55.75
+    },
+    "mahedi": {
+     "P": 96.74,
+     "R": 96.88,
+     "mAP50": 98.84,
+     "mAP50-95": 55.68
+    },
+    "nightlpbd": {
+     "P": 86.36,
+     "R": 86.67,
+     "mAP50": 92.68,
+     "mAP50-95": 57.8
+    },
+    "ridoykj": {
+     "P": 96.67,
+     "R": 97.08,
+     "mAP50": 96.38,
+     "mAP50-95": 22.12
+    },
+    "towniyan": {
+     "P": 98.63,
+     "R": 100.0,
+     "mAP50": 99.5,
+     "mAP50-95": 63.39
+    },
+    "tusar": {
+     "P": 96.43,
+     "R": 93.04,
+     "mAP50": 97.65,
+     "mAP50-95": 54.41
+    }
+   },
+   "plates_found_%": 96.44,
+   "plates": 1011
+  },
+  "det_v8s": {
+   "test": {
+    "P": 96.19,
+    "R": 94.79,
+    "mAP50": 97.62,
+    "mAP50-95": 45.88
+   },
+   "test_without_ridoykj": {
+    "P": 95.97,
+    "R": 93.72,
+    "mAP50": 97.54,
+    "mAP50-95": 64.45
+   },
+   "by_source": {
+    "kuet": {
+     "P": 95.69,
+     "R": 97.93,
+     "mAP50": 98.98,
+     "mAP50-95": 72.85
+    },
+    "lpdba": {
+     "P": 94.45,
+     "R": 96.79,
+     "mAP50": 97.08,
+     "mAP50-95": 54.69
+    },
+    "mahedi": {
+     "P": 96.37,
+     "R": 96.88,
+     "mAP50": 98.09,
+     "mAP50-95": 53.31
+    },
+    "nightlpbd": {
+     "P": 91.76,
+     "R": 85.0,
+     "mAP50": 91.91,
+     "mAP50-95": 57.76
+    },
+    "ridoykj": {
+     "P": 97.33,
+     "R": 97.81,
+     "mAP50": 97.06,
+     "mAP50-95": 23.3
+    },
+    "towniyan": {
+     "P": 94.66,
+     "R": 98.5,
+     "mAP50": 98.34,
+     "mAP50-95": 59.45
+    },
+    "tusar": {
+     "P": 96.51,
+     "R": 95.3,
+     "mAP50": 98.47,
+     "mAP50-95": 54.6
+    }
+   },
+   "plates_found_%": 97.13,
+   "plates": 1011
+  },
+  "p02_lpd_v12s": {
+   "test": {
+    "P": 96.72,
+    "R": 96.22,
+    "mAP50": 98.87,
+    "mAP50-95": 46.18
+   },
+   "test_without_ridoykj": {
+    "P": 95.7,
+    "R": 94.98,
+    "mAP50": 98.4,
+    "mAP50-95": 64.41
+   },
+   "by_source": {
+    "kuet": {
+     "P": 95.16,
+     "R": 96.9,
+     "mAP50": 98.95,
+     "mAP50-95": 73.08
+    },
+    "lpdba": {
+     "P": 97.61,
+     "R": 96.74,
+     "mAP50": 98.18,
+     "mAP50-95": 54.31
+    },
+    "mahedi": {
+     "P": 94.1,
+     "R": 99.65,
+     "mAP50": 99.14,
+     "mAP50-95": 58.32
+    },
+    "nightlpbd": {
+     "P": 98.19,
+     "R": 90.46,
+     "mAP50": 98.2,
+     "mAP50-95": 67.15
+    },
+    "ridoykj": {
+     "P": 99.6,
+     "R": 100.0,
+     "mAP50": 99.5,
+     "mAP50-95": 24.21
+    },
+    "towniyan": {
+     "P": 100.0,
+     "R": 99.17,
+     "mAP50": 99.5,
+     "mAP50-95": 72.64
+    },
+    "tusar": {
+     "P": 93.03,
+     "R": 93.1,
+     "mAP50": 90.39,
+     "mAP50-95": 52.71
+    }
+   },
+   "plates_found_%": 98.32,
+   "plates": 1011
+  }
+ },
+ "e2e_cross": {
+  "det_v8n+lpnr_v12n/p06_protocol": {
+   "photos": 204,
+   "plate_detected_%": 94.61,
+   "plate_exact_%": 84.8,
+   "char_acc_%": 93.95,
+   "ms_mean_local": 31.9,
+   "by_source": {
+    "blpd_ext": 93.75,
+    "nightlpbd": 63.33
+   }
+  },
+  "det_v8n+lpnr_v12n/p02_cascade": {
+   "photos": 204,
+   "plate_detected_%": 94.61,
+   "plate_exact_%": 85.29,
+   "char_acc_%": 93.98,
+   "ms_mean_local": 27.0,
+   "by_source": {
+    "blpd_ext": 93.75,
+    "nightlpbd": 65.0
+   }
+  },
+  "det_v8s+lpnr_v12n/p06_protocol": {
+   "photos": 204,
+   "plate_detected_%": 96.08,
+   "plate_exact_%": 88.24,
+   "char_acc_%": 95.21,
+   "ms_mean_local": 28.6,
+   "by_source": {
+    "blpd_ext": 93.75,
+    "nightlpbd": 75.0
+   }
+  },
+  "det_v8s+lpnr_v12n/p02_cascade": {
+   "photos": 204,
+   "plate_detected_%": 96.08,
+   "plate_exact_%": 88.24,
+   "char_acc_%": 95.21,
+   "ms_mean_local": 24.3,
+   "by_source": {
+    "blpd_ext": 93.75,
+    "nightlpbd": 75.0
+   }
+  },
+  "p02_lpd_v12s+lpnr_v12n/p02_cascade": {
+   "photos": 204,
+   "plate_detected_%": 95.59,
+   "plate_exact_%": 86.76,
+   "char_acc_%": 94.89,
+   "ms_mean_local": 30.2,
+   "by_source": {
+    "blpd_ext": 93.75,
+    "nightlpbd": 70.0
+   }
+  }
+ }
+}

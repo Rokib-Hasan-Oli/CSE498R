@@ -1,0 +1,105 @@
+{
+ "recognition_test": {
+  "plates": 467,
+  "tokens": 4107,
+  "A_colour_crops_acc_%": 92.91,
+  "B_binary_blobs_gt_boxes_acc_%": 82.4,
+  "per_kind": {
+   "digit": {
+    "n": 2802,
+    "A_%": 97.04,
+    "B_%": 88.87
+   },
+   "metro": {
+    "n": 371,
+    "A_%": 96.77,
+    "B_%": 80.59
+   },
+   "letter": {
+    "n": 467,
+    "A_%": 80.3,
+    "B_%": 64.45
+   },
+   "district": {
+    "n": 467,
+    "A_%": 77.73,
+    "B_%": 62.96
+   }
+  },
+  "C_tokens_found_iou50_all15_%": 52.42,
+  "C_tokens_found_iou50_fixed_%": 52.37,
+  "C_plates_all_tokens_found_%": 8.57,
+  "C_blobs_per_plate_all15": 14.98,
+  "C_blobs_per_plate_fixed": 11.35,
+  "C_tokens_per_plate": 8.79,
+  "C_cnn_on_matched_blobs_acc_%": 93.54,
+  "C_matched_blobs": 2153
+ },
+ "ocr_test": {
+  "D_local_none_fixed": {
+   "plates": 651,
+   "plate_exact_%": 0.0,
+   "CER_%": 71.32,
+   "char_acc_%": 28.68,
+   "token_acc_%": 36.4,
+   "WER_%": 99.94,
+   "similarity_%": 49.49,
+   "ge95_%": 1.08,
+   "ge90_%": 6.3
+  },
+  "E_brta_decoder_on_fixed_tokens": {
+   "plates": 651,
+   "plate_exact_%": 0.0,
+   "CER_%": 62.81,
+   "char_acc_%": 37.19,
+   "token_acc_%": 35.14,
+   "WER_%": 83.98,
+   "similarity_%": 54.14,
+   "ge95_%": 1.38,
+   "ge90_%": 9.83
+  },
+  "E_brta_decoder_on_paper_tokens": {
+   "plates": 651,
+   "plate_exact_%": 0.0,
+   "CER_%": 78.39,
+   "char_acc_%": 21.61,
+   "token_acc_%": 10.89,
+   "WER_%": 87.6,
+   "similarity_%": 52.63,
+   "ge95_%": 0.0,
+   "ge90_%": 0.15
+  },
+  "E_valid_layout_%": 0.61
+ },
+ "vs_paper02_same_plates": {
+  "plates": 467,
+  "truth_matches_box_labels": 467,
+  "p08_gt_boxes_exact_%": 59.53,
+  "p08_gt_boxes": {
+   "plates": 467,
+   "plate_exact_%": 59.53,
+   "CER_%": 13.23,
+   "char_acc_%": 86.77,
+   "token_acc_%": 91.43,
+   "WER_%": 16.12,
+   "similarity_%": 89.32,
+   "ge95_%": 60.39,
+   "ge90_%": 70.88
+  },
+  "p02_char_yolo_exact_%": 88.87,
+  "p02_char_yolo": {
+   "plates": 467,
+   "plate_exact_%": 88.87,
+   "CER_%": 1.52,
+   "char_acc_%": 98.48,
+   "token_acc_%": 98.34,
+   "WER_%": 3.22,
+   "similarity_%": 98.91,
+   "ge95_%": 92.72,
+   "ge90_%": 96.79
+  },
+  "only_p08_right": 7,
+  "only_p02_right": 144,
+  "mcnemar_p": 0.0
+ }
+}

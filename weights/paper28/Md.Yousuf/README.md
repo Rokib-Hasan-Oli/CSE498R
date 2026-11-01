@@ -4,7 +4,11 @@
 > **Project:** 498R BanglaLPR — re-implementation of *"YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information"* (Paper #28, arXiv:2402.13616)
 > **Author / maintainer:** Md. Yousuf
 > **Date:** 20 October 2026
+<<<<<<< HEAD
 > **Full technical report:** [`Paper28_Report.md`](Paper28_Report.md)
+=======
+> **Full technical report:** [`Paper28_Report.md`](../../../report/Md.Yousuf/Paper28_Report.md)
+>>>>>>> b2e8c6800e4ff5030314c2d4fd0cba5b64ea80f5
 > **Location in the team repository:** `weights/paper28/Md.Yousuf` in `Rokib-Hasan-Oli/CSE498R`
 
 This package contains **four Bangla (BRTA) licence-plate detectors** (YOLOv9-T, YOLOv9-S, YOLOv8-N, YOLOv8-S) fine-tuned from COCO weights on the 498R BanglaLPR All-in-One detection split, their test, condition and speed results, the logs and the code. All numbers come from the saved run files in `paper28_results.zip`.
@@ -390,7 +394,11 @@ Exact versions are in `environment.json` (Python 3.13.15, PyTorch 2.11.0+cu128, 
 
 ### 7.2 Commands
 
+<<<<<<< HEAD
 Notebook route: open `notebooks/paper-28-yolov9-learning-what-you-want-to-learn.ipynb` on Kaggle (Accelerator **GPU T4 × 2**, Internet **On**), run it once with `FAST = True` and check that every cell finishes, then set `FAST = False` and use **Save Version → Save & Run All**. Download `paper28_outputs.zip` (216.4 MB, with weights) from the **Output** tab; `paper28_results.zip` (4.3 MB) is the copy without weights.
+=======
+Notebook route: open `notebooks/Md.Yousuf/paper28_run.ipynb` on Kaggle (Accelerator **GPU T4 × 2**, Internet **On**), run it once with `FAST = True` and check that every cell finishes, then set `FAST = False` and use **Save Version → Save & Run All**. Download `paper28_outputs.zip` (216.4 MB, with weights) from the **Output** tab; `paper28_results.zip` (4.3 MB) is the copy without weights.
+>>>>>>> b2e8c6800e4ff5030314c2d4fd0cba5b64ea80f5
 
 Script route: the commands in Section 3.4.
 

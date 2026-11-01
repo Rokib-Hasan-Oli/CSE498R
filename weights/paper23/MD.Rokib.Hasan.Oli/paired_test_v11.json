@@ -1,0 +1,83 @@
+{
+ "all_194": {
+  "plates": 194,
+  "leaky_%": 85.57,
+  "fair_%": 77.84,
+  "leaky_ci95": [
+   79.9,
+   89.8
+  ],
+  "fair_ci95": [
+   71.5,
+   83.1
+  ],
+  "both_right": 144,
+  "only_leaky_right": 22,
+  "only_fair_right": 7,
+  "both_wrong": 21,
+  "mcnemar_p": 0.0081
+ },
+ "B_plate_in_leaky_train": {
+  "plates": 114,
+  "leaky_%": 90.35,
+  "fair_%": 79.82,
+  "leaky_ci95": [
+   83.5,
+   94.5
+  ],
+  "fair_ci95": [
+   71.5,
+   86.2
+  ],
+  "both_right": 86,
+  "only_leaky_right": 17,
+  "only_fair_right": 5,
+  "both_wrong": 6,
+  "mcnemar_p": 0.0169
+ },
+ "C_unseen_by_both": {
+  "plates": 80,
+  "leaky_%": 78.75,
+  "fair_%": 75.0,
+  "leaky_ci95": [
+   68.6,
+   86.3
+  ],
+  "fair_ci95": [
+   64.5,
+   83.2
+  ],
+  "both_right": 58,
+  "only_leaky_right": 5,
+  "only_fair_right": 2,
+  "both_wrong": 15,
+  "mcnemar_p": 0.4531
+ },
+ "fair_train_plates_in_test": 0,
+ "leaky_train": {
+  "crops": 3391,
+  "plates": 518
+ },
+ "fair_train": {
+  "crops": 660,
+  "plates": 378
+ },
+ "non_kuet_468": {
+  "plates": 468,
+  "leaky_%": 50.21,
+  "fair_%": 50.0,
+  "leaky_ci95": [
+   45.7,
+   54.7
+  ],
+  "fair_ci95": [
+   45.5,
+   54.5
+  ],
+  "both_right": 209,
+  "only_leaky_right": 26,
+  "only_fair_right": 25,
+  "both_wrong": 208,
+  "mcnemar_p": 1.0
+ }
+}

@@ -1,0 +1,65 @@
+plates {'val': 766, 'test': 651} dataset 1.1
+chars_v8n  val  82.38 test  86.79 CI (83.97, 89.18) CER 2.51 char 97.49 ms 9.36 valid 92.93 extra {'test_fog': 80.77, 'test_rain_synth': 75.88} train 52.1
+crnn       val  62.27 test  73.43 CI (69.9, 76.67) CER 5.53 char 94.47 ms 6.47 valid 95.08 extra {'test_fog': 50.0, 'test_rain_synth': 67.13} train 23.9
+slot       val  47.65 test  57.60 CI (53.77, 61.34) CER 11.42 char 88.58 ms 1.15 valid 92.32 extra {'test_fog': 42.31, 'test_rain_synth': 51.46} train 23.7
+vitstr     val  20.63 test  20.89 CI (17.94, 24.18) CER 24.33 char 75.67 ms 10.18 valid 93.86 extra {'test_fog': 0.0, 'test_rain_synth': 17.97} train 24.5
+chars train {'epochs_run': 100, 'epochs_planned': 100, 'test_boxes': {'P': 0.8993, 'R': 0.9009, 'mAP50': 0.939, 'mAP50-95': 0.6472, 'speed_ms': {'preprocess': 0.34, 'inference': 1.77, 'loss': 0.0, 'postprocess': 1.28}}, 'val_boxes': {'P': 0.9166, 'R': 0.838, 'mAP50': 0.9365, 'mAP50-95': 0.6396, 'speed_ms': {'preprocess': 0.25, 'inference': 1.89, 'loss': 0.01, 'postprocess': 1.15}}, 'xsort_exact': 0.0, 'valid_format_%': 92.93}
+patterns [{'right': ['chars_v8n', 'crnn', 'slot'], 'n': 212}, {'right': ['chars_v8n', 'crnn', 'slot', 'vitstr'], 'n': 124}, {'right': ['chars_v8n', 'crnn'], 'n': 120}, {'right': ['chars_v8n'], 'n': 73}, {'right': [], 'n': 65}, {'right': ['chars_v8n', 'slot'], 'n': 27}, {'right': ['crnn'], 'n': 12}, {'right': ['chars_v8n', 'crnn', 'vitstr'], 'n': 5}, {'right': ['chars_v8n', 'slot', 'vitstr'], 'n': 4}, {'right': ['slot'], 'n': 3}, {'right': ['crnn', 'slot'], 'n': 3}, {'right': ['crnn', 'slot', 'vitstr'], 'n': 2}, {'right': ['vitstr'], 'n': 1}]
+best wrong {'n': 86, 'others_right_count': {'0': 65, '1': 16, '2': 3, '3': 2}, 'any_other_right': 21, 'crnn_right': 17}
+oracle {'chars_v8n + crnn': 89.4, 'chars_v8n + slot': 88.02, 'chars_v8n + vitstr': 87.25, 'crnn + slot': 78.65, 'crnn + vitstr': 74.19, 'slot + vitstr': 58.53, 'chars_v8n + crnn + slot': 89.86, 'chars_v8n + crnn + vitstr': 89.55, 'chars_v8n + slot + vitstr': 88.17, 'crnn + slot + vitstr': 78.8, 'chars_v8n + crnn + slot + vitstr': 90.02}
+pair {'a': 'chars_v8n', 'b': 'crnn', 'both_right': 461, 'a_only': 104, 'b_only': 17, 'both_wrong': 69, 'Q': 0.895, 'disagree_%': 18.59, 'same_wrong_string': 13, 'p_b_wrong_given_a_wrong_%': 80.2}
+pair {'a': 'chars_v8n', 'b': 'slot', 'both_right': 367, 'a_only': 198, 'b_only': 8, 'both_wrong': 78, 'Q': 0.895, 'disagree_%': 31.64, 'same_wrong_string': 11, 'p_b_wrong_given_a_wrong_%': 90.7}
+pair {'a': 'chars_v8n', 'b': 'vitstr', 'both_right': 133, 'a_only': 432, 'b_only': 3, 'both_wrong': 83, 'Q': 0.79, 'disagree_%': 66.82, 'same_wrong_string': 1, 'p_b_wrong_given_a_wrong_%': 96.5}
+pair {'a': 'crnn', 'b': 'slot', 'both_right': 341, 'a_only': 137, 'b_only': 34, 'both_wrong': 139, 'Q': 0.821, 'disagree_%': 26.27, 'same_wrong_string': 22, 'p_b_wrong_given_a_wrong_%': 80.3}
+pair {'a': 'crnn', 'b': 'vitstr', 'both_right': 131, 'a_only': 347, 'b_only': 5, 'both_wrong': 168, 'Q': 0.854, 'disagree_%': 54.07, 'same_wrong_string': 5, 'p_b_wrong_given_a_wrong_%': 97.1}
+pair {'a': 'slot', 'b': 'vitstr', 'both_right': 130, 'a_only': 245, 'b_only': 6, 'both_wrong': 270, 'Q': 0.92, 'disagree_%': 38.56, 'same_wrong_string': 5, 'p_b_wrong_given_a_wrong_%': 97.8}
+indep 3 majority 95.2
+conf chars_v8n {'auroc': 0.858, 'mean_right': 0.886, 'mean_wrong': 0.794, 'wrong_with_conf_ge_0.9_%': 8.1} [(0, 0, None), (0.5, 15, 0.0), (0.7, 19, 5.3), (0.8, 432, 89.4), (0.9, 185, 96.2), (0.95, 0, None)]
+conf crnn {'auroc': 0.837, 'mean_right': 0.975, 'mean_wrong': 0.913, 'wrong_with_conf_ge_0.9_%': 64.7} [(0, 0, None), (0.5, 1, 0.0), (0.7, 9, 0.0), (0.8, 63, 19.0), (0.9, 134, 57.5), (0.95, 444, 87.6)]
+conf slot {'auroc': 0.933, 'mean_right': 0.914, 'mean_wrong': 0.739, 'wrong_with_conf_ge_0.9_%': 6.2} [(0, 18, 0.0), (0.5, 76, 1.3), (0.7, 84, 13.1), (0.8, 189, 50.8), (0.9, 214, 92.1), (0.95, 70, 100.0)]
+conf vitstr {'auroc': 0.945, 'mean_right': 0.902, 'mean_wrong': 0.689, 'wrong_with_conf_ge_0.9_%': 4.1} [(0, 42, 0.0), (0.5, 218, 0.9), (0.7, 159, 4.4), (0.8, 127, 33.9), (0.9, 85, 75.3), (0.95, 20, 100.0)]
+hc pair {'pair': ['chars_v8n', 'crnn'], 'right_overruled': 85, 'wrong_fixed': 17} {'pair': ['chars_v8n', 'vitstr'], 'right_overruled': 22, 'wrong_fixed': 2} HC range with crnn [76.19, 76.65]
+kaggle check {'kaggle_best_test': 88.63, 'recomputed_best_test': 88.63, 'kaggle_paper_rule_test': 86.33, 'recomputed_paper_rule_test': 86.33, 'kaggle_oracle_test': 90.02, 'kit_rows': 66, 'rows_equal': 66}
+best_paper_rule ['chars_v8n', 'crnn', 'slot'] MV-BM val 82.64 test 86.33 char 97.48 ms 16.98 {'fixed': 5, 'broken': 8, 'net': -3, 'p_mcnemar': 0.5811, 'gain_pp': -0.46, 'gain_ci95': [-1.54, 0.61]}
+best_kit_rule ['chars_v8n', 'crnn', 'vitstr'] fallback val 85.12 test 88.63 char 97.27 ms 10.54 {'fixed': 12, 'broken': 0, 'net': 12, 'p_mcnemar': 0.0005, 'gain_pp': 1.84, 'gain_ci95': [0.92, 2.92]}
+best_any_rule ['chars_v8n', 'crnn', 'vitstr'] fallback val 85.12 test 88.63 char 97.27 ms 10.54 {'fixed': 12, 'broken': 0, 'net': 12, 'p_mcnemar': 0.0005, 'gain_pp': 1.84, 'gain_ci95': [0.92, 2.92]}
+fallback_2 ['chars_v8n', 'crnn'] fallback val 84.99 test 88.63 char 97.31 ms 9.82 {'fixed': 12, 'broken': 0, 'net': 12, 'p_mcnemar': 0.0005, 'gain_pp': 1.84, 'gain_ci95': [0.92, 2.92]}
+   chars_v8n + crnn + vitstr fallback 85.12 88.63 10.54
+   chars_v8n + crnn MV-BM+format 84.99 88.63 15.83
+   chars_v8n + crnn WMV+format 84.99 88.63 15.83
+   chars_v8n + crnn fallback 84.99 88.63 9.82
+   chars_v8n + crnn + slot WMV+format 84.99 88.63 16.98
+   chars_v8n + crnn + vitstr MV-BM+format 84.99 88.33 26.01
+   chars_v8n + crnn + slot fallback 84.86 88.63 9.9
+   chars_v8n + crnn + slot + vitstr fallback 84.86 88.48 10.62
+   chars_v8n + crnn + vitstr WMV+format 84.73 88.02 26.01
+   chars_v8n + crnn + slot + vitstr WMV+format 84.46 88.17 27.16
+   chars_v8n + crnn + slot MV-BM+format 84.07 87.4 16.98
+   chars_v8n + slot MV-BM+format 83.55 87.71 10.51
+   chars_v8n + slot WMV+format 83.55 87.71 10.51
+   chars_v8n + slot fallback 83.55 87.71 9.44
+   chars_v8n + slot + vitstr WMV+format 83.55 87.71 20.69
+   chars_v8n + slot + vitstr fallback 83.55 87.71 10.16
+topn [{'rank_by': 'accuracy', 'k': 1, 'added': 'chars_v8n', 'HC': 86.79, 'MV-HC': 86.79, 'MV-BM': 86.79, 'MV-BM+format': 86.79, 'fallback': 86.79, 'ms_sum': 9.36}, {'rank_by': 'accuracy', 'k': 2, 'added': 'crnn', 'HC': 76.34, 'MV-HC': 76.34, 'MV-BM': 86.79, 'MV-BM+format': 88.63, 'fallback': 88.63, 'ms_sum': 15.83}, {'rank_by': 'accuracy', 'k': 3, 'added': 'slot', 'HC': 76.65, 'MV-HC': 79.72, 'MV-BM': 86.33, 'MV-BM+format': 87.4, 'fallback': 88.63, 'ms_sum': 16.98}, {'rank_by': 'accuracy', 'k': 4, 'added': 'vitstr', 'HC': 76.5, 'MV-HC': 79.57, 'MV-BM': 86.18, 'MV-BM+format': 87.1, 'fallback': 88.48, 'ms_sum': 27.16}, {'rank_by': 'speed', 'k': 1, 'added': 'slot', 'HC': 57.6, 'MV-HC': 57.6, 'MV-BM': 57.6, 'MV-BM+format': 57.6, 'fallback': 57.6, 'ms_sum': 1.15}, {'rank_by': 'speed', 'k': 2, 'added': 'crnn', 'HC': 74.35, 'MV-HC': 74.35, 'MV-BM': 73.43, 'MV-BM+format': 73.73, 'fallback': 73.73, 'ms_sum': 7.62}, {'rank_by': 'speed', 'k': 3, 'added': 'chars_v8n', 'HC': 76.65, 'MV-HC': 79.72, 'MV-BM': 86.33, 'MV-BM+format': 87.4, 'fallback': 88.63, 'ms_sum': 16.98}, {'rank_by': 'speed', 'k': 4, 'added': 'vitstr', 'HC': 76.5, 'MV-HC': 79.57, 'MV-BM': 86.18, 'MV-BM+format': 87.1, 'fallback': 88.48, 'ms_sum': 27.16}]
+cascade best {'helpers': ['crnn', 'vitstr'], 't': 0.0, 'val': 85.12, 'called_val_%': 12.0, 'test': 88.63, 'called_test_%': 7.1, 'ms_avg_test': 10.54} 
+ t0 crnn {'helpers': ['crnn'], 't': 0.0, 'val': 84.99, 'called_val_%': 12.0, 'test': 88.63, 'called_test_%': 7.1, 'ms_avg_test': 9.82} 
+ best t>0 {'helpers': ['crnn', 'vitstr'], 't': 0.5, 'val': 85.12, 'called_val_%': 12.0, 'test': 88.63, 'called_test_%': 7.1, 'ms_avg_test': 10.54}
+fallback detail {'2': {'val': {'flagged': 92, 'flagged_wrong': 92, 'fixed': 20, 'still_wrong_valid_helper': 50, 'kept_best_reading': 22}, 'test': {'flagged': 46, 'flagged_wrong': 46, 'fixed': 12, 'still_wrong_valid_helper': 24, 'kept_best_reading': 10}}, '3': {'val': {'flagged': 92, 'flagged_wrong': 92, 'fixed': 21, 'still_wrong_valid_helper': 67, 'kept_best_reading': 4}, 'test': {'flagged': 46, 'flagged_wrong': 46, 'fixed': 12, 'still_wrong_valid_helper': 31, 'kept_best_reading': 3}}} {'val': {'plates': 18, 'only_3_right': 1, 'only_2_right': 0}, 'test': {'plates': 7, 'only_3_right': 0, 'only_2_right': 0}}
+by source {"anpr": {"n": 184, "chars_v8n": 86.4, "crnn": 68.5, "slot": 46.7, "vitstr": 7.1, "fusion": 85.3, "cascade": 88.0, "oracle": 88.6}, "blpd": {"n": 30, "chars_v8n": 83.3, "crnn": 60.0, "slot": 40.0, "vitstr": 6.7, "fusion": 83.3, "cascade": 83.3, "oracle": 83.3}, "kuet": {"n": 183, "chars_v8n": 83.6, "crnn": 75.4, "slot": 68.9, "vitstr": 42.1, "fusion": 83.1, "cascade": 86.3, "oracle": 90.2}, "lpdba": {"n": 202, "chars_v8n": 93.1, "crnn": 81.7, "slot": 68.3, "vitstr": 20.8, "fusion": 93.1, "cascade": 95.0, "oracle": 95.5}, "nightlpbd": {"n": 52, "chars_v8n": 76.9, "crnn": 59.6, "slot": 25.0, "vitstr": 3.8, "fusion": 76.9, "cascade": 76.9, "oracle": 76.9}}
+by cond {"clear": {"n": 480, "chars_v8n": 90.8, "crnn": 77.5, "slot": 62.3, "vitstr": 23.3, "fusion": 90.4, "cascade": 92.3, "oracle": 92.7}, "night": {"n": 65, "chars_v8n": 80.0, "crnn": 61.5, "slot": 27.7, "vitstr": 4.6, "fusion": 78.5, "cascade": 80.0, "oracle": 80.0}, "blurry": {"n": 112, "chars_v8n": 74.1, "crnn": 64.3, "slot": 54.5, "vitstr": 19.6, "fusion": 74.1, "cascade": 78.6, "oracle": 84.8}}
+unchanged 632 {'n': 632, 'chars_v8n': 87.0, 'crnn': 73.9, 'slot': 57.9, 'vitstr': 21.2, 'fusion': 86.6, 'cascade': 88.9, 'oracle': 90.3} 
+recut 19 {'n': 19, 'chars_v8n': 78.9, 'crnn': 57.9, 'slot': 47.4, 'vitstr': 10.5, 'fusion': 78.9, 'cascade': 78.9, 'oracle': 78.9} 
+blpd old crops {'n': 11, 'chars_v8n': 90.9, 'crnn': 63.6, 'slot': 27.3, 'vitstr': 0.0, 'fusion': 90.9, 'cascade': 90.9, 'oracle': 90.9}
+v10->v11 {'what': 'char-YOLOv8n', 'v10_all': 85.56, 'v11_all': 86.79, 'v10_632': 88.0, 'v11_632': 87.0, 'v10_19': 5.3, 'v11_19': 78.9, 'v10_val': 81.07, 'v11_val': 82.38, 'v10_ms': 11.36, 'v11_ms': 9.36}
+v10->v11 {'what': 'CRNN-CTC', 'v10_all': 74.04, 'v11_all': 73.43, 'v10_632': 76.3, 'v11_632': 73.9, 'v10_19': 0.0, 'v11_19': 57.9, 'v10_val': 64.49, 'v11_val': 62.27, 'v10_ms': 8.12, 'v11_ms': 6.47}
+v10->v11 {'what': 'slot CNN', 'v10_all': 45.93, 'v11_all': 57.6, 'v10_632': 47.3, 'v11_632': 57.9, 'v10_19': 0.0, 'v11_19': 47.4, 'v10_val': 37.08, 'v11_val': 47.65, 'v10_ms': 1.29, 'v11_ms': 1.15}
+v10->v11 {'what': 'ViTSTR-tiny', 'v10_all': 23.2, 'v11_all': 20.89, 'v10_632': 23.9, 'v11_632': 21.2, 'v10_19': 0.0, 'v11_19': 10.5, 'v10_val': 20.76, 'v11_val': 20.63, 'v10_ms': 11.7, 'v11_ms': 10.18}
+v10->v11 {'what': "paper's best rule (val-chosen)", 'v10_all': 86.18, 'v11_all': 86.33, 'v10_632': 88.6, 'v11_632': 86.6, 'v10_19': 5.3, 'v11_19': 78.9}
+v10->v11 {'what': 'format fallback (char-YOLO + CRNN)', 'v10_all': 87.4, 'v11_all': 88.63, 'v10_632': 89.9, 'v11_632': 88.9, 'v10_19': 5.3, 'v11_19': 78.9}
+v10->v11 {'what': 'oracle (any of the 4 right)', 'v10_all': 88.17, 'v11_all': 90.02, 'v10_632': 90.7, 'v11_632': 90.3, 'v10_19': 5.3, 'v11_19': 78.9}
+error detector {"format": {"flagged": 46, "flagged_%": 7.1, "flagged_wrong": 46, "precision_%": 100.0, "recall_%": 53.5, "accepted": 605, "acc_when_accepted_%": 93.39}, "conf<0.8": {"flagged": 34, "flagged_%": 5.2, "flagged_wrong": 33, "precision_%": 97.1, "recall_%": 38.4, "accepted": 617, "acc_when_accepted_%": 91.41}, "format or conf<0.8": {"flagged": 53, "flagged_%": 8.1, "flagged_wrong": 52, "precision_%": 98.1, "recall_%": 60.5, "accepted": 598, "acc_when_accepted_%": 94.31}} {'format': {'flagged': 92, 'flagged_%': 12.0, 'flagged_wrong': 92, 'precision_%': 100.0, 'recall_%': 68.1, 'accepted': 674, 'acc_when_accepted_%': 93.62}}
+invalid but right {'chars_v8n': 0, 'crnn': 0, 'slot': 0, 'vitstr': 0}
+error kinds [{'op': 'extra', 'kind': 'digit', 'n': 45}, {'op': 'sub', 'kind': 'letter', 'n': 34}, {'op': 'sub', 'kind': 'digit', 'n': 32}, {'op': 'sub', 'kind': 'district', 'n': 13}, {'op': 'missing', 'kind': 'digit', 'n': 8}, {'op': 'extra', 'kind': 'district', 'n': 7}, {'op': 'missing', 'kind': 'letter', 'n': 4}, {'op': 'missing', 'kind': 'district', 'n': 4}] {'sub': 79, 'extra': 52, 'missing': 16} {'1': 58, '2': 16, '3': 12} invalid 46
+reasons {'valid layout, wrong symbol': 40, 'more than 6 digits': 25, 'two letters': 14, 'no letter': 6, 'two districts': 6, 'fewer than 6 digits': 4, 'no district': 3}
+counts {'paper_fixed': 5, 'paper_broken': 8, 'fallback_fixed': 12, 'missed_by_fallback_but_some_model_right': 9, 'all_wrong': 65}
+curves best {'crnn': {'epoch': 45, 'train_loss': 0.0245, 'val_loss': 0.3257}, 'slot': {'epoch': 86, 'train_loss': 0.4433, 'val_loss': 0.9604}, 'vitstr': {'epoch': 18, 'train_loss': 0.7129, 'val_loss': 1.1197}} {'crnn': 87, 'slot': 87, 'vitstr': 87} {'human': 3471, 'auto': 2136}

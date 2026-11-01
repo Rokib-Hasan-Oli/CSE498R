@@ -1,0 +1,26 @@
+# Windows / macOS / editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
+*.tmp
+.vscode/
+.idea/
+
+# Python and Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Raw Kaggle downloads are too big for GitHub: they go to the team Drive.
+# Full outputs archives are only allowed in output/ (Git LFS).
+results.zip
+*_outputs.zip
+!output/*_outputs.zip
+
+# Secrets: never commit API keys
+kaggle.json
+.env
+*.key

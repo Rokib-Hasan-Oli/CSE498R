@@ -1,0 +1,163 @@
+8.1s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.1s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.1s 3 0.00s - to python to disable frozen modules.
+8.1s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.8s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.8s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.8s 7 0.00s - to python to disable frozen modules.
+8.8s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+22.4s 9 torch 2.11.0+cu128 | GPUs: ['Tesla T4', 'Tesla T4']
+22.4s 10 ====================================================================================================
+22.4s 11 FULL RUN (FAST = False): planned about 3.5 h. A training job that ends after a few minutes FAILED:
+22.4s 12 read the '----- ... failed' lines below the cell and logs/<run>.log.
+22.4s 13 ====================================================================================================
+22.4s 14 Writing /kaggle/working/lprkit/common.py
+22.5s 15 Writing /kaggle/working/lprkit/vocab.py
+22.5s 16 Writing /kaggle/working/lprkit/metrics.py
+22.5s 17 Writing /kaggle/working/lprkit/report.py
+22.5s 18 Writing /kaggle/working/lprkit/det.py
+22.5s 19 Writing /kaggle/working/lprkit/rec.py
+22.6s 20 Writing /kaggle/working/lprkit/seq.py
+22.6s 21 Writing /kaggle/working/lprkit/ved.py
+22.6s 22 Writing /kaggle/working/lprkit/p06_easyocr.py
+22.6s 23 dataset not attached -> downloading it from the team Drive (https://drive.google.com/drive/folders/11psdzW5Cpr7tXwqzqNxNt3LA-qeDSOQl)
+23.8s 24 0.00 / 3.38 GB
+31.1s 25 0.49 / 3.38 GB
+37.3s 26 0.98 / 3.38 GB
+44.8s 27 1.46 / 3.38 GB
+51.7s 28 1.95 / 3.38 GB
+59.1s 29 2.44 / 3.38 GB
+65.6s 30 2.93 / 3.38 GB
+72.6s 31 unpacking ...
+97.6s 32 dataset ready: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+97.8s 33 dataset: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+97.8s 34 det|test|human                           1153
+97.8s 35 det|train|auto                           4507
+97.8s 36 det|train|human                          4067
+97.8s 37 det|val|human                            896
+97.8s 38 e2e|test                                 204
+97.8s 39 extras_fog|test                          26
+97.8s 40 extras_fog|train                         267
+97.8s 41 extras_fog|val                           59
+97.8s 42 leaky_kuet|detection|fair_test           540
+97.8s 43 leaky_kuet|detection|fair_train          1758
+97.8s 44 leaky_kuet|detection|fair_val            311
+97.8s 45 leaky_kuet|detection|test|copy           27
+97.8s 46 leaky_kuet|detection|test|unique         526
+97.8s 47 leaky_kuet|detection|test_clean          474
+97.8s 48 leaky_kuet|detection|test_dup            79
+97.8s 49 leaky_kuet|detection|train|copy          3752
+97.8s 50 leaky_kuet|detection|train|unique        1868
+97.8s 51 leaky_kuet|detection|val|copy            26
+97.8s 52 leaky_kuet|detection|val|unique          251
+97.8s 53 leaky_kuet|recognition|fair_left_out_same_plate_as_test 315
+97.8s 54 leaky_kuet|recognition|fair_test         194
+97.8s 55 leaky_kuet|recognition|fair_train        660
+97.8s 56 leaky_kuet|recognition|fair_val          122
+97.8s 57 leaky_kuet|recognition|test|unique       194
+97.8s 58 leaky_kuet|recognition|test_clean        80
+97.8s 59 leaky_kuet|recognition|test_dup          114
+97.8s 60 leaky_kuet|recognition|train|copy        2613
+97.8s 61 leaky_kuet|recognition|train|unique      778
+97.8s 62 leaky_kuet|recognition|val|copy          1
+97.8s 63 leaky_kuet|recognition|val|unique        319
+97.8s 64 ocr|test|human                           651
+97.8s 65 ocr|train|auto                           2136
+97.8s 66 ocr|train|human                          3471
+97.8s 67 ocr|val|human                            766
+97.8s 68 rec|test|human                           467
+97.8s 69 rec|train|auto                           2136
+97.8s 70 rec|train|auto_verified                  930
+97.8s 71 rec|train|human                          2399
+97.8s 72 rec|val|human                            536
+97.8s 73 path: /tmp/498r_data/BanglaLPR_AllInOne_v1_1/detection
+97.8s 74 train: images/train
+97.8s 75 val: images/val
+97.8s 76 test: images/test
+97.8s 77 nc: 1
+97.8s 78 names:
+97.8s 79 0: "plate"
+97.8s 80 
+99.2s 81 Creating new Ultralytics Settings v0.0.8 file ✅
+99.2s 82 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+99.2s 83 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+131.9s 84 [start] det_v8n on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_human.yaml --model yolov8n.pt --name det_v8n --project /kaggle/working/runs --epochs 120 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 3 --labels human --note paper #6: COCO YOLOv8 fine-tuned as a 1-class plate detector
+131.9s 85 [start] det_v8s on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_human.yaml --model yolov8s.pt --name det_v8s --project /kaggle/working/runs --epochs 120 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 4 --labels human --note paper #6: COCO YOLOv8 fine-tuned as a 1-class plate detector
+8202.2s 86 [done]  det_v8n code=0 after 134.5 min
+8992.2s 87 [done]  det_v8s code=0 after 147.7 min
+8992.2s 88 [start] speed_det_v8n on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_human.yaml --name det_v8n --project /kaggle/working/runs --imgsz 640 --fps-only --trt
+9302.3s 89 [done]  speed_det_v8n code=0 after 5.2 min
+9302.3s 90 [start] speed_det_v8s on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_human.yaml --name det_v8s --project /kaggle/working/runs --imgsz 640 --fps-only --trt
+9482.3s 91 [done]  speed_det_v8s code=0 after 3.0 min
+9483.3s 92 Downloading recognition model, please wait. This may take several minutes depending upon your network connection.
+9483.3s 93 
+9483.3s 94 Downloading recognition model, please wait. This may take several minutes depending upon your network connection.
+9489.0s 95 [start] easyocr_crops on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p06_easyocr.py crops --name easyocr_crops --project /kaggle/working/runs
+9489.0s 96 [start] e2e_v8n on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/p06_easyocr.py e2e --det /kaggle/working/runs/det_v8n/weights/best.pt --name e2e_v8n --project /kaggle/working/runs
+9529.0s 97 [done]  e2e_v8n code=0 after 0.7 min
+9529.0s 98 [start] e2e_v8s on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/p06_easyocr.py e2e --det /kaggle/working/runs/det_v8s/weights/best.pt --name e2e_v8s --project /kaggle/working/runs
+9569.0s 99 [done]  e2e_v8s code=0 after 0.7 min
+10049.0s 100 [done]  easyocr_crops code=0 after 9.3 min
+10049.0s 101 det_v8n {'P': 0.9657, 'R': 0.9407, 'mAP50': 0.9739, 'mAP50-95': 0.4497, 'speed_ms': {'preprocess': 1.87, 'inference': 3.82, 'loss': 0.0, 'postprocess': 2.26}} 96.44 {'ms_per_image': 5.47, 'fps': 182.9, 'ms_median': 5.6, 'fps_median': 178.7, 'slow_calls': 0, 'ms_breakdown': {'preprocess': 1.57, 'inference': 2.96, 'postprocess': 1.11}}
+10049.0s 102 det_v8s {'P': 0.9618, 'R': 0.9471, 'mAP50': 0.9761, 'mAP50-95': 0.4588, 'speed_ms': {'preprocess': 0.74, 'inference': 7.15, 'loss': 0.0, 'postprocess': 0.76}} 97.13 {'ms_per_image': 6.15, 'fps': 162.5, 'ms_median': 6.27, 'fps_median': 159.5, 'slow_calls': 0, 'ms_breakdown': {'preprocess': 1.55, 'inference': 3.71, 'postprocess': 1.09}}
+10049.0s 103 EasyOCR alone: {'plates': 651, 'plate_exact_%': 13.52, 'CER_%': 39.55, 'char_acc_%': 60.45, 'token_acc_%': 53.68, 'WER_%': 62.95, 'similarity_%': 67.36} | prep: {'plates': 651, 'plate_exact_%': 4.92, 'CER_%': 58.2, 'char_acc_%': 41.8, 'token_acc_%': 35.3, 'WER_%': 86.27, 'similarity_%': 52.0, 'ms_per_plate': 580.93}
+10049.0s 104 e2e_v8n {'photos': 204, 'plate_detected_%': 94.61, 'full_plate_exact_%': 11.76, 'char_acc_%': 58.34, 'CER_%': 41.66, 'similarity_%': 64.97, 'ms_mean': 68.7, 'ms_max': 202.0}
+10049.0s 105 e2e_v8s {'photos': 204, 'plate_detected_%': 96.08, 'full_plate_exact_%': 10.29, 'char_acc_%': 57.64, 'CER_%': 42.36, 'similarity_%': 64.24, 'ms_mean': 69.5, 'ms_max': 195.2}
+10049.2s 106 # Paper #6: ours vs. the paper
+10049.2s 107 
+10049.2s 108 | Metric | Paper (page) | det_v8n | det_v8s | easyocr_crops | e2e_v8n | e2e_v8s |
+10049.2s 109 |---|---|---|---|---|---|---|
+10049.2s 110 | Precision (%) | 93.5 (p.9, Table 1) | 96.6 | 96.2 | – | – | – |
+10049.2s 111 | Recall (%) | 92.3 (p.9, Table 1) | 94.1 | 94.7 | – | – | – |
+10049.2s 112 | mAP50 (%) | 94.0 ("mAP"; = mAP@50 in Fig. 6) (p.9, Table 1) | 97.4 | 97.6 | – | – | – |
+10049.2s 113 | mAP50-95 (%) | about 59 (read off Fig. 6) (p.11, Fig. 6) | 45.0 | 45.9 | – | – | – |
+10049.2s 114 | Plates found (%), conf 0.25, IoU 0.5 | 94.8 "detection accuracy" (not defined) (p.9, Table 1) | 96.44 | 97.13 | – | – | – |
+10049.2s 115 | Detector FPS, T4 PyTorch FP32, batch 1 | 78 (GPU and precision not named) (p.12, Table 3) | 113.80 | 109.60 | – | – | – |
+10049.2s 116 | Detector FPS, T4 TensorRT FP16, batch 1 | - | 182.90 | 162.50 | – | – | – |
+10049.2s 117 | Training time (min) | not reported | 130.90 | 144.50 | – | – | – |
+10049.2s 118 | EasyOCR alone (human crops): char accuracy (%) | 92.7 ("character recognition accuracy", not defined) (p.11) | – | – | 60.45 | – | – |
+10049.2s 119 | EasyOCR alone: plate exact (%) | not reported | – | – | 13.52 | – | – |
+10049.2s 120 | EasyOCR alone: CER (%) | not reported | – | – | 39.55 | – | – |
+10049.2s 121 | EasyOCR + preprocessing (4x, grey, CLAHE): char accuracy (%) | "preprocessing", no details (p.8) | – | – | 41.80 | – | – |
+10049.2s 122 | EasyOCR, clear plates: char accuracy (%) | 97.5 (clean plates) (p.12, Table 2) | – | – | 66.84 | – | – |
+10049.2s 123 | EasyOCR, small plates (low_res tag): char accuracy (%) | 92.0 (low resolution) (p.12, Table 2) | – | – | – | – | – |
+10049.2s 124 | EasyOCR, night: char accuracy (%) | 91.5 (low light; metric not named) (p.13, Table 4) | – | – | 49.69 | – | – |
+10049.2s 125 | EasyOCR, blurry: char accuracy (%) | - | – | – | 38.74 | – | – |
+10049.2s 126 | EasyOCR, real fog copies: char accuracy (%) | 89.3 (bad weather) (p.12, Table 2) | – | – | 59.53 | – | – |
+10049.2s 127 | EasyOCR, synthetic rain: char accuracy (%) | 89.3 (rain; metric not named) (p.13, Table 4) | – | – | 44.04 | – | – |
+10049.2s 128 | EasyOCR ms per plate (T4) | not reported | – | – | 90.86 | – | – |
+10049.2s 129 | Whole system (e2e photos): plate found (%) | - | – | – | – | 94.61 | 96.08 |
+10049.2s 130 | Whole system: char accuracy (%) | - | – | – | – | 58.34 | 57.64 |
+10049.2s 131 | Whole system: plate exact (%) | - | – | – | – | 11.76 | 10.29 |
+10049.2s 132 | Whole system: ms per photo (detector + EasyOCR) | - | – | – | – | 68.70 | 69.50 |
+10049.2s 133 
+10049.2s 134 The paper used its own data; our numbers are on the 498R All-in-One test split (different data),
+10049.2s 135 so the comparison shows the direction and size of the gap, not a head-to-head result.
+10049.2s 136 
+10049.2s 137 The paper's 2,600 photos are not public and were augmented BEFORE the split (p.7), so its test set can hold copies of training photos; ours is the grouped All-in-One test split with human boxes. Char accuracy = 100 - CER after normalisation (the paper never defines its metric). Its case groups (clean / low-res / damaged / weather) are matched to our closest condition tags; 'damaged' has no counterpart.
+10049.2s 138 
+10049.2s 139 ## Results by condition: detectors (test mAP50 %)
+10049.2s 140 
+10049.2s 141 | Run | all test | clear | night | blurry | small plates | rain (synthetic) | fog (synthetic) | false alarms on plate-free photos (%) |
+10049.2s 142 |---|---|---|---|---|---|---|---|---|
+10049.2s 143 | det_v8n | 97.4 | 97.7 | 94.3 | 98.6 | 94.8 | 77.5 | 94.8 | 6.25 |
+10049.2s 144 | det_v8s | 97.6 | 98.0 | 93.4 | 98.4 | 85.9 | 80.4 | 93.2 | 6.25 |
+10049.2s 145 
+10049.2s 146 ## Results by condition: plate readers (plate exact %)
+10049.2s 147 
+10049.2s 148 | Run | all test | clear | night | blurry | fog (real fog copies) | rain (synthetic) |
+10049.2s 149 |---|---|---|---|---|---|---|
+10049.2s 150 | easyocr_crops | 13.52 | 17.71 | 1.54 | 1.79 | 15.38 | 5.68 |
+10049.2s 151 
+10049.2s 152 Condition subsets are fixed for the whole team (detection/conditions.json, ocr/conditions.json); rain and detection-fog copies are synthetic.
+10049.2s 153 
+10055.7s 154 packed /kaggle/working/paper06_outputs.zip 129.8 MB
+10055.8s 155 packed /kaggle/working/paper06_results.zip 2.4 MB (no weights: for GitHub weights/)
+10060.0s 156 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+10060.0s 157 cells[i][c] = re.sub('\\\\\|', '|', cell)
+10060.2s 158 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+10060.2s 159 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+10061.1s 160 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+10061.2s 161 [NbConvertApp] Writing 156337 bytes to __notebook__.ipynb
+10063.7s 162 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+10064.6s 163 [NbConvertApp] Writing 932053 bytes to __results__.html

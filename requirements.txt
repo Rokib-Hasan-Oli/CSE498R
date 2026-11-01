@@ -1,1 +1,18 @@
+<<<<<<< HEAD
 recommended info.
+=======
+# Packages to load the uploaded models and run the "Quick start" of each weights/paperNN/<Member>/README.md.
+# The Kaggle notebooks in src/ install everything else they need by themselves.
+# Install PyTorch first from https://pytorch.org (pick your CUDA version), then: pip install -r requirements.txt
+torch>=2.4
+ultralytics==8.4.170
+opencv-python
+numpy
+pandas
+matplotlib
+pillow
+
+# Optional
+easyocr==1.7.2   # paper #6: the paper's stock EasyOCR reader
+pymupdf          # rebuild a study report PDF from report/<Member>/paperNN/source/
+>>>>>>> b2e8c6800e4ff5030314c2d4fd0cba5b64ea80f5

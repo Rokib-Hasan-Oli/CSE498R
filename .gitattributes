@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 *.zip filter=lfs diff=lfs merge=lfs -text
+=======
+# Git LFS is used ONLY for the big full-output archives in output/ (40-250 MB each).
+# Everything else (results zips, .pt weights under 100 MB, PDFs) is a normal git file,
+# so a web upload and a git push store files the same way.
+output/*.zip filter=lfs diff=lfs merge=lfs -text
+>>>>>>> b2e8c6800e4ff5030314c2d4fd0cba5b64ea80f5
