@@ -1,0 +1,158 @@
+8.2s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.2s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.2s 3 0.00s - to python to disable frozen modules.
+8.2s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.8s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.8s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.8s 7 0.00s - to python to disable frozen modules.
+8.8s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+22.9s 9 torch 2.11.0+cu128 | GPUs: ['Tesla T4', 'Tesla T4']
+22.9s 10 ====================================================================================================
+22.9s 11 FULL RUN (FAST = False): planned about 8.5 h. A training job that ends after a few minutes FAILED:
+22.9s 12 read the '----- ... failed' lines below the cell and logs/<run>.log.
+22.9s 13 ====================================================================================================
+22.9s 14 Writing /kaggle/working/lprkit/common.py
+23.0s 15 Writing /kaggle/working/lprkit/vocab.py
+23.0s 16 Writing /kaggle/working/lprkit/metrics.py
+23.0s 17 Writing /kaggle/working/lprkit/report.py
+23.0s 18 Writing /kaggle/working/lprkit/det.py
+23.0s 19 Writing /kaggle/working/lprkit/rec.py
+23.1s 20 Writing /kaggle/working/lprkit/seq.py
+23.1s 21 Writing /kaggle/working/lprkit/ved.py
+23.1s 22 Writing /kaggle/working/lprkit/p26_official.py
+23.1s 23 dataset not attached -> downloading it from the team Drive (https://drive.google.com/drive/folders/11psdzW5Cpr7tXwqzqNxNt3LA-qeDSOQl)
+24.2s 24 0.00 / 3.38 GB
+28.3s 25 0.49 / 3.38 GB
+32.5s 26 0.98 / 3.38 GB
+36.8s 27 1.46 / 3.38 GB
+42.6s 28 1.95 / 3.38 GB
+47.0s 29 2.44 / 3.38 GB
+57.1s 30 2.93 / 3.38 GB
+70.7s 31 unpacking ...
+90.3s 32 dataset ready: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+90.7s 33 dataset: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+90.7s 34 det|test|human                           1153
+90.7s 35 det|train|auto                           4507
+90.7s 36 det|train|human                          4067
+90.7s 37 det|val|human                            896
+90.7s 38 e2e|test                                 204
+90.7s 39 extras_fog|test                          26
+90.7s 40 extras_fog|train                         267
+90.7s 41 extras_fog|val                           59
+90.7s 42 leaky_kuet|detection|fair_test           540
+90.7s 43 leaky_kuet|detection|fair_train          1758
+90.7s 44 leaky_kuet|detection|fair_val            311
+90.7s 45 leaky_kuet|detection|test|copy           27
+90.7s 46 leaky_kuet|detection|test|unique         526
+90.7s 47 leaky_kuet|detection|test_clean          474
+90.7s 48 leaky_kuet|detection|test_dup            79
+90.7s 49 leaky_kuet|detection|train|copy          3752
+90.7s 50 leaky_kuet|detection|train|unique        1868
+90.7s 51 leaky_kuet|detection|val|copy            26
+90.7s 52 leaky_kuet|detection|val|unique          251
+90.7s 53 leaky_kuet|recognition|fair_left_out_same_plate_as_test 315
+90.7s 54 leaky_kuet|recognition|fair_test         194
+90.7s 55 leaky_kuet|recognition|fair_train        660
+90.7s 56 leaky_kuet|recognition|fair_val          122
+90.7s 57 leaky_kuet|recognition|test|unique       194
+90.7s 58 leaky_kuet|recognition|test_clean        80
+90.7s 59 leaky_kuet|recognition|test_dup          114
+90.7s 60 leaky_kuet|recognition|train|copy        2613
+90.7s 61 leaky_kuet|recognition|train|unique      778
+90.7s 62 leaky_kuet|recognition|val|copy          1
+90.7s 63 leaky_kuet|recognition|val|unique        319
+90.7s 64 ocr|test|human                           651
+90.7s 65 ocr|train|auto                           2136
+90.7s 66 ocr|train|human                          3471
+90.7s 67 ocr|val|human                            766
+90.7s 68 rec|test|human                           467
+90.7s 69 rec|train|auto                           2136
+90.7s 70 rec|train|auto_verified                  930
+90.7s 71 rec|train|human                          2399
+90.7s 72 rec|val|human                            536
+90.7s 73 path: /tmp/498r_data/BanglaLPR_AllInOne_v1_1/detection
+90.7s 74 train: images/train
+90.7s 75 val: images/val
+90.7s 76 test: images/test
+90.7s 77 nc: 1
+90.7s 78 names:
+90.7s 79 0: "plate"
+90.7s 80 
+90.8s 81 Creating new Ultralytics Settings v0.0.8 file ✅
+90.8s 82 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+90.8s 83 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+138.1s 84 weights /kaggle/working/yolov12_official/yolov12n.pt 5386 KB
+138.1s 85 weights /kaggle/working/yolov12_official/yolov12s.pt 18270 KB
+138.1s 86 official fork imports as: Creating new Ultralytics Settings v0.0.6 file ✅
+138.1s 87 View Ultralytics Settings with 'yolo settings' or at '/root/.config/yolov12/settings.json'
+138.1s 88 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+138.1s 89 FlashAttention is not available on this device. Using scaled_dot_product_attention instead.
+138.1s 90 8.3.63 /kaggle/working/yolov12_official/ultralytics/__init__.py
+138.1s 91 
+138.1s 92 [start] v12s_official on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --model /kaggle/working/yolov12_official/yolov12s.pt --name v12s_official --project /kaggle/working/runs --epochs 60 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 4.2 --note official sunsmarterjie/yolov12 code
+138.1s 93 [start] v12s_ultra on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --model yolo12s.pt --name v12s_ultra --project /kaggle/working/runs --epochs 60 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 3.8
+10918.4s 94 [done]  v12s_ultra code=0 after 179.7 min
+10918.4s 95 [start] v11s on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --model yolo11s.pt --name v11s --project /kaggle/working/runs --epochs 60 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 3.4
+15868.6s 96 [done]  v12s_official code=0 after 262.2 min
+15868.6s 97 [start] chars_v12n on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/rec.py --data /kaggle/working/yaml/recognition_all.yaml --model yolo12n.pt --name chars_v12n --project /kaggle/working/runs --epochs 70 --imgsz 320 --batch 32 --fraction 1.0 --max-hours 1.4
+18768.7s 98 [done]  v11s code=0 after 130.8 min
+18978.7s 99 [done]  chars_v12n code=0 after 51.8 min
+18978.7s 100 [start] chars_v11n on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/rec.py --data /kaggle/working/yaml/recognition_all.yaml --model yolo11n.pt --name chars_v11n --project /kaggle/working/runs --epochs 70 --imgsz 320 --batch 32 --fraction 1.0 --max-hours 1.4
+20578.7s 101 [done]  chars_v11n code=0 after 26.7 min
+20578.7s 102 [start] speed_v12s_official on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --name v12s_official --project /kaggle/working/runs --imgsz 640 --fps-only --trt
+20578.7s 103 [start] speed_v12s_ultra on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --name v12s_ultra --project /kaggle/working/runs --imgsz 640 --fps-only --trt
+20698.8s 104 [done]  speed_v12s_official code=0 after 2.0 min
+20968.8s 105 [done]  speed_v12s_ultra code=0 after 6.5 min
+20968.8s 106 [start] speed_v11s on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --name v11s --project /kaggle/working/runs --imgsz 640 --fps-only --trt
+21218.8s 107 [done]  speed_v11s code=0 after 4.2 min
+21218.8s 108 v12s_official {'P': 0.9692, 'R': 0.9614, 'mAP50': 0.9859, 'mAP50-95': 0.4853, 'speed_ms': {'preprocess': 0.36, 'inference': 10.9, 'loss': 0.0, 'postprocess': 1.63}} 7.94 failed: No module named 'onnxscript'
+21218.8s 109 v12s_ultra {'P': 0.9672, 'R': 0.9622, 'mAP50': 0.9887, 'mAP50-95': 0.4618, 'speed_ms': {'preprocess': 1.13, 'inference': 8.9, 'loss': 0.0, 'postprocess': 1.15}} 7.75 {'ms_per_image': 7.87, 'fps': 127.0, 'ms_breakdown': {'preprocess': 2.02, 'inference': 4.45, 'postprocess': 1.1}}
+21218.8s 110 v11s {'P': 0.9727, 'R': 0.9723, 'mAP50': 0.9895, 'mAP50-95': 0.4621, 'speed_ms': {'preprocess': 1.45, 'inference': 7.13, 'loss': 0.0, 'postprocess': 1.28}} 5.19 {'ms_per_image': 7.56, 'fps': 132.3, 'ms_breakdown': {'preprocess': 2.37, 'inference': 4.12, 'postprocess': 1.69}}
+21219.0s 111 # Paper #26: ours vs. the paper
+21219.0s 112 
+21219.0s 113 | Metric | Paper (page) | v12s_official | v12s_ultra | v11s | chars_v12n | chars_v11n |
+21219.0s 114 |---|---|---|---|---|---|---|
+21219.0s 115 | mAP50 (%) | - | 98.6 | 98.9 | 99.0 | – | – |
+21219.0s 116 | mAP50-95 (%) | COCO: v12-S 48.0, v11-S 46.9 (p.5, Table 1) | 48.5 | 46.2 | 46.2 | – | – |
+21219.0s 117 | T4 TensorRT FP16 ms | v12-S 2.61, v11-S 2.5 (p.5, Table 1) | – | 7.87 | 7.56 | – | – |
+21219.0s 118 | T4 PyTorch FP16 ms (incl. NMS) | - | 232.96 | 153.37 | 162.99 | – | – |
+21219.0s 119 | CPU ONNX ms | - | 281.32 | 175.55 | 184.53 | – | – |
+21219.0s 120 | Params (M) / GFLOPs | v12-S 9.3 M / 21.4 G (p.5, Table 1) | 9.10 | 9.25 | 9.43 | – | – |
+21219.0s 121 | GFLOPs | 21.4 (p.5) | 19.60 | 23.50 | 21.70 | – | – |
+21219.0s 122 | Peak GPU memory (GB) | not reported | 7.94 | 7.75 | 5.19 | – | – |
+21219.0s 123 | Character detector mAP50 | - | – | – | – | 92.3 | 96.2 |
+21219.0s 124 | Character detector plate exact (%) | - | – | – | – | 82.80 | 83.56 |
+21219.0s 125 | Training time (min) | not reported (600 epochs from scratch) (p.6) | 256.10 | 175.60 | 127.10 | 51.10 | 25.90 |
+21219.0s 126 
+21219.0s 127 The paper used its own data; our numbers are on the 498R All-in-One test split (different data),
+21219.0s 128 so the comparison shows the direction and size of the gap, not a head-to-head result.
+21219.0s 129 
+21219.0s 130 On the T4 the official code cannot use FlashAttention (Ampere+ only) and falls back to plain attention.
+21219.0s 131 
+21219.0s 132 ## Results by condition: detectors (test mAP50 %)
+21219.0s 133 
+21219.0s 134 | Run | all test | clear | night | blurry | small plates | rain (synthetic) | fog (synthetic) | false alarms on plate-free photos (%) |
+21219.0s 135 |---|---|---|---|---|---|---|---|---|
+21219.0s 136 | v11s | 99.0 | 99.2 | 95.6 | 98.2 | 93.2 | 86.3 | 97.6 | 8.75 |
+21219.0s 137 | v12s_official | 98.6 | 99.0 | 91.0 | 96.8 | 95.2 | 88.2 | 97.4 | 8.12 |
+21219.0s 138 | v12s_ultra | 98.9 | 99.2 | 98.4 | 99.2 | 93.2 | 83.1 | 97.5 | 10.00 |
+21219.0s 139 
+21219.0s 140 ## Results by condition: plate readers (plate exact %)
+21219.0s 141 
+21219.0s 142 | Run | all test | clear | night | blurry | fog (real fog copies) | rain (synthetic) |
+21219.0s 143 |---|---|---|---|---|---|---|
+21219.0s 144 | chars_v11n | 83.56 | 87.92 | 78.46 | 67.86 | 69.23 | 69.59 |
+21219.0s 145 | chars_v12n | 82.80 | 85.83 | 73.85 | 75.00 | 65.38 | 74.04 |
+21219.0s 146 
+21219.0s 147 Condition subsets are fixed for the whole team (detection/conditions.json, ocr/conditions.json); rain and detection-fog copies are synthetic.
+21219.0s 148 
+21232.7s 149 packed /kaggle/working/paper26_outputs.zip 260.5 MB
+21233.3s 150 packed /kaggle/working/paper26_results.zip 5.1 MB (no weights: for GitHub weights/)
+21238.5s 151 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+21238.5s 152 cells[i][c] = re.sub('\\\\\|', '|', cell)
+21238.7s 153 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+21238.7s 154 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+21239.6s 155 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+21239.7s 156 [NbConvertApp] Writing 143375 bytes to __notebook__.ipynb
+21242.5s 157 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+21243.5s 158 [NbConvertApp] Writing 872705 bytes to __results__.html
