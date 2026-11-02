@@ -1,0 +1,174 @@
+7.2s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.2s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.2s 3 0.00s - to python to disable frozen modules.
+7.2s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.8s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.8s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.8s 7 0.00s - to python to disable frozen modules.
+7.8s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+20.4s 9 torch 2.11.0+cu128 | GPUs: ['Tesla T4', 'Tesla T4']
+20.4s 10 ====================================================================================================
+20.4s 11 FULL RUN (FAST = False): planned about 7.5 h. A training job that ends after a few minutes FAILED:
+20.4s 12 read the '----- ... failed' lines below the cell and logs/<run>.log.
+20.4s 13 ====================================================================================================
+20.4s 14 Writing /kaggle/working/lprkit/common.py
+20.4s 15 Writing /kaggle/working/lprkit/vocab.py
+20.5s 16 Writing /kaggle/working/lprkit/metrics.py
+20.5s 17 Writing /kaggle/working/lprkit/report.py
+20.5s 18 Writing /kaggle/working/lprkit/det.py
+20.5s 19 Writing /kaggle/working/lprkit/rec.py
+20.5s 20 Writing /kaggle/working/lprkit/seq.py
+20.6s 21 Writing /kaggle/working/lprkit/ved.py
+20.6s 22 Writing /kaggle/working/lprkit/p33_yolo26.py
+20.6s 23 dataset not attached -> downloading it from the team Drive (https://drive.google.com/drive/folders/11psdzW5Cpr7tXwqzqNxNt3LA-qeDSOQl)
+21.9s 24 0.00 / 3.38 GB
+29.8s 25 0.49 / 3.38 GB
+35.5s 26 0.98 / 3.38 GB
+41.4s 27 1.46 / 3.38 GB
+48.9s 28 1.95 / 3.38 GB
+56.2s 29 2.44 / 3.38 GB
+65.8s 30 2.93 / 3.38 GB
+72.2s 31 unpacking ...
+97.7s 32 dataset ready: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+98.0s 33 dataset: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+98.0s 34 det|test|human                           1153
+98.0s 35 det|train|auto                           4507
+98.0s 36 det|train|human                          4067
+98.0s 37 det|val|human                            896
+98.0s 38 e2e|test                                 204
+98.0s 39 extras_fog|test                          26
+98.0s 40 extras_fog|train                         267
+98.0s 41 extras_fog|val                           59
+98.0s 42 leaky_kuet|detection|fair_test           540
+98.0s 43 leaky_kuet|detection|fair_train          1758
+98.0s 44 leaky_kuet|detection|fair_val            311
+98.0s 45 leaky_kuet|detection|test|copy           27
+98.0s 46 leaky_kuet|detection|test|unique         526
+98.0s 47 leaky_kuet|detection|test_clean          474
+98.0s 48 leaky_kuet|detection|test_dup            79
+98.0s 49 leaky_kuet|detection|train|copy          3752
+98.0s 50 leaky_kuet|detection|train|unique        1868
+98.0s 51 leaky_kuet|detection|val|copy            26
+98.0s 52 leaky_kuet|detection|val|unique          251
+98.0s 53 leaky_kuet|recognition|fair_left_out_same_plate_as_test 315
+98.0s 54 leaky_kuet|recognition|fair_test         194
+98.0s 55 leaky_kuet|recognition|fair_train        660
+98.0s 56 leaky_kuet|recognition|fair_val          122
+98.0s 57 leaky_kuet|recognition|test|unique       194
+98.0s 58 leaky_kuet|recognition|test_clean        80
+98.0s 59 leaky_kuet|recognition|test_dup          114
+98.0s 60 leaky_kuet|recognition|train|copy        2613
+98.0s 61 leaky_kuet|recognition|train|unique      778
+98.0s 62 leaky_kuet|recognition|val|copy          1
+98.0s 63 leaky_kuet|recognition|val|unique        319
+98.0s 64 ocr|test|human                           651
+98.0s 65 ocr|train|auto                           2136
+98.0s 66 ocr|train|human                          3471
+98.0s 67 ocr|val|human                            766
+98.0s 68 rec|test|human                           467
+98.0s 69 rec|train|auto                           2136
+98.0s 70 rec|train|auto_verified                  930
+98.0s 71 rec|train|human                          2399
+98.0s 72 rec|val|human                            536
+98.0s 73 path: /tmp/498r_data/BanglaLPR_AllInOne_v1_1/detection
+98.0s 74 train: images/train
+98.0s 75 val: images/val
+98.0s 76 test: images/test
+98.0s 77 nc: 1
+98.0s 78 names:
+98.0s 79 0: "plate"
+98.0s 80 
+98.3s 81 Creating new Ultralytics Settings v0.0.8 file ✅
+98.3s 82 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+98.3s 83 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+133.7s 84 [start] y26n on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --model yolo26n.pt --name y26n --project /kaggle/working/runs --epochs 60 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 2.3 --optimizer MuSGD --lr0 0.01 --note YOLO26 recipe: MuSGD
+133.7s 85 [start] y11n on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --model yolo11n.pt --name y11n --project /kaggle/working/runs --epochs 60 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 2.2
+7133.9s 86 [done]  y11n code=0 after 116.7 min
+7133.9s 87 [start] y26n_sgd on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --model yolo26n.pt --name y26n_sgd --project /kaggle/working/runs --epochs 60 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 2.2 --note optimiser ablation: SGD
+8794.0s 88 [done]  y26n code=0 after 144.3 min
+8794.0s 89 [start] y26s on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --model yolo26s.pt --name y26s --project /kaggle/working/runs --epochs 60 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 3.3 --optimizer MuSGD --lr0 0.01 --note YOLO26 recipe: MuSGD
+14984.4s 90 [done]  y26n_sgd code=0 after 130.8 min
+14984.4s 91 [start] y26n_p2 on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --model yolo26n-p2.yaml --name y26n_p2 --project /kaggle/working/runs --epochs 60 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 2.8 --optimizer MuSGD --lr0 0.01 --hyp {"pretrained": "yolo26n.pt"} --note P2 head (yolo26-p2.yaml), COCO yolo26n backbone transferred
+19524.6s 92 [done]  y26s code=0 after 178.8 min
+23204.7s 93 [done]  y26n_p2 code=0 after 137.0 min
+23204.7s 94 [start] heads_y26n on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p33_yolo26.py --weights /kaggle/working/runs/y26n/weights/best.pt --data /kaggle/working/yaml/detection_all.yaml --name heads_y26n --project /kaggle/working/runs --trt
+23204.7s 95 [start] speed_y11n on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --name y11n --project /kaggle/working/runs --imgsz 640 --fps-only --trt int8
+23824.7s 96 [done]  speed_y11n code=0 after 10.3 min
+24104.7s 97 [done]  heads_y26n code=0 after 15.0 min
+24104.7s 98 [start] heads_y26s on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p33_yolo26.py --weights /kaggle/working/runs/y26s/weights/best.pt --data /kaggle/working/yaml/detection_all.yaml --name heads_y26s --project /kaggle/working/runs --trt
+25094.7s 99 [done]  heads_y26s code=0 after 16.5 min
+25094.7s 100 [start] heads_y26n_p2 on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p33_yolo26.py --weights /kaggle/working/runs/y26n_p2/weights/best.pt --data /kaggle/working/yaml/detection_all.yaml --name heads_y26n_p2 --project /kaggle/working/runs --trt
+26074.8s 101 [done]  heads_y26n_p2 code=0 after 16.3 min
+26074.8s 102 y26n one2many_nms 0.4536 97.82 17.65 8.19 0.9786
+26074.8s 103 y26n one2one_e2e 0.4496 96.83 14.26 5.55 0.9744
+26074.8s 104 y26s one2many_nms 0.4639 97.73 13.23 6.43 0.9795
+26074.8s 105 y26s one2one_e2e 0.4707 97.53 12.86 5.78 0.9778
+26074.8s 106 y26n_p2 one2many_nms 0.4616 98.42 15.27 6.09 0.9767
+26074.8s 107 y26n_p2 one2one_e2e 0.4536 98.12 14.83 5.85 0.9735
+26074.8s 108 y26n {'P': 0.9779, 'R': 0.9636, 'mAP50': 0.9869, 'mAP50-95': 0.4536, 'speed_ms': {'preprocess': 1.32, 'inference': 3.45, 'loss': 0.0, 'postprocess': 1.58}} {'small': 40.0, 'medium': 97.0, 'large': 98.51} 141.0
+26074.8s 109 y26s {'P': 0.9756, 'R': 0.9674, 'mAP50': 0.991, 'mAP50-95': 0.4639, 'speed_ms': {'preprocess': 1.12, 'inference': 7.23, 'loss': 0.0, 'postprocess': 1.23}} {'small': 20.0, 'medium': 95.88, 'large': 98.92} 175.1
+26074.8s 110 y11n {'P': 0.9625, 'R': 0.9723, 'mAP50': 0.978, 'mAP50-95': 0.4468, 'speed_ms': {'preprocess': 1.4, 'inference': 3.54, 'loss': 0.0, 'postprocess': 1.58}} {'small': 60.0, 'medium': 96.63, 'large': 98.38} 113.3
+26074.8s 111 y26n_sgd {'P': 0.9705, 'R': 0.9713, 'mAP50': 0.9851, 'mAP50-95': 0.4583, 'speed_ms': {'preprocess': 1.32, 'inference': 3.2, 'loss': 0.0, 'postprocess': 1.33}} {'small': 60.0, 'medium': 96.25, 'large': 98.38} 127.8
+26074.8s 112 y26n_p2 {'P': 0.9704, 'R': 0.9728, 'mAP50': 0.9798, 'mAP50-95': 0.4616, 'speed_ms': {'preprocess': 0.8, 'inference': 4.19, 'loss': 0.0, 'postprocess': 0.77}} {'small': 80.0, 'medium': 98.13, 'large': 98.65} 134.4
+26074.9s 113 # Paper #33: ours vs. the paper
+26074.9s 114 
+26074.9s 115 | Metric | Paper (page) | y26n | y26s | y11n | y26n_sgd | y26n_p2 | heads_y26n | heads_y26s | heads_y26n_p2 |
+26074.9s 116 |---|---|---|---|---|---|---|---|---|---|
+26074.9s 117 | mAP50 (%) | - | 98.7 | 99.1 | 97.8 | 98.5 | 98.0 | – | – | – |
+26074.9s 118 | mAP50-95 (%) | COCO val: 26n 40.9, 26s 48.6 (p.8, Table 2) | 45.4 | 46.4 | 44.7 | 45.8 | 46.2 | – | – | – |
+26074.9s 119 | mAP50-95, NMS-free one-to-one head (%) | COCO e2e: 26n 40.1, 26s 47.8 (p.8, Table 2) | – | – | – | – | – | 45.0 | 47.1 | 45.4 |
+26074.9s 120 | mAP50-95, one-to-many head + NMS (%) | COCO: 26n 40.9, 26s 48.6 (p.8, Table 2) | – | – | – | – | – | 45.4 | 46.4 | 46.2 |
+26074.9s 121 | NMS-free minus NMS head, mAP50-95 (pp) | -0.8 (26n and 26s, COCO) (p.8, Table 2) | – | – | – | – | – | -0.40 | 0.68 | -0.80 |
+26074.9s 122 | Plates found at conf 0.25 (%) | - | 97.82 | 97.73 | 97.73 | 97.63 | 98.42 | – | – | – |
+26074.9s 123 | Plates found, NMS-free head (%) | - | – | – | – | – | – | 96.83 | 97.53 | 98.12 |
+26074.9s 124 | Small plates: recall (%) | STAL "boosts small objects", no number (p.7) | 40.00 | 20.00 | 60.00 | 60.00 | 80.00 | – | – | – |
+26074.9s 125 | Small plates, NMS-free head: recall (%) | - | – | – | – | – | – | 40.00 | 20.00 | 80.00 |
+26074.9s 126 | False alarms on plate-free photos, NMS-free head (%) | - | – | – | – | – | – | 5.00 | 5.00 | 3.75 |
+26074.9s 127 | T4 PyTorch FP16 ms, median (YOLO26: NMS-free head; YOLO11: with NMS) | - | – | – | 12.06 (fp16) | – | – | 14.26 | 12.86 | 14.83 |
+26074.9s 128 | T4 PyTorch FP16 ms, one-to-many + NMS (median) | - | – | – | – | – | – | 17.65 | 13.23 | 15.27 |
+26074.9s 129 | T4 TensorRT FP16 ms (YOLO26: NMS-free; YOLO11: with NMS) | 26n 1.7, 26s 2.5 (TensorRT 10, model only) (p.8, Table 2) | – | – | 6.28 (tensorrt_fp16) | – | – | 5.55 | 5.78 | 5.85 |
+26074.9s 130 | TensorRT INT8: test mAP50 (%) (YOLO26: NMS-free; YOLO11: with NMS) | "minimal impact on accuracy" (no number) (p.10) | – | – | 0.97 (tensorrt_int8) | – | – | 0.97 | 0.98 | 0.97 |
+26074.9s 131 | TensorRT INT8 ms | - | – | – | 7.77 (tensorrt_int8) | – | – | 5.62 | 5.76 | 5.80 |
+26074.9s 132 | CPU ONNX ms (YOLO26: NMS-free; YOLO11: with NMS) | 26n 38.9, 26s 87.2 (p.8, Table 2) | – | – | 90.98 (cpu_onnx) | – | – | 43.83 | 117.43 | 98.36 |
+26074.9s 133 | Params (M) | 26n 2.4, 26s 9.5 (p.8, Table 2) | 2.50 | 9.95 | 2.59 | 2.50 | 2.52 | – | – | – |
+26074.9s 134 | GFLOPs | 26n 5.4, 26s 20.7 (p.8, Table 2) | 5.90 | 22.70 | 6.50 | 5.90 | 7.60 | – | – | – |
+26074.9s 135 | Best epoch | - | 50 | 49 | 55 | 55 | 55 | – | – | – |
+26074.9s 136 | Training time (min) | not reported | 141.00 | 175.10 | 113.30 | 127.80 | 134.40 | – | – | – |
+26074.9s 137 
+26074.9s 138 A value marked with (...) comes from `speed.fp16.ms_median`: that run has no number at `heads.one2one_e2e.pytorch_fp16.ms_median` (e.g. the TensorRT export failed or was not run).
+26074.9s 139 
+26074.9s 140 A value marked with (...) comes from `speed.tensorrt_fp16.ms_median`: that run has no number at `heads.one2one_e2e.tensorrt_fp16.ms_median` (e.g. the TensorRT export failed or was not run).
+26074.9s 141 
+26074.9s 142 A value marked with (...) comes from `speed.tensorrt_int8.test_mAP50`: that run has no number at `heads.one2one_e2e.tensorrt_int8.test_mAP50` (e.g. the TensorRT export failed or was not run).
+26074.9s 143 
+26074.9s 144 A value marked with (...) comes from `speed.tensorrt_int8.ms_median`: that run has no number at `heads.one2one_e2e.tensorrt_int8.ms_median` (e.g. the TensorRT export failed or was not run).
+26074.9s 145 
+26074.9s 146 A value marked with (...) comes from `speed.cpu_onnx.ms_median`: that run has no number at `heads.one2one_e2e.cpu_onnx.ms_median` (e.g. the TensorRT export failed or was not run).
+26074.9s 147 
+26074.9s 148 The paper used its own data; our numbers are on the 498R All-in-One test split (different data),
+26074.9s 149 so the comparison shows the direction and size of the gap, not a head-to-head result.
+26074.9s 150 
+26074.9s 151 The paper's Table 2 is Ultralytics' own COCO table (the paper runs no experiment of its own); its speed column is model-only TensorRT, ours is pre + inference + post at batch 1. In Ultralytics 8.4.170 a YOLO26 model runs its one-to-many head with NMS unless `nms=False` is given: the training runs (y26n, y26s, ...) are scored that way, the heads_* runs score both heads of the same weights.
+26074.9s 152 
+26074.9s 153 ## Results by condition: detectors (test mAP50 %)
+26074.9s 154 
+26074.9s 155 | Run | all test | clear | night | blurry | small plates | rain (synthetic) | fog (synthetic) | false alarms on plate-free photos (%) |
+26074.9s 156 |---|---|---|---|---|---|---|---|---|
+26074.9s 157 | y11n | 97.8 | 97.9 | 96.0 | 98.5 | 93.9 | 71.6 | 95.9 | 5.62 |
+26074.9s 158 | y26n | 98.7 | 99.0 | 93.0 | 95.7 | 92.4 | 88.7 | 97.7 | 5.62 |
+26074.9s 159 | y26n_p2 | 98.0 | 98.0 | 94.7 | 96.4 | 93.5 | 87.6 | 96.6 | 5.62 |
+26074.9s 160 | y26n_sgd | 98.5 | 98.7 | 94.0 | 97.8 | 97.3 | 72.5 | 97.5 | 4.38 |
+26074.9s 161 | y26s | 99.1 | 99.3 | 94.1 | 97.9 | 92.1 | 86.5 | 97.9 | 5.00 |
+26074.9s 162 
+26074.9s 163 Condition subsets are fixed for the whole team (detection/conditions.json, ocr/conditions.json); rain and detection-fog copies are synthetic.
+26074.9s 164 
+26084.8s 165 packed /kaggle/working/paper33_outputs.zip 203.7 MB
+26085.3s 166 packed /kaggle/working/paper33_results.zip 5.6 MB (no weights: for GitHub weights/)
+26089.4s 167 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+26089.4s 168 cells[i][c] = re.sub('\\\\\|', '|', cell)
+26089.6s 169 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+26089.6s 170 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+26090.4s 171 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+26090.5s 172 [NbConvertApp] Writing 155402 bytes to __notebook__.ipynb
+26092.9s 173 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+26093.8s 174 [NbConvertApp] Writing 919946 bytes to __results__.html
