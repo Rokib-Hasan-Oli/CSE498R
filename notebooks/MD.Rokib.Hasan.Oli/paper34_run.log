@@ -1,0 +1,159 @@
+8.2s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.2s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.2s 3 0.00s - to python to disable frozen modules.
+8.2s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.9s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.9s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.9s 7 0.00s - to python to disable frozen modules.
+8.9s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+23.8s 9 torch 2.11.0+cu128 | GPUs: ['Tesla T4', 'Tesla T4']
+23.8s 10 ====================================================================================================
+23.8s 11 FULL RUN (FAST = False): planned about 2.5 h. A training job that ends after a few minutes FAILED:
+23.8s 12 read the '----- ... failed' lines below the cell and logs/<run>.log.
+23.8s 13 ====================================================================================================
+23.9s 14 Writing /kaggle/working/lprkit/common.py
+23.9s 15 Writing /kaggle/working/lprkit/vocab.py
+23.9s 16 Writing /kaggle/working/lprkit/metrics.py
+23.9s 17 Writing /kaggle/working/lprkit/report.py
+24.0s 18 Writing /kaggle/working/lprkit/det.py
+24.0s 19 Writing /kaggle/working/lprkit/rec.py
+24.0s 20 Writing /kaggle/working/lprkit/seq.py
+24.0s 21 Writing /kaggle/working/lprkit/ved.py
+24.0s 22 Writing /kaggle/working/lprkit/p34_svtrv2.py
+24.1s 23 dataset not attached -> downloading it from the team Drive (https://drive.google.com/drive/folders/11psdzW5Cpr7tXwqzqNxNt3LA-qeDSOQl)
+25.3s 24 0.00 / 3.38 GB
+29.6s 25 0.49 / 3.38 GB
+34.5s 26 0.98 / 3.38 GB
+40.2s 27 1.46 / 3.38 GB
+45.7s 28 1.95 / 3.38 GB
+51.7s 29 2.44 / 3.38 GB
+66.6s 30 2.93 / 3.38 GB
+76.3s 31 unpacking ...
+101.4s 32 dataset ready: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+101.8s 33 dataset: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+101.8s 34 det|test|human                           1153
+101.8s 35 det|train|auto                           4507
+101.8s 36 det|train|human                          4067
+101.8s 37 det|val|human                            896
+101.8s 38 e2e|test                                 204
+101.8s 39 extras_fog|test                          26
+101.8s 40 extras_fog|train                         267
+101.8s 41 extras_fog|val                           59
+101.8s 42 leaky_kuet|detection|fair_test           540
+101.8s 43 leaky_kuet|detection|fair_train          1758
+101.8s 44 leaky_kuet|detection|fair_val            311
+101.8s 45 leaky_kuet|detection|test|copy           27
+101.8s 46 leaky_kuet|detection|test|unique         526
+101.8s 47 leaky_kuet|detection|test_clean          474
+101.8s 48 leaky_kuet|detection|test_dup            79
+101.8s 49 leaky_kuet|detection|train|copy          3752
+101.8s 50 leaky_kuet|detection|train|unique        1868
+101.8s 51 leaky_kuet|detection|val|copy            26
+101.8s 52 leaky_kuet|detection|val|unique          251
+101.8s 53 leaky_kuet|recognition|fair_left_out_same_plate_as_test 315
+101.8s 54 leaky_kuet|recognition|fair_test         194
+101.8s 55 leaky_kuet|recognition|fair_train        660
+101.8s 56 leaky_kuet|recognition|fair_val          122
+101.8s 57 leaky_kuet|recognition|test|unique       194
+101.8s 58 leaky_kuet|recognition|test_clean        80
+101.8s 59 leaky_kuet|recognition|test_dup          114
+101.8s 60 leaky_kuet|recognition|train|copy        2613
+101.8s 61 leaky_kuet|recognition|train|unique      778
+101.8s 62 leaky_kuet|recognition|val|copy          1
+101.8s 63 leaky_kuet|recognition|val|unique        319
+101.8s 64 ocr|test|human                           651
+101.8s 65 ocr|train|auto                           2136
+101.8s 66 ocr|train|human                          3471
+101.8s 67 ocr|val|human                            766
+101.8s 68 rec|test|human                           467
+101.8s 69 rec|train|auto                           2136
+101.8s 70 rec|train|auto_verified                  930
+101.8s 71 rec|train|human                          2399
+101.8s 72 rec|val|human                            536
+101.8s 73 path: /tmp/498r_data/BanglaLPR_AllInOne_v1_1/detection
+101.8s 74 train: images/train
+101.8s 75 val: images/val
+101.8s 76 test: images/test
+101.8s 77 nc: 1
+101.8s 78 names:
+101.8s 79 0: "plate"
+101.8s 80 
+102.0s 81 Creating new Ultralytics Settings v0.0.8 file ✅
+102.0s 82 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+102.0s 83 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+162.1s 84 OpenOCR ready at /kaggle/working/openocr commit 1ccfc6ee6161f7133b192e16af3a9265273997ba
+162.1s 85 SVTRv2-T English weights: /kaggle/working/svtrv2_T_u14m/best.pth
+162.1s 86 SVTRv2-S English weights: /kaggle/working/svtrv2_S_u14m/best.pth
+162.1s 87 
+162.1s 88 [start] svtrv2_t_msr on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p34_svtrv2.py train --name svtrv2_t_msr --project /kaggle/working/runs --epochs 100 --max-hours 1.6 --size T --pretrained
+162.1s 89 [start] svtrv2_t_fixed on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/p34_svtrv2.py train --name svtrv2_t_fixed --project /kaggle/working/runs --epochs 100 --max-hours 1.6 --size T --resize fixed --pretrained
+5972.3s 90 [done]  svtrv2_t_fixed code=0 after 96.8 min
+5972.3s 91 [start] svtrv2_t_scratch on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/p34_svtrv2.py train --name svtrv2_t_scratch --project /kaggle/working/runs --epochs 100 --max-hours 1.6 --size T
+5982.3s 92 [done]  svtrv2_t_msr code=0 after 97.0 min
+5982.3s 93 [start] svtrv2_s_msr on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p34_svtrv2.py train --name svtrv2_s_msr --project /kaggle/working/runs --epochs 100 --max-hours 1.6 --size S --pretrained
+11812.5s 94 [done]  svtrv2_t_scratch code=0 after 97.3 min
+11812.5s 95 [start] crnn on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/seq.py --model crnn --name crnn --project /kaggle/working/runs --epochs 60
+11862.5s 96 [done]  svtrv2_s_msr code=0 after 98.0 min
+12832.5s 97 [done]  crnn code=0 after 17.0 min
+12832.5s 98 svtrv2_t_msr {'plates': 651, 'plate_exact_%': 81.26, 'CER_%': 2.49, 'char_acc_%': 97.51, 'token_acc_%': 97.16, 'WER_%': 5.14} 7.62 ms best.pth: encoder 164 of 164 tensors, FRM head 14 of 16 (classifier new)
+12832.5s 99 32x128 1 plates, exact 100.0
+12832.5s 100 40x112 4 plates, exact 50.0
+12832.5s 101 48x96 317 plates, exact 84.54
+12832.5s 102 64x64 329 plates, exact 78.42
+12832.5s 103 svtrv2_s_msr {'plates': 651, 'plate_exact_%': 81.87, 'CER_%': 3.07, 'char_acc_%': 96.93, 'token_acc_%': 97.12, 'WER_%': 5.14} 15.34 ms best.pth: encoder 164 of 164 tensors, FRM head 14 of 16 (classifier new)
+12832.5s 104 32x128 1 plates, exact 0.0
+12832.5s 105 40x112 4 plates, exact 75.0
+12832.5s 106 48x96 317 plates, exact 86.12
+12832.5s 107 64x64 329 plates, exact 78.12
+12832.5s 108 svtrv2_t_fixed {'plates': 651, 'plate_exact_%': 74.5, 'CER_%': 4.47, 'char_acc_%': 95.53, 'token_acc_%': 95.49, 'WER_%': 7.88} 14.15 ms best.pth: encoder 164 of 164 tensors, FRM head 14 of 16 (classifier new)
+12832.5s 109 32x128 651 plates, exact 74.5
+12832.5s 110 svtrv2_t_scratch {'plates': 651, 'plate_exact_%': 61.75, 'CER_%': 8.55, 'char_acc_%': 91.45, 'token_acc_%': 92.47, 'WER_%': 13.44} 14.99 ms from scratch
+12832.5s 111 32x128 1 plates, exact 0.0
+12832.5s 112 40x112 4 plates, exact 75.0
+12832.5s 113 48x96 317 plates, exact 70.35
+12832.5s 114 64x64 329 plates, exact 53.5
+12832.5s 115 crnn {'plates': 651, 'plate_exact_%': 73.43, 'CER_%': 5.53, 'char_acc_%': 94.47, 'token_acc_%': 95.05, 'WER_%': 8.66} 4.58 ms
+12832.7s 116 # Paper #34: ours vs. the paper
+12832.7s 117 
+12832.7s 118 | Metric | Paper (page) | svtrv2_t_msr | svtrv2_s_msr | svtrv2_t_fixed | svtrv2_t_scratch | crnn |
+12832.7s 119 |---|---|---|---|---|---|---|
+12832.7s 120 | Plate exact (%) | word accuracy, Common benchmarks: T 94.78, S 96.13 (English) (p.7, Table 3) | 81.26 | 81.87 | 74.50 | 61.75 | 73.43 |
+12832.7s 121 | CER (%) | - | 2.49 | 3.07 | 4.47 | 8.55 | 5.53 |
+12832.7s 122 | Token accuracy (%) | - | 97.16 | 97.12 | 95.49 | 92.47 | 95.05 |
+12832.7s 123 | Two-line plates (48x96 MSR size): plate exact (%) | MSR vs fixed 32x128: +5.2 (1.5 <= R < 2.5) (p.6, Table 1) | 84.54 | 86.12 | – | 70.35 | – |
+12832.7s 124 | Near-square plates (64x64 MSR size): plate exact (%) | MSR vs fixed 32x128: +15.3 (R < 1.5) (p.6, Table 1) | 78.42 | 78.12 | – | 53.50 | – |
+12832.7s 125 | Fixed 32x128 (all plates): plate exact (%) | - | 100.00 | 0.00 | 74.50 | 0.00 | – |
+12832.7s 126 | Night crops: plate exact (%) | - | 69.23 | 67.69 | 52.31 | 40.00 | 61.54 |
+12832.7s 127 | ms per plate (T4, batch 1) | FPS: T 201, S 189, CRNN 172 (1080Ti) (p.7, Table 3) | 7.62 | 15.34 | 14.15 | 14.99 | 4.58 |
+12832.7s 128 | Params (M) | T 5.1, S 11.3, CRNN 16.2 (p.7, Table 3) | 5.13 | 11.25 | 5.13 | 5.13 | 7.69 |
+12832.7s 129 | Start weights | trained on U14M-Filter (English) (p.5) | best.pth: encoder 164 of 164 tensors, FRM head 14 of 16 (cla | best.pth: encoder 164 of 164 tensors, FRM head 14 of 16 (cla | best.pth: encoder 164 of 164 tensors, FRM head 14 of 16 (cla | from scratch | – |
+12832.7s 130 | Epochs run | 20 (English, batch 1024) (p.5) | 63 | 66 | 64 | 65 | – |
+12832.7s 131 | Training time (min) | not reported (4 x RTX 4090) (p.5) | 96.30 | 96.90 | 96.10 | 96.30 | 16.50 |
+12832.7s 132 
+12832.7s 133 The paper used its own data; our numbers are on the 498R All-in-One test split (different data),
+12832.7s 134 so the comparison shows the direction and size of the gap, not a head-to-head result.
+12832.7s 135 
+12832.7s 136 The paper reads English words (94 characters, millions of real training crops); we read Bangla plate tokens with about 5.6 k training crops. The semantic guidance module (SGM) is not trained here (plate text has almost no language context; see the notes). Compare svtrv2_t_msr with svtrv2_t_fixed for MSR, with svtrv2_t_scratch for the English pre-training, and every run with crnn and with PARSeq (#31).
+12832.7s 137 
+12832.7s 138 ## Results by condition: plate readers (plate exact %)
+12832.7s 139 
+12832.7s 140 | Run | all test | clear | night | blurry | fog (real fog copies) | rain (synthetic) |
+12832.7s 141 |---|---|---|---|---|---|---|
+12832.7s 142 | crnn | 73.43 | 77.50 | 61.54 | 64.29 | 50.00 | 67.13 |
+12832.7s 143 | svtrv2_s_msr | 81.87 | 84.58 | 67.69 | 79.46 | 57.69 | 76.80 |
+12832.7s 144 | svtrv2_t_fixed | 74.50 | 79.17 | 52.31 | 67.86 | 53.85 | 66.97 |
+12832.7s 145 | svtrv2_t_msr | 81.26 | 85.00 | 69.23 | 73.21 | 57.69 | 75.27 |
+12832.7s 146 | svtrv2_t_scratch | 61.75 | 66.46 | 40.00 | 54.46 | 26.92 | 59.60 |
+12832.7s 147 
+12832.7s 148 Condition subsets are fixed for the whole team (detection/conditions.json, ocr/conditions.json); rain and detection-fog copies are synthetic.
+12832.7s 149 
+12840.8s 150 packed /kaggle/working/paper34_outputs.zip 156.3 MB
+12840.8s 151 packed /kaggle/working/paper34_results.zip 0.2 MB (no weights: for GitHub weights/)
+12845.7s 152 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+12845.7s 153 cells[i][c] = re.sub('\\\\\|', '|', cell)
+12845.9s 154 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+12845.9s 155 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+12846.7s 156 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+12846.8s 157 [NbConvertApp] Writing 162886 bytes to __notebook__.ipynb
+12849.6s 158 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+12850.7s 159 [NbConvertApp] Writing 974448 bytes to __results__.html
