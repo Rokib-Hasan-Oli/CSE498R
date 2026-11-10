@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 # Paper27_README.md — Paper #27: NMS-Free YOLOv10 vs YOLOv8 for Bangla Licence-Plate Detection
 
 > **Project:** 498R BanglaLPR — re-implementation and evaluation of *“YOLOv10: Real-Time End-to-End Object Detection”* (Paper #27, arXiv:2405.14458)  
