@@ -1,0 +1,214 @@
+{
+ "score": {
+  "svtrv2_t_msr": {
+   "test": {
+    "plates": 651,
+    "local_exact_%": 81.26,
+    "kaggle_exact_%": 81.26,
+    "same_text_as_kaggle": 651,
+    "conf_max_abs_diff": 0.0076,
+    "bucket_same": 651
+   },
+   "val": {
+    "plates": 766,
+    "local_exact_%": 73.76,
+    "kaggle_exact_%": 73.76,
+    "same_text_as_kaggle": 766,
+    "conf_max_abs_diff": 0.0023,
+    "bucket_same": 766
+   }
+  },
+  "svtrv2_s_msr": {
+   "test": {
+    "plates": 651,
+    "local_exact_%": 81.87,
+    "kaggle_exact_%": 81.87,
+    "same_text_as_kaggle": 650,
+    "conf_max_abs_diff": 0.0347,
+    "bucket_same": 651
+   },
+   "val": {
+    "plates": 766,
+    "local_exact_%": 75.33,
+    "kaggle_exact_%": 75.33,
+    "same_text_as_kaggle": 766,
+    "conf_max_abs_diff": 0.0056,
+    "bucket_same": 766
+   }
+  },
+  "svtrv2_t_fixed": {
+   "test": {
+    "plates": 651,
+    "local_exact_%": 74.5,
+    "kaggle_exact_%": 74.5,
+    "same_text_as_kaggle": 651,
+    "conf_max_abs_diff": 0.4839,
+    "bucket_same": 651
+   },
+   "val": {
+    "plates": 766,
+    "local_exact_%": 66.58,
+    "kaggle_exact_%": 66.58,
+    "same_text_as_kaggle": 765,
+    "conf_max_abs_diff": 0.0409,
+    "bucket_same": 766
+   }
+  },
+  "svtrv2_t_scratch": {
+   "test": {
+    "plates": 651,
+    "local_exact_%": 61.75,
+    "kaggle_exact_%": 61.75,
+    "same_text_as_kaggle": 651,
+    "conf_max_abs_diff": 0.4998,
+    "bucket_same": 651
+   },
+   "val": {
+    "plates": 766,
+    "local_exact_%": 53.52,
+    "kaggle_exact_%": 53.52,
+    "same_text_as_kaggle": 765,
+    "conf_max_abs_diff": 0.0059,
+    "bucket_same": 766
+   }
+  },
+  "crnn": {
+   "test": {
+    "plates": 651,
+    "local_exact_%": 73.43,
+    "kaggle_exact_%": 73.43,
+    "same_text_as_kaggle": 648,
+    "conf_max_abs_diff": 0.0637,
+    "bucket_same": 651
+   },
+   "val": {
+    "plates": 766,
+    "local_exact_%": 62.27,
+    "kaggle_exact_%": 62.27,
+    "same_text_as_kaggle": 766,
+    "conf_max_abs_diff": 0.0008,
+    "bucket_same": 766
+   }
+  }
+ },
+ "fp16": {
+  "svtrv2_t_msr": {
+   "file": "best_svtrv2_t_msr_fp16.pt",
+   "MiB": 9.85,
+   "sha256": "a6791e0dd2b93ef98220bf8b41d4292a128b198d09ce9e72b43c28b1965a3c40",
+   "fp32_MiB": 19.63,
+   "test": {
+    "same_text": 651,
+    "plates": 651,
+    "exact_fp16_%": 81.26
+   },
+   "val": {
+    "same_text": 766,
+    "plates": 766,
+    "exact_fp16_%": 73.76
+   }
+  },
+  "svtrv2_s_msr": {
+   "file": "best_svtrv2_s_msr_fp16.pt",
+   "MiB": 21.53,
+   "sha256": "8cd7e80a3008a3ad538889bae94c50722fc3233dc3b68162d5b6f23b3f7d5f6a",
+   "fp32_MiB": 42.99,
+   "test": {
+    "same_text": 650,
+    "plates": 651,
+    "exact_fp16_%": 81.87
+   },
+   "val": {
+    "same_text": 766,
+    "plates": 766,
+    "exact_fp16_%": 75.33
+   }
+  }
+ },
+ "sha256": {
+  "svtrv2_t_msr": "2462a90f760649030e5e6d3fbf2ac3022d5b0d06e34b7c3fd29e8981c7a8f99b",
+  "svtrv2_s_msr": "68fd6fc5a2907eff179e2fb47820fc345027a037985ebb8c05ab1947c0ad4d81",
+  "svtrv2_t_fixed": "e8aa42401235b65bb6c900a6284ceb8d0ad37b4872793e1557687fe66bbc45eb",
+  "svtrv2_t_scratch": "90a839c01285add8611673fcc3886ea03b274bb7ed434db8ba73506f4dd59fc8",
+  "crnn_model_full": "0110631e3be91b45db0c432ee40ae25246c68cc4587842055367e75310b5f033"
+ },
+ "timing": {
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "cpu_threads": 4,
+  "torch": "2.13.0+cu130",
+  "statistic": "10th percentile of 600 calls (another training job shared the GPU)",
+  "T": {
+   "64x64": {
+    "gpu_fp32": 4.378,
+    "gpu_fp32_batch64_ms_per_plate": 0.3437,
+    "gpu_fp16": 4.141,
+    "cpu_fp32": 13.082
+   },
+   "48x96": {
+    "gpu_fp32": 4.422,
+    "gpu_fp32_batch64_ms_per_plate": 0.3957,
+    "gpu_fp16": 4.059,
+    "cpu_fp32": 14.185
+   },
+   "40x112": {
+    "gpu_fp32": 4.372,
+    "gpu_fp32_batch64_ms_per_plate": 0.3842,
+    "gpu_fp16": 3.966,
+    "cpu_fp32": 13.896
+   },
+   "32x128": {
+    "gpu_fp32": 4.185,
+    "gpu_fp32_batch64_ms_per_plate": 0.3402,
+    "gpu_fp16": 4.212,
+    "cpu_fp32": 13.026
+   }
+  },
+  "S": {
+   "64x64": {
+    "gpu_fp32": 4.297,
+    "gpu_fp32_batch64_ms_per_plate": 0.5975,
+    "gpu_fp16": 4.755,
+    "cpu_fp32": 20.083
+   },
+   "48x96": {
+    "gpu_fp32": 4.157,
+    "gpu_fp32_batch64_ms_per_plate": 0.6913,
+    "gpu_fp16": 4.506,
+    "cpu_fp32": 22.466
+   },
+   "40x112": {
+    "gpu_fp32": 4.073,
+    "gpu_fp32_batch64_ms_per_plate": 0.6722,
+    "gpu_fp16": 4.899,
+    "cpu_fp32": 21.904
+   },
+   "32x128": {
+    "gpu_fp32": 4.738,
+    "gpu_fp32_batch64_ms_per_plate": 0.5995,
+    "gpu_fp16": 4.652,
+    "cpu_fp32": 20.332
+   }
+  },
+  "crnn": {
+   "gpu_fp32": 4.189,
+   "gpu_fp16": 4.481,
+   "gpu_fp32_batch64_ms_per_plate": 0.4429,
+   "cpu_fp32": 18.567
+  },
+  "reader_svtrv2_t_msr_ms": 6.1,
+  "reader_crnn_ms": 5.003
+ },
+ "onnx": {
+  "ok": true,
+  "MiB": 19.72,
+  "max_abs_diff": 1.1e-05,
+  "exact_%": 81.26,
+  "same_text_as_kaggle": 651,
+  "plates": 651,
+  "ort_cpu4_ms": {
+   "64x64": 7.875,
+   "48x96": 8.678
+  },
+  "onnxruntime": "1.31.0"
+ }
+}
