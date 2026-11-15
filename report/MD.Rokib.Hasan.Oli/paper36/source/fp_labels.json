@@ -1,0 +1,6 @@
+{
+ "note": "My by-eye labels of the 48 tiles in _fp_sheet.jpg (fp_sample.py, seed 36), 29 Oct 2026: plate = a number plate (readable or not) that the test labels leave out; unclear = plate-shaped but too blurred or cut to tell; not_plate = sign, painted text, sticker, house-number board or background.",
+ "plate": [0, 1, 4, 5, 7, 8, 9, 12, 15, 17, 20, 22, 24, 25, 26, 28, 34, 40, 41, 42, 43, 44, 45, 46, 47],
+ "unclear": [3, 10, 14, 23, 27, 31],
+ "not_plate": [2, 6, 11, 13, 16, 18, 19, 21, 29, 30, 32, 33, 35, 36, 37, 38, 39]
+}

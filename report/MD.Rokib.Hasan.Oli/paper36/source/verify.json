@@ -1,0 +1,351 @@
+{
+ "box_by_box": {
+  "v8s_640__FI": {
+   "photos": 80,
+   "boxes": 101,
+   "photos_with_other_count": 0,
+   "max_abs_diff": 0.0
+  },
+  "v8s_640__SAHI": {
+   "photos": 80,
+   "boxes": 206,
+   "photos_with_other_count": 0,
+   "max_abs_diff": 0.0
+  },
+  "v8s_640__SAHI_FI": {
+   "photos": 80,
+   "boxes": 220,
+   "photos_with_other_count": 0,
+   "max_abs_diff": 0.0
+  },
+  "v8s_sf__FI": {
+   "photos": 80,
+   "boxes": 89,
+   "photos_with_other_count": 0,
+   "max_abs_diff": 0.0
+  },
+  "v8s_sf__SAHI": {
+   "photos": 80,
+   "boxes": 147,
+   "photos_with_other_count": 0,
+   "max_abs_diff": 0.0
+  },
+  "v8s_sf__SAHI_FI": {
+   "photos": 80,
+   "boxes": 154,
+   "photos_with_other_count": 0,
+   "max_abs_diff": 0.0
+  }
+ },
+ "rescore": {
+  "v8s_640__FI": {
+   "AP50_%": [
+    97.33,
+    97.33
+   ],
+   "AP50_small_%": [
+    26.01,
+    26.01
+   ],
+   "AP50_medium_%": [
+    95.74,
+    95.74
+   ],
+   "AP50_large_%": [
+    97.61,
+    97.61
+   ],
+   "found_%": [
+    98.12,
+    98.12
+   ],
+   "correct_%": [
+    90.59,
+    90.59
+   ],
+   "false_alarm_no_plate_%": [
+    6.25,
+    6.25
+   ],
+   "found_by_condition_%": [
+    {
+     "blurry": 94.34,
+     "clear": 98.87,
+     "night": 90.14,
+     "small_plates": 91.67
+    },
+    {
+     "blurry": 94.34,
+     "clear": 98.87,
+     "night": 90.14,
+     "small_plates": 91.67
+    }
+   ]
+  },
+  "v8s_640__SAHI": {
+   "AP50_%": [
+    88.78,
+    88.78
+   ],
+   "AP50_small_%": [
+    16.62,
+    16.62
+   ],
+   "AP50_medium_%": [
+    79.45,
+    79.44
+   ],
+   "AP50_large_%": [
+    91.1,
+    91.09
+   ],
+   "found_%": [
+    94.86,
+    94.86
+   ],
+   "correct_%": [
+    60.93,
+    60.93
+   ],
+   "false_alarm_no_plate_%": [
+    19.38,
+    19.38
+   ],
+   "found_by_condition_%": [
+    {
+     "blurry": 73.58,
+     "clear": 96.72,
+     "night": 76.06,
+     "small_plates": 100.0
+    },
+    {
+     "blurry": 73.58,
+     "clear": 96.72,
+     "night": 76.06,
+     "small_plates": 100.0
+    }
+   ]
+  },
+  "v8s_640__SAHI_FI": {
+   "AP50_%": [
+    91.63,
+    91.64
+   ],
+   "AP50_small_%": [
+    16.6,
+    16.6
+   ],
+   "AP50_medium_%": [
+    80.85,
+    80.85
+   ],
+   "AP50_large_%": [
+    93.94,
+    93.94
+   ],
+   "found_%": [
+    97.23,
+    97.23
+   ],
+   "correct_%": [
+    60.72,
+    60.72
+   ],
+   "false_alarm_no_plate_%": [
+    20.0,
+    20.0
+   ],
+   "found_by_condition_%": [
+    {
+     "blurry": 86.79,
+     "clear": 97.96,
+     "night": 91.55,
+     "small_plates": 100.0
+    },
+    {
+     "blurry": 86.79,
+     "clear": 97.96,
+     "night": 91.55,
+     "small_plates": 100.0
+    }
+   ]
+  },
+  "v8s_sf__FI": {
+   "AP50_%": [
+    96.65,
+    96.68
+   ],
+   "AP50_small_%": [
+    27.5,
+    27.5
+   ],
+   "AP50_medium_%": [
+    94.66,
+    94.66
+   ],
+   "AP50_large_%": [
+    97.21,
+    97.21
+   ],
+   "found_%": [
+    97.53,
+    97.53
+   ],
+   "correct_%": [
+    93.82,
+    93.82
+   ],
+   "false_alarm_no_plate_%": [
+    5.62,
+    5.62
+   ],
+   "found_by_condition_%": [
+    {
+     "blurry": 98.11,
+     "clear": 97.85,
+     "night": 94.37,
+     "small_plates": 91.67
+    },
+    {
+     "blurry": 98.11,
+     "clear": 97.85,
+     "night": 94.37,
+     "small_plates": 91.67
+    }
+   ]
+  },
+  "v8s_sf__SAHI": {
+   "AP50_%": [
+    93.37,
+    93.37
+   ],
+   "AP50_small_%": [
+    12.34,
+    12.34
+   ],
+   "AP50_medium_%": [
+    89.48,
+    89.5
+   ],
+   "AP50_large_%": [
+    94.66,
+    94.66
+   ],
+   "found_%": [
+    96.93,
+    96.93
+   ],
+   "correct_%": [
+    68.87,
+    68.87
+   ],
+   "false_alarm_no_plate_%": [
+    11.88,
+    11.88
+   ],
+   "found_by_condition_%": [
+    {
+     "blurry": 86.79,
+     "clear": 97.85,
+     "night": 87.32,
+     "small_plates": 100.0
+    },
+    {
+     "blurry": 86.79,
+     "clear": 97.85,
+     "night": 87.32,
+     "small_plates": 100.0
+    }
+   ]
+  },
+  "v8s_sf__SAHI_FI": {
+   "AP50_%": [
+    93.62,
+    93.62
+   ],
+   "AP50_small_%": [
+    12.58,
+    12.58
+   ],
+   "AP50_medium_%": [
+    88.77,
+    88.77
+   ],
+   "AP50_large_%": [
+    94.88,
+    94.88
+   ],
+   "found_%": [
+    97.23,
+    97.23
+   ],
+   "correct_%": [
+    68.36,
+    68.36
+   ],
+   "false_alarm_no_plate_%": [
+    13.12,
+    13.12
+   ],
+   "found_by_condition_%": [
+    {
+     "blurry": 92.45,
+     "clear": 97.85,
+     "night": 90.14,
+     "small_plates": 100.0
+    },
+    {
+     "blurry": 92.45,
+     "clear": 97.85,
+     "night": 90.14,
+     "small_plates": 100.0
+    }
+   ]
+  },
+  "v8s_1280__FI": {
+   "AP50_%": [
+    97.1,
+    97.1
+   ],
+   "AP50_small_%": [
+    16.07,
+    16.07
+   ],
+   "AP50_medium_%": [
+    94.43,
+    94.43
+   ],
+   "AP50_large_%": [
+    98.56,
+    98.56
+   ],
+   "found_%": [
+    97.63,
+    97.63
+   ],
+   "correct_%": [
+    88.28,
+    88.28
+   ],
+   "false_alarm_no_plate_%": [
+    5.0,
+    5.0
+   ],
+   "found_by_condition_%": [
+    {
+     "blurry": 94.34,
+     "clear": 98.64,
+     "night": 84.51,
+     "small_plates": 95.83
+    },
+    {
+     "blurry": 94.34,
+     "clear": 98.64,
+     "night": 84.51,
+     "small_plates": 95.83
+    }
+   ]
+  }
+ },
+ "greedy_nmm_max_abs_diff": 0.0
+}

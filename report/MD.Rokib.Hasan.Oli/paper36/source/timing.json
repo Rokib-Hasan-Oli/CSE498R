@@ -1,0 +1,44 @@
+{
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "photos": 300,
+ "photos_gt_640_in_pick": 271,
+ "configs": {
+  "v8s_640__FI": {
+   "median_ms": 14.64,
+   "mean_ms": 14.5
+  },
+  "v8s_640__SAHI": {
+   "median_ms": 48.46,
+   "mean_ms": 41.7
+  },
+  "v8s_640__SAHI_FI": {
+   "median_ms": 57.13,
+   "mean_ms": 49.17
+  },
+  "v8s_640__SAHI_FI_batch8": {
+   "median_ms": 50.93,
+   "mean_ms": 44.79
+  },
+  "v8s_sf__FI": {
+   "median_ms": 14.73,
+   "mean_ms": 13.75
+  },
+  "v8s_sf__SAHI": {
+   "median_ms": 48.04,
+   "mean_ms": 41.24
+  },
+  "v8s_sf__SAHI_FI": {
+   "median_ms": 58.07,
+   "mean_ms": 50.16
+  },
+  "v8s_sf__SAHI_FI_batch8": {
+   "median_ms": 51.29,
+   "mean_ms": 44.09
+  },
+  "v8s_1280__FI": {
+   "median_ms": 20.83,
+   "mean_ms": 20.63
+  }
+ },
+ "big_photos_in_test": 1050
+}

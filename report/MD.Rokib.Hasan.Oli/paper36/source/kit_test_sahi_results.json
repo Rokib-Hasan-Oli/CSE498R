@@ -1,0 +1,162 @@
+{
+ "run": "sahi",
+ "kind": "sahi",
+ "sahi_settings": {
+  "slice": 640,
+  "overlap": 0.25,
+  "merge": "NMS IoU 0.5",
+  "conf_for_AP": 0.01,
+  "conf_for_found": 0.25,
+  "SAHI_FI_BORDER": "slice boxes within 2 px of an inner slice edge dropped, then NMS IoU 0.5 with the full-image boxes"
+ },
+ "configs": {
+  "v8s_640__FI": {
+   "AP50_%": 97.33,
+   "AP50_small_%": 26.01,
+   "AP50_medium_%": 95.74,
+   "AP50_large_%": 97.61,
+   "photos": 1153,
+   "plates": 1011,
+   "found_%": 98.12,
+   "correct_%": 90.59,
+   "found_by_size_%": {
+    "large": 98.78,
+    "medium": 97.38,
+    "small": 40.0
+   },
+   "plates_by_size": {
+    "large": 739,
+    "medium": 267,
+    "small": 5
+   },
+   "found_by_condition_%": {
+    "blurry": 94.34,
+    "clear": 98.87,
+    "night": 90.14,
+    "small_plates": 91.67
+   },
+   "false_alarm_no_plate_%": 6.25,
+   "ms_median": 18.1,
+   "ms_mean": 19.7,
+   "e2e": {
+    "plates": 204,
+    "plate_exact_%": 71.57,
+    "CER_%": 8.89,
+    "char_acc_%": 91.11,
+    "token_acc_%": 92.7,
+    "WER_%": 12.17,
+    "plate_detected_%": 97.06
+   }
+  },
+  "v8s_640__SAHI_FI": {
+   "AP50_%": 91.64,
+   "AP50_small_%": 16.6,
+   "AP50_medium_%": 80.85,
+   "AP50_large_%": 93.94,
+   "photos": 1153,
+   "plates": 1011,
+   "found_%": 97.23,
+   "correct_%": 60.72,
+   "found_by_size_%": {
+    "large": 97.56,
+    "medium": 96.63,
+    "small": 80.0
+   },
+   "plates_by_size": {
+    "large": 739,
+    "medium": 267,
+    "small": 5
+   },
+   "found_by_condition_%": {
+    "blurry": 86.79,
+    "clear": 97.96,
+    "night": 91.55,
+    "small_plates": 100.0
+   },
+   "false_alarm_no_plate_%": 20.0,
+   "ms_median": 67.6,
+   "ms_mean": 67.3,
+   "slices_per_photo": 5.96,
+   "e2e": {
+    "plates": 204,
+    "plate_exact_%": 67.65,
+    "CER_%": 11.88,
+    "char_acc_%": 88.12,
+    "token_acc_%": 91.61,
+    "WER_%": 14.62,
+    "plate_detected_%": 99.02
+   },
+   "vs_FI": {
+    "AP50_pp": -5.69,
+    "AP50_small_pp": -9.41,
+    "found_pp": -0.89,
+    "found_small_pp": 40.0,
+    "ms_x": 3.73
+   }
+  },
+  "v8s_640__SAHI_FI_BORDER": {
+   "AP50_%": 97.51,
+   "AP50_small_%": 16.8,
+   "AP50_medium_%": 92.09,
+   "AP50_large_%": 98.87,
+   "photos": 1153,
+   "plates": 1011,
+   "found_%": 98.62,
+   "correct_%": 77.65,
+   "found_by_size_%": {
+    "large": 99.05,
+    "medium": 97.75,
+    "small": 80.0
+   },
+   "plates_by_size": {
+    "large": 739,
+    "medium": 267,
+    "small": 5
+   },
+   "found_by_condition_%": {
+    "blurry": 94.34,
+    "clear": 98.98,
+    "night": 92.96,
+    "small_plates": 100.0
+   },
+   "false_alarm_no_plate_%": 18.12,
+   "ms_median": 69.2,
+   "ms_mean": 67.8,
+   "slices_per_photo": 5.96,
+   "e2e": {
+    "plates": 204,
+    "plate_exact_%": 72.55,
+    "CER_%": 8.67,
+    "char_acc_%": 91.33,
+    "token_acc_%": 93.84,
+    "WER_%": 10.89,
+    "plate_detected_%": 99.02
+   },
+   "vs_FI": {
+    "AP50_pp": 0.18,
+    "AP50_small_pp": -9.21,
+    "found_pp": 0.5,
+    "found_small_pp": 40.0,
+    "ms_x": 3.82
+   }
+  }
+ },
+ "skipped": {},
+ "env": {
+  "python": "3.14.6",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "date": "2026-10-29 17:32",
+  "torch": "2.13.0+cu130",
+  "cuda": "13.0",
+  "gpus": [
+   "NVIDIA GeForce RTX 5060 Ti"
+  ],
+  "ultralytics": "8.4.170",
+  "transformers": "4.57.1",
+  "numpy": "2.5.2",
+  "cv2": "5.0.0",
+  "onnxruntime": "1.31.0",
+  "timm": "1.0.30",
+  "peft": "0.17.1"
+ }
+}
