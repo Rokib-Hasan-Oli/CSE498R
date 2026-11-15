@@ -1,0 +1,183 @@
+8.9s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.9s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.9s 3 0.00s - to python to disable frozen modules.
+8.9s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.6s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.6s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.6s 7 0.00s - to python to disable frozen modules.
+9.6s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+25.1s 9 torch 2.11.0+cu128 | GPUs: ['Tesla T4', 'Tesla T4']
+25.1s 10 ====================================================================================================
+25.1s 11 FULL RUN (FAST = False): planned about 7.5 h. A training job that ends after a few minutes FAILED:
+25.1s 12 read the '----- ... failed' lines below the cell and logs/<run>.log.
+25.1s 13 ====================================================================================================
+25.2s 14 Writing /kaggle/working/lprkit/common.py
+25.2s 15 Writing /kaggle/working/lprkit/vocab.py
+25.2s 16 Writing /kaggle/working/lprkit/metrics.py
+25.2s 17 Writing /kaggle/working/lprkit/report.py
+25.3s 18 Writing /kaggle/working/lprkit/det.py
+25.3s 19 Writing /kaggle/working/lprkit/rec.py
+25.3s 20 Writing /kaggle/working/lprkit/seq.py
+25.3s 21 Writing /kaggle/working/lprkit/ved.py
+25.4s 22 Writing /kaggle/working/lprkit/p36_sahi.py
+25.4s 23 dataset not attached -> downloading it from the team Drive (https://drive.google.com/drive/folders/11psdzW5Cpr7tXwqzqNxNt3LA-qeDSOQl)
+26.6s 24 0.00 / 3.38 GB
+35.5s 25 0.49 / 3.38 GB
+42.6s 26 0.98 / 3.38 GB
+50.4s 27 1.46 / 3.38 GB
+58.3s 28 1.95 / 3.38 GB
+70.0s 29 2.44 / 3.38 GB
+80.3s 30 2.93 / 3.38 GB
+86.3s 31 unpacking ...
+110.5s 32 dataset ready: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+110.9s 33 dataset: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+110.9s 34 det|test|human                           1153
+110.9s 35 det|train|auto                           4507
+110.9s 36 det|train|human                          4067
+110.9s 37 det|val|human                            896
+110.9s 38 e2e|test                                 204
+110.9s 39 extras_fog|test                          26
+110.9s 40 extras_fog|train                         267
+110.9s 41 extras_fog|val                           59
+110.9s 42 leaky_kuet|detection|fair_test           540
+110.9s 43 leaky_kuet|detection|fair_train          1758
+110.9s 44 leaky_kuet|detection|fair_val            311
+110.9s 45 leaky_kuet|detection|test|copy           27
+110.9s 46 leaky_kuet|detection|test|unique         526
+110.9s 47 leaky_kuet|detection|test_clean          474
+110.9s 48 leaky_kuet|detection|test_dup            79
+110.9s 49 leaky_kuet|detection|train|copy          3752
+110.9s 50 leaky_kuet|detection|train|unique        1868
+110.9s 51 leaky_kuet|detection|val|copy            26
+110.9s 52 leaky_kuet|detection|val|unique          251
+110.9s 53 leaky_kuet|recognition|fair_left_out_same_plate_as_test 315
+110.9s 54 leaky_kuet|recognition|fair_test         194
+110.9s 55 leaky_kuet|recognition|fair_train        660
+110.9s 56 leaky_kuet|recognition|fair_val          122
+110.9s 57 leaky_kuet|recognition|test|unique       194
+110.9s 58 leaky_kuet|recognition|test_clean        80
+110.9s 59 leaky_kuet|recognition|test_dup          114
+110.9s 60 leaky_kuet|recognition|train|copy        2613
+110.9s 61 leaky_kuet|recognition|train|unique      778
+110.9s 62 leaky_kuet|recognition|val|copy          1
+110.9s 63 leaky_kuet|recognition|val|unique        319
+110.9s 64 ocr|test|human                           651
+110.9s 65 ocr|train|auto                           2136
+110.9s 66 ocr|train|human                          3471
+110.9s 67 ocr|val|human                            766
+110.9s 68 rec|test|human                           467
+110.9s 69 rec|train|auto                           2136
+110.9s 70 rec|train|auto_verified                  930
+110.9s 71 rec|train|human                          2399
+110.9s 72 rec|val|human                            536
+110.9s 73 path: /tmp/498r_data/BanglaLPR_AllInOne_v1_1/detection
+110.9s 74 train: images/train
+110.9s 75 val: images/val
+110.9s 76 test: images/test
+110.9s 77 nc: 1
+110.9s 78 names:
+110.9s 79 0: "plate"
+110.9s 80 
+111.0s 81 Creating new Ultralytics Settings v0.0.8 file ✅
+111.1s 82 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+111.1s 83 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+220.5s 84 {
+220.5s 85 "train_photos": 8574,
+220.5s 86 "photos_sliced": 3329,
+220.5s 87 "slices_with_plates": 9110,
+220.5s 88 "slices_without": 1926,
+220.5s 89 "plates_cut_off_dropped": 1879,
+220.5s 90 "train_images_total": 19610,
+220.5s 91 "slice": 640,
+220.5s 92 "overlap": 0.2,
+220.5s 93 "min_side": 800,
+220.5s 94 "min_visible": 0.5,
+220.5s 95 "negatives_kept": 0.25
+220.5s 96 }
+220.5s 97 
+220.5s 98 [start] det_v8s_640 on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --model yolov8s.pt --name det_v8s_640 --project /kaggle/working/runs --epochs 60 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 3.2
+220.5s 99 [start] det_v8s_sf on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /tmp/sf_data/sf.yaml --model yolov8s.pt --name det_v8s_sf --project /kaggle/working/runs --epochs 26 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 3.2 --labels human+auto, + 640 px slices (SF) --note paper #36 slicing aided fine-tuning: 26 epochs on photos + slices (2.29x the photos) = the steps of 60 epochs
+8730.8s 100 [done]  det_v8s_sf code=0 after 141.8 min
+8730.8s 101 [start] det_v8s_1280 on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --model yolov8s.pt --name det_v8s_1280 --project /kaggle/working/runs --epochs 20 --imgsz 1280 --batch 8 --fraction 1.0 --max-hours 3.6 --note bigger input (1280 px) instead of slicing
+9240.9s 102 [done]  det_v8s_640 code=0 after 150.3 min
+9240.9s 103 [start] crnn on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/seq.py --model crnn --name crnn --project /kaggle/working/runs --epochs 60
+11341.0s 104 [done]  crnn code=0 after 35.0 min
+17301.1s 105 [done]  det_v8s_1280 code=0 after 142.8 min
+17301.2s 106 [start] sahi on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p36_sahi.py eval --models v8s_640=/kaggle/working/runs/det_v8s_640/weights/best.pt@640 v8s_sf=/kaggle/working/runs/det_v8s_sf/weights/best.pt@640 v8s_1280=/kaggle/working/runs/det_v8s_1280/weights/best.pt@1280 --ocr /kaggle/working/runs/crnn/model_full.pt --name sahi --project /kaggle/working/runs
+17971.2s 107 [done]  sahi code=0 after 11.2 min
+17971.2s 108 [start] speed_det_v8s_640 on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --name det_v8s_640 --project /kaggle/working/runs --imgsz 640 --fps-only --trt
+18271.2s 109 [done]  speed_det_v8s_640 code=0 after 5.0 min
+18271.2s 110 [start] speed_det_v8s_1280 on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --name det_v8s_1280 --project /kaggle/working/runs --imgsz 1280 --fps-only --trt
+18521.2s 111 [done]  speed_det_v8s_1280 code=0 after 4.2 min
+18521.2s 112 v8s_640__FI        AP50 97.33 small 26.01 | found 98.12 correct 90.59 small 40.0 | 33.8 ms | e2e 72.06
+18521.2s 113 v8s_640__SAHI      AP50 88.78 small 16.62 | found 94.86 correct 60.93 small 80.0 | 93.8 ms | e2e 64.71
+18521.2s 114 v8s_640__SAHI_FI   AP50 91.63 small 16.6 | found 97.23 correct 60.72 small 80.0 | 118.2 ms | e2e 68.14
+18521.2s 115 v8s_sf__FI         AP50 96.65 small 27.5 | found 97.53 correct 93.82 small 40.0 | 32.5 ms | e2e 73.53
+18521.2s 116 v8s_sf__SAHI       AP50 93.37 small 12.34 | found 96.93 correct 68.87 small 60.0 | 96.5 ms | e2e 66.18
+18521.2s 117 v8s_sf__SAHI_FI    AP50 93.62 small 12.58 | found 97.23 correct 68.36 small 60.0 | 119.0 ms | e2e 69.12
+18521.2s 118 v8s_1280__FI       AP50 97.1 small 16.07 | found 97.63 correct 88.28 small 60.0 | 46.1 ms | e2e 72.55
+18521.2s 119 skipped: {} | SF set: {'train_photos': 8574, 'photos_sliced': 3329, 'slices_with_plates': 9110, 'slices_without': 1926, 'plates_cut_off_dropped': 1879, 'train_images_total': 19610, 'slice': 640, 'overlap': 0.2, 'min_side': 800, 'min_visible': 0.5, 'negatives_kept': 0.25}
+18521.4s 120 # Paper #36: ours vs. the paper
+18521.4s 121 
+18521.4s 122 | Metric | Paper (page) | det_v8s_640 | det_v8s_sf | det_v8s_1280 | crnn | sahi |
+18521.4s 123 |---|---|---|---|---|---|---|
+18521.4s 124 | Test mAP50, Ultralytics val on the full photo (%) | - | 98.5 | 97.5 | 98.0 | – | – |
+18521.4s 125 | AP50, 640 model, full image (FI) (%) | TOOD + FI 29.4 (VisDrone) (p.3, Table 1) |  |  |  |  | 97.33 |
+18521.4s 126 | AP50, 640 model, SAHI slices only (%) | TOOD + SAHI + PO 32.5 (p.3, Table 1) |  |  |  |  | 88.78 |
+18521.4s 127 | AP50, 640 model, SAHI + FI (%) | TOOD + SAHI + FI + PO 34.7 (p.3, Table 1) |  |  |  |  | 91.63 |
+18521.4s 128 | AP50, SF model, full image (%) | TOOD + SF + FI 36.8 (p.3, Table 1) |  |  |  |  | 96.65 |
+18521.4s 129 | AP50, SF model, SAHI + FI (%) | TOOD + SF + SAHI + FI + PO 43.5 (p.3, Table 1) |  |  |  |  | 93.62 |
+18521.4s 130 | AP50, 1280 px model, full image (%) | not in the paper |  |  |  |  | 97.10 |
+18521.4s 131 | AP50 small plates: 640 FI (%) | TOOD + FI 18.1 (p.3, Table 1) |  |  |  |  | 26.01 |
+18521.4s 132 | AP50 small plates: 640 SAHI + FI (%) | TOOD + SAHI + FI + PO 23.8 (p.3, Table 1) |  |  |  |  | 16.60 |
+18521.4s 133 | AP50 small plates: SF SAHI + FI (%) | TOOD + SF + SAHI + FI + PO 31.7 (p.3, Table 1) |  |  |  |  | 12.58 |
+18521.4s 134 | AP50 small plates: 1280 FI (%) | - |  |  |  |  | 16.07 |
+18521.4s 135 | AP50 large plates: 640 FI / SAHI + FI (%) | TOOD 50.0 -> 50.3 (FI helps large objects) (p.3-4, Table 1) |  |  |  |  | 93.94 |
+18521.4s 136 | Plates found at conf 0.25: 640 FI (%) | - |  |  |  |  | 98.12 |
+18521.4s 137 | Plates found: 640 SAHI + FI (%) | - |  |  |  |  | 97.23 |
+18521.4s 138 | Plates found: SF SAHI + FI (%) | - |  |  |  |  | 97.23 |
+18521.4s 139 | Plates found: 1280 FI (%) | - |  |  |  |  | 97.63 |
+18521.4s 140 | Small plates found: 640 FI / SAHI + FI gain (pp) | - |  |  |  |  | 40.00 |
+18521.4s 141 | Small plates found: 1280 FI (%) | - |  |  |  |  | 60.00 |
+18521.4s 142 | Boxes correct (precision) at conf 0.25: 640 SAHI + FI (%) | slices add false positives (p.4) (p.4) |  |  |  |  | 60.72 |
+18521.4s 143 | False alarms on plate-free photos: 640 SAHI + FI (%) | - |  |  |  |  | 20.00 |
+18521.4s 144 | ms per photo: 640 FI | - |  |  |  |  | 33.80 |
+18521.4s 145 | ms per photo: 640 SAHI + FI | "increases linearly" with the slices (p.4) |  |  |  |  | 118.20 |
+18521.4s 146 | ms per photo: 1280 FI | - |  |  |  |  | 46.10 |
+18521.4s 147 | e2e photos plate exact: 640 FI (%) | - |  |  |  |  | 72.06 |
+18521.4s 148 | e2e photos plate exact: 640 SAHI + FI (%) | - |  |  |  |  | 68.14 |
+18521.4s 149 | e2e photos plate exact: 1280 FI (%) | - |  |  |  |  | 72.55 |
+18521.4s 150 | Detector FPS, T4 TensorRT FP16 (640 / 1280 model) | - | 127.90 | – | 83.20 | – | – |
+18521.4s 151 | Training time (min) | not reported (SGD lr 0.01, decay at epochs 16 and 22) (p.4) | 145.60 | 137.20 | 134.80 | 34.30 | – |
+18521.4s 152 
+18521.4s 153 The paper used its own data; our numbers are on the 498R All-in-One test split (different data),
+18521.4s 154 so the comparison shows the direction and size of the gap, not a head-to-head result.
+18521.4s 155 
+18521.4s 156 The paper's numbers are AP50 on VisDrone test-dev (drone photos, 10 classes, mmdetection FCOS / VFNet / TOOD); ours are one class (plate) on our test photos with YOLOv8s. Read the gains (FI -> SAHI -> SF), not the absolute values. AP50 here = pycocotools on the sahi predictions (conf 0.01, max 500 boxes); 'plates found' = conf 0.25, IoU 0.5 as in every kit.
+18521.4s 157 
+18521.4s 158 ## Results by condition: detectors (test mAP50 %)
+18521.4s 159 
+18521.4s 160 | Run | all test | clear | night | blurry | small plates | rain (synthetic) | fog (synthetic) | false alarms on plate-free photos (%) |
+18521.4s 161 |---|---|---|---|---|---|---|---|---|
+18521.4s 162 | det_v8s_1280 | 98.0 | 98.4 | 94.3 | 97.7 | 91.4 | 76.4 | 97.6 | 5.62 |
+18521.4s 163 | det_v8s_640 | 98.5 | 99.0 | 94.3 | 95.2 | 84.5 | 82.5 | 97.9 | 5.62 |
+18521.4s 164 | det_v8s_sf | 97.5 | 97.5 | 96.5 | 97.4 | 96.3 | 85.5 | 97.8 | 6.25 |
+18521.4s 165 
+18521.4s 166 ## Results by condition: plate readers (plate exact %)
+18521.4s 167 
+18521.4s 168 | Run | all test | clear | night | blurry | fog (real fog copies) | rain (synthetic) |
+18521.4s 169 |---|---|---|---|---|---|---|
+18521.4s 170 | crnn | 73.43 | 77.50 | 61.54 | 64.29 | 50.00 | 67.13 |
+18521.4s 171 
+18521.4s 172 Condition subsets are fixed for the whole team (detection/conditions.json, ocr/conditions.json); rain and detection-fog copies are synthetic.
+18521.4s 173 
+18537.9s 174 packed /kaggle/working/paper36_outputs.zip 301.6 MB
+18538.1s 175 packed /kaggle/working/paper36_results.zip 3.0 MB (no weights: for GitHub weights/)
+18543.3s 176 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+18543.3s 177 cells[i][c] = re.sub('\\\\\|', '|', cell)
+18543.5s 178 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+18543.5s 179 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+18544.4s 180 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+18544.5s 181 [NbConvertApp] Writing 168236 bytes to __notebook__.ipynb
+18547.5s 182 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+18548.6s 183 [NbConvertApp] Writing 984215 bytes to __results__.html
