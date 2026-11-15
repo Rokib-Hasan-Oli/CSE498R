@@ -1,0 +1,390 @@
+{
+ "dataset_version": "1.1",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "torch": "2.13.0+cu130",
+ "models": {
+  "y11n/nms": {
+   "found_%": {
+    "test": 97.73,
+    "rain": 63.01,
+    "fog": 93.08
+   },
+   "val_test": {
+    "mAP50": 97.81,
+    "mAP50-95": 44.65,
+    "P": 96.25,
+    "R": 97.23
+   },
+   "val_test_no_ridoykj": {
+    "mAP50": 97.7,
+    "mAP50-95": 65.01,
+    "P": 95.53,
+    "R": 96.61
+   }
+  },
+  "y26n/nms": {
+   "found_%": {
+    "test": 97.82,
+    "rain": 82.0,
+    "fog": 95.75
+   },
+   "val_test": {
+    "mAP50": 98.69,
+    "mAP50-95": 45.34,
+    "P": 97.79,
+    "R": 96.36
+   },
+   "val_test_no_ridoykj": {
+    "mAP50": 98.1,
+    "mAP50-95": 64.63,
+    "P": 97.36,
+    "R": 95.2
+   }
+  },
+  "y26n/e2e": {
+   "found_%": {
+    "test": 96.83,
+    "rain": 80.51,
+    "fog": 94.96
+   },
+   "val_test": {
+    "mAP50": 98.3,
+    "mAP50-95": 44.95,
+    "P": 96.3,
+    "R": 95.45
+   },
+   "val_test_no_ridoykj": {
+    "mAP50": 97.18,
+    "mAP50-95": 64.07,
+    "P": 95.33,
+    "R": 94.3
+   }
+  },
+  "y26n_sgd/nms": {
+   "found_%": {
+    "test": 97.63,
+    "rain": 60.63,
+    "fog": 95.45
+   },
+   "val_test": {
+    "mAP50": 98.51,
+    "mAP50-95": 45.83,
+    "P": 97.05,
+    "R": 97.13
+   },
+   "val_test_no_ridoykj": {
+    "mAP50": 97.71,
+    "mAP50-95": 64.73,
+    "P": 96.74,
+    "R": 96.51
+   }
+  },
+  "y26n_sgd/e2e": {
+   "found_%": {
+    "test": 97.33,
+    "rain": 59.35,
+    "fog": 95.15
+   },
+   "val_test": {
+    "mAP50": 97.74,
+    "mAP50-95": 44.57,
+    "P": 96.62,
+    "R": 96.44
+   },
+   "val_test_no_ridoykj": {
+    "mAP50": 97.47,
+    "mAP50-95": 64.5,
+    "P": 95.95,
+    "R": 95.39
+   }
+  },
+  "y26n_p2/nms": {
+   "found_%": {
+    "test": 98.42,
+    "rain": 82.39,
+    "fog": 94.46
+   },
+   "val_test": {
+    "mAP50": 97.98,
+    "mAP50-95": 46.13,
+    "P": 97.04,
+    "R": 97.27
+   },
+   "val_test_no_ridoykj": {
+    "mAP50": 97.84,
+    "mAP50-95": 64.8,
+    "P": 96.06,
+    "R": 96.88
+   }
+  },
+  "y26n_p2/e2e": {
+   "found_%": {
+    "test": 98.12,
+    "rain": 80.51,
+    "fog": 93.77
+   },
+   "val_test": {
+    "mAP50": 97.92,
+    "mAP50-95": 45.34,
+    "P": 96.46,
+    "R": 96.98
+   },
+   "val_test_no_ridoykj": {
+    "mAP50": 97.68,
+    "mAP50-95": 64.41,
+    "P": 95.82,
+    "R": 96.33
+   }
+  },
+  "y26s/nms": {
+   "found_%": {
+    "test": 97.73,
+    "rain": 78.64,
+    "fog": 96.14
+   },
+   "val_test": {
+    "mAP50": 99.1,
+    "mAP50-95": 46.33,
+    "P": 97.6,
+    "R": 96.74
+   },
+   "val_test_no_ridoykj": {
+    "mAP50": 97.92,
+    "mAP50-95": 64.73,
+    "P": 96.75,
+    "R": 95.52
+   }
+  },
+  "y26s/e2e": {
+   "found_%": {
+    "test": 97.53,
+    "rain": 77.25,
+    "fog": 96.34
+   },
+   "val_test": {
+    "mAP50": 98.68,
+    "mAP50-95": 47.07,
+    "P": 96.81,
+    "R": 95.55
+   },
+   "val_test_no_ridoykj": {
+    "mAP50": 97.48,
+    "mAP50-95": 63.73,
+    "P": 95.04,
+    "R": 95.25
+   }
+  }
+ },
+ "ultralytics": "8.4.170",
+ "speed": {
+  "y11n/nms": {
+   "gpu_fp16": {
+    "ms_median": 7.57,
+    "post_ms_median": 0.88,
+    "images": 200
+   },
+   "cpu_onnx": {
+    "onnx_MB": 10.57,
+    "model_ms_all_cores": 11.85,
+    "outputs": [
+     [
+      1,
+      5,
+      8400
+     ]
+    ],
+    "model_ms_4_threads": 18.48,
+    "e2e_ms_median": 82.1,
+    "post_ms_median": 7.73
+   }
+  },
+  "y26n/nms": {
+   "gpu_fp16": {
+    "ms_median": 8.4,
+    "post_ms_median": 0.85,
+    "images": 200
+   },
+   "cpu_onnx": {
+    "onnx_MB": 9.75,
+    "model_ms_all_cores": 10.52,
+    "outputs": [
+     [
+      1,
+      5,
+      8400
+     ]
+    ],
+    "model_ms_4_threads": 15.43,
+    "e2e_ms_median": 81.6,
+    "post_ms_median": 7.46
+   }
+  },
+  "y26n/e2e": {
+   "gpu_fp16": {
+    "ms_median": 8.26,
+    "post_ms_median": 0.33,
+    "images": 200
+   },
+   "cpu_onnx": {
+    "onnx_MB": 9.76,
+    "model_ms_all_cores": 11.46,
+    "outputs": [
+     [
+      1,
+      300,
+      6
+     ]
+    ],
+    "model_ms_4_threads": 15.91,
+    "e2e_ms_median": 62.42,
+    "post_ms_median": 0.27
+   }
+  },
+  "y26n_sgd/nms": {
+   "gpu_fp16": {
+    "ms_median": 8.3,
+    "post_ms_median": 0.86,
+    "images": 200
+   },
+   "cpu_onnx": {
+    "onnx_MB": 9.75,
+    "model_ms_all_cores": 9.47,
+    "outputs": [
+     [
+      1,
+      5,
+      8400
+     ]
+    ],
+    "model_ms_4_threads": 15.76,
+    "e2e_ms_median": 70.89,
+    "post_ms_median": 10.98
+   }
+  },
+  "y26n_sgd/e2e": {
+   "gpu_fp16": {
+    "ms_median": 8.1,
+    "post_ms_median": 0.32,
+    "images": 200
+   },
+   "cpu_onnx": {
+    "onnx_MB": 9.76,
+    "model_ms_all_cores": 9.79,
+    "outputs": [
+     [
+      1,
+      300,
+      6
+     ]
+    ],
+    "model_ms_4_threads": 16.08,
+    "e2e_ms_median": 64.18,
+    "post_ms_median": 0.27
+   }
+  },
+  "y26n_p2/nms": {
+   "gpu_fp16": {
+    "ms_median": 9.97,
+    "post_ms_median": 0.89,
+    "images": 200
+   },
+   "cpu_onnx": {
+    "onnx_MB": 10.39,
+    "model_ms_all_cores": 19.8,
+    "outputs": [
+     [
+      1,
+      5,
+      34000
+     ]
+    ],
+    "model_ms_4_threads": 23.41,
+    "e2e_ms_median": 158.04,
+    "post_ms_median": 80.41
+   }
+  },
+  "y26n_p2/e2e": {
+   "gpu_fp16": {
+    "ms_median": 9.87,
+    "post_ms_median": 0.33,
+    "images": 200
+   },
+   "cpu_onnx": {
+    "onnx_MB": 10.4,
+    "model_ms_all_cores": 20.06,
+    "outputs": [
+     [
+      1,
+      300,
+      6
+     ]
+    ],
+    "model_ms_4_threads": 23.85,
+    "e2e_ms_median": 64.62,
+    "post_ms_median": 0.27
+   }
+  },
+  "y26s/nms": {
+   "gpu_fp16": {
+    "ms_median": 8.51,
+    "post_ms_median": 0.87,
+    "images": 200
+   },
+   "cpu_onnx": {
+    "onnx_MB": 38.11,
+    "model_ms_all_cores": 29.42,
+    "outputs": [
+     [
+      1,
+      5,
+      8400
+     ]
+    ],
+    "model_ms_4_threads": 49.98,
+    "e2e_ms_median": 85.75,
+    "post_ms_median": 6.73
+   }
+  },
+  "y26s/e2e": {
+   "gpu_fp16": {
+    "ms_median": 8.14,
+    "post_ms_median": 0.33,
+    "images": 200
+   },
+   "cpu_onnx": {
+    "onnx_MB": 38.12,
+    "model_ms_all_cores": 26.62,
+    "outputs": [
+     [
+      1,
+      300,
+      6
+     ]
+    ],
+    "model_ms_4_threads": 48.91,
+    "e2e_ms_median": 45.68,
+    "post_ms_median": 0.27
+   }
+  }
+ },
+ "optimiser_step": {
+  "SGD": {
+   "step_ms_median": 1.02,
+   "groups": 3,
+   "lrs": [
+    0.01
+   ]
+  },
+  "MuSGD": {
+   "step_ms_median": 13.55,
+   "groups": 8,
+   "lrs": [
+    0.01,
+    0.03
+   ]
+  },
+  "steps_per_epoch": 536,
+  "extra_s_per_epoch": 6.7
+ },
+ "cpu": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel"
+}
