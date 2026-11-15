@@ -1,0 +1,92 @@
+8.0s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.0s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.0s 3 0.00s - to python to disable frozen modules.
+8.0s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.6s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.6s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.6s 7 0.00s - to python to disable frozen modules.
+8.6s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+22.4s 9 torch 2.11.0+cu128 | GPUs: ['Tesla T4', 'Tesla T4']
+22.4s 10 ====================================================================================================
+22.4s 11 FULL RUN (FAST = False): planned about 0.5 h. A training job that ends after a few minutes FAILED:
+22.4s 12 read the '----- ... failed' lines below the cell and logs/<run>.log.
+22.4s 13 ====================================================================================================
+22.5s 14 Writing /kaggle/working/lprkit/common.py
+22.5s 15 Writing /kaggle/working/lprkit/vocab.py
+22.5s 16 Writing /kaggle/working/lprkit/metrics.py
+22.5s 17 Writing /kaggle/working/lprkit/report.py
+22.5s 18 Writing /kaggle/working/lprkit/det.py
+22.6s 19 Writing /kaggle/working/lprkit/rec.py
+22.6s 20 Writing /kaggle/working/lprkit/seq.py
+22.6s 21 Writing /kaggle/working/lprkit/ved.py
+22.6s 22 Writing /kaggle/working/lprkit/p35_lowlight.py
+22.6s 23 Writing /kaggle/working/lprkit/c35_lol.py
+23.2s 24 Creating new Ultralytics Settings v0.0.8 file ✅
+23.2s 25 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+23.2s 26 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+59.0s 27 HVI-CIDNet code ready at /kaggle/working/hvi_cidnet commit eb43d7d91e9a336c66856824ff9e4603ae41f408
+59.0s 28 
+71.0s 29 {'lolv1': 15, 'lolv2_real': 100}
+71.0s 30 30/200 [00:05<00:02, 26.28it/s]
+71.0s 31 Fetching 200 files:  68%|██████▊   | 135/200 [00:05<00:02, 29.89it/s]
+71.0s 32 Fetching 200 files:  70%|██████▉   | 139/200 [00:05<00:02, 28.38it/s]
+71.0s 33 Fetching 200 files:  72%|███████▏  | 144/200 [00:05<00:01, 31.43it/s]
+71.0s 34 Fetching 200 files:  74%|███████▍  | 148/200 [00:05<00:01, 29.42it/s]
+71.0s 35 Fetching 200 files:  76%|███████▌  | 151/200 [00:05<00:01, 28.64it/s]
+71.0s 36 Fetching 200 files:  78%|███████▊  | 155/200 [00:06<00:01, 29.75it/s]
+71.0s 37 Fetching 200 files:  79%|███████▉  | 158/200 [00:06<00:01, 27.94it/s]
+71.0s 38 Fetching 200 files:  80%|████████  | 161/200 [00:06<00:01, 28.27it/s]
+71.0s 39 Fetching 200 files:  82%|████████▏ | 164/200 [00:06<00:01, 26.96it/s]
+71.0s 40 Fetching 200 files:  84%|████████▍ | 168/200 [00:06<00:01, 27.69it/s]
+71.0s 41 Fetching 200 files:  86%|████████▌ | 171/200 [00:06<00:01, 27.41it/s]
+71.0s 42 Fetching 200 files:  88%|████████▊ | 175/200 [00:06<00:00, 27.45it/s]
+71.0s 43 Fetching 200 files:  90%|████████▉ | 179/200 [00:06<00:00, 25.53it/s]
+71.0s 44 Fetching 200 files:  92%|█████████▏| 184/200 [00:07<00:00, 29.55it/s]
+71.0s 45 Fetching 200 files:  94%|█████████▍| 188/200 [00:07<00:00, 27.94it/s]
+71.0s 46 Fetching 200 files:  96%|█████████▌| 192/200 [00:07<00:00, 30.60it/s]
+71.0s 47 Fetching 200 files:  98%|█████████▊| 196/200 [00:07<00:00, 31.08it/s]
+71.0s 48 Fetching 200 files: 100%|██████████| 200/200 [00:07<00:00, 30.23it/s]
+71.0s 49 Fetching 200 files: 100%|██████████| 200/200 [00:07<00:00, 26.20it/s]
+71.0s 50 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+71.0s 51 
+71.0s 52 [start] lolv1 on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/c35_lol.py eval --root /kaggle/working/lol --set lolv1 --models hvi_lolv1 hvi_lolv1_perc --name lolv1 --project /kaggle/working/runs
+71.0s 53 [start] lolv2_real on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/c35_lol.py eval --root /kaggle/working/lol --set lolv2_real --models hvi_lolv2 hvi_lolv2_ssim hvi_gen --name lolv2_real --project /kaggle/working/runs
+101.0s 54 [done]  lolv1 code=0 after 0.5 min
+191.1s 55 [done]  lolv2_real code=0 after 2.0 min
+191.1s 56 lolv1 hvi_lolv1 {'plain': {'psnr': 23.6131, 'ssim': 0.8703, 'lpips': 0.1053}, 'gt_mean': {'psnr': 28.2285, 'ssim': 0.8888, 'lpips': 0.0988}, 'ms_median': 82.88, 'params_M': 1.976, 'hf': ['Fediory/HVI-CIDNet-LOLv1-woperc', 'de3f94cef143b2dcf4d62de303ad17b4c27d7dc1']}
+191.1s 57 lolv1 hvi_lolv1_perc {'plain': {'psnr': 23.841, 'ssim': 0.8574, 'lpips': 0.0856}, 'gt_mean': {'psnr': 27.7263, 'ssim': 0.876, 'lpips': 0.0792}, 'ms_median': 81.88, 'params_M': 1.976, 'hf': ['Fediory/HVI-CIDNet-LOLv1-wperc', '1fa9b6993413a8fe7df1ba433682ccf525349c88']}
+191.1s 58 lolv2_real hvi_lolv2 {'plain': {'psnr': 23.8885, 'ssim': 0.8656, 'lpips': 0.122}, 'gt_mean': {'psnr': 27.9544, 'ssim': 0.8828, 'lpips': 0.1157}, 'ms_median': 83.24, 'params_M': 1.976, 'hf': ['Fediory/HVI-CIDNet-LOLv2-real-bestPSNR', 'c317f57dec7dd66704ac1b13789a2fa5f20746de']}
+191.1s 59 lolv2_real hvi_lolv2_ssim {'plain': {'psnr': 23.8882, 'ssim': 0.8704, 'lpips': 0.1186}, 'gt_mean': {'psnr': 28.3879, 'ssim': 0.8873, 'lpips': 0.1138}, 'ms_median': 85.06, 'params_M': 1.976, 'hf': ['Fediory/HVI-CIDNet-LOLv2-real-bestSSIM', '5f759d5426d1326e46b9fbc4b6e4417c54a97226']}
+191.1s 60 lolv2_real hvi_gen {'plain': {'psnr': 21.303, 'ssim': 0.8491, 'lpips': 0.1195}, 'gt_mean': {'psnr': 27.8257, 'ssim': 0.886, 'lpips': 0.1084}, 'ms_median': 87.34, 'params_M': 1.976, 'hf': ['Fediory/HVI-CIDNet-Generalization', '51481ef2546f870060c43eb6d6525399f5b3d2d3']}
+191.1s 61 # Paper #35 on its own data: ours vs. the paper
+191.1s 62 
+191.1s 63 | Metric | Paper (page) | lolv1 | lolv2_real |
+191.1s 64 |---|---|---|---|
+191.1s 65 | LOLv1, GT mean: PSNR (dB), wo-perc weights | 28.201 (README: 28.1405) (p.6, Table 1) | 28.23 |  |
+191.1s 66 | LOLv1, GT mean: SSIM | 0.889 (README: 0.8887) (p.6, Table 1) | 0.89 |  |
+191.1s 67 | LOLv1, GT mean: LPIPS | 0.079 (README: 0.0988; w-perc 0.0791) (p.6, Table 1) | 0.0988 |  |
+191.1s 68 | LOLv1, no GT mean: PSNR (dB), wo-perc weights | README: 23.5000 (the paper gives none) | 23.61 |  |
+191.1s 69 | LOLv1, w-perc weights, GT mean: PSNR (dB) | README: 27.7146 | 27.73 |  |
+191.1s 70 | LOLv2-Real: PSNR (dB), best-PSNR weights, no GT mean | 24.111 (README: lost weights; public 23.9040) (p.6, Table 1) |  | 23.89 |
+191.1s 71 | LOLv2-Real: SSIM, best-PSNR weights | 0.871 (README: 0.8656) (p.6, Table 1) |  | 0.87 |
+191.1s 72 | LOLv2-Real: LPIPS, best-PSNR weights | 0.108 (README: 0.1219) (p.6, Table 1) |  | 0.12 |
+191.1s 73 | LOLv2-Real: SSIM, best-SSIM weights | README: 0.8705 |  | 0.87 |
+191.1s 74 | LOLv2-Real: PSNR, generalization weights (used in the main kit) | - |  | 21.30 |
+191.1s 75 | Params (M) | 1.88 (p.6, Table 1) | 1.98 |  |
+191.1s 76 | GPU ms per LOLv2 image (600 x 400) | 53 (GPU not named) (p.7, Table 3) |  | 83.24 |
+191.1s 77 
+191.1s 78 Same data and split as the paper (its own published data / weights), so this IS a direct check of
+191.1s 79 the paper's numbers. Remaining differences come from software versions, hardware and randomness.
+191.1s 80 
+191.1s 81 'GT mean' uses the ground truth at test time (brightness taken from the target image), so it is not something a real system can do; the plain rows are the honest numbers.
+191.1s 82 
+191.1s 83 packed /kaggle/working/paper35_check_outputs.zip 0.0 MB
+191.1s 84 packed /kaggle/working/paper35_check_results.zip 0.0 MB (no weights: for GitHub weights/)
+195.4s 85 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+195.4s 86 cells[i][c] = re.sub('\\\\\|', '|', cell)
+195.6s 87 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+195.6s 88 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+196.3s 89 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+196.4s 90 [NbConvertApp] Writing 162273 bytes to __notebook__.ipynb
+198.9s 91 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+199.9s 92 [NbConvertApp] Writing 990113 bytes to __results__.html
