@@ -1,0 +1,75 @@
+6.5s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.5s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.5s 3 0.00s - to python to disable frozen modules.
+6.5s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.1s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.1s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.1s 7 0.00s - to python to disable frozen modules.
+7.1s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+20.0s 9 torch 2.11.0+cu128 | GPUs: ['Tesla T4', 'Tesla T4']
+20.0s 10 ====================================================================================================
+20.0s 11 FULL RUN (FAST = False): planned about 2 h. A training job that ends after a few minutes FAILED:
+20.0s 12 read the '----- ... failed' lines below the cell and logs/<run>.log.
+20.0s 13 ====================================================================================================
+20.0s 14 Writing /kaggle/working/lprkit/common.py
+20.0s 15 Writing /kaggle/working/lprkit/vocab.py
+20.0s 16 Writing /kaggle/working/lprkit/metrics.py
+20.1s 17 Writing /kaggle/working/lprkit/report.py
+20.1s 18 Writing /kaggle/working/lprkit/det.py
+20.1s 19 Writing /kaggle/working/lprkit/rec.py
+20.1s 20 Writing /kaggle/working/lprkit/seq.py
+20.1s 21 Writing /kaggle/working/lprkit/ved.py
+20.2s 22 Writing /kaggle/working/lprkit/coco_check.py
+20.2s 23 Writing /kaggle/working/lprkit/c33_coco.py
+20.6s 24 Creating new Ultralytics Settings v0.0.8 file ✅
+20.6s 25 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+20.6s 26 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+70.3s 27 download https://github.com/ultralytics/assets/releases/download/v0.0.0/coco2017labels.zip
+70.3s 28 download http://images.cocodataset.org/zips/val2017.zip
+70.3s 29 val2017 photos: 5000 -> /kaggle/working/datasets/coco_val.yaml
+70.3s 30 
+70.4s 31 [start] coco_gpu0 on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/c33_coco.py --models yolo26n.pt yolo26s.pt --name coco_gpu0 --project /kaggle/working/runs
+70.4s 32 [start] coco_gpu1 on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/c33_coco.py --models yolo26m.pt yolo11n.pt --name coco_gpu1 --project /kaggle/working/runs
+1430.4s 33 [done]  coco_gpu1 code=0 after 22.7 min
+1560.4s 34 [done]  coco_gpu0 code=0 after 24.8 min
+1560.4s 35 yolo26n one2many_nms {'AP_%': 40.81, 'AP50_%': 56.87, 'AP_small_%': 21.32, 'AP_medium_%': 44.83, 'AP_large_%': 58.93} {'inference_ms': 2.63, 'end_to_end_ms': 5.07, 'fps_inference': 380.2}
+1560.4s 36 yolo26n one2one_e2e {'AP_%': 40.06, 'AP50_%': 55.69, 'AP_small_%': 19.77, 'AP_medium_%': 44.1, 'AP_large_%': 58.06} {'inference_ms': 2.52, 'end_to_end_ms': 3.71, 'fps_inference': 397.0}
+1560.4s 37 yolo26s one2many_nms {'AP_%': 48.62, 'AP50_%': 65.77, 'AP_small_%': 29.48, 'AP_medium_%': 53.24, 'AP_large_%': 65.94} {'inference_ms': 2.73, 'end_to_end_ms': 4.67, 'fps_inference': 365.7}
+1560.4s 38 yolo26s one2one_e2e {'AP_%': 47.78, 'AP50_%': 64.53, 'AP_small_%': 29.16, 'AP_medium_%': 52.48, 'AP_large_%': 64.52} {'inference_ms': 2.64, 'end_to_end_ms': 3.78, 'fps_inference': 378.5}
+1560.4s 39 yolo26m one2many_nms {'AP_%': 53.09, 'AP50_%': 70.69, 'AP_small_%': 36.81, 'AP_medium_%': 57.74, 'AP_large_%': 68.91} {'inference_ms': 4.73, 'end_to_end_ms': 7.08, 'fps_inference': 211.2}
+1560.4s 40 yolo26m one2one_e2e {'AP_%': 52.5, 'AP50_%': 69.79, 'AP_small_%': 36.39, 'AP_medium_%': 56.92, 'AP_large_%': 68.48} {'inference_ms': 4.92, 'end_to_end_ms': 6.1, 'fps_inference': 203.1}
+1560.4s 41 yolo11n one2many_nms {'AP_%': 39.45, 'AP50_%': 55.29, 'AP_small_%': 20.02, 'AP_medium_%': 43.3, 'AP_large_%': 57.1} {'inference_ms': 2.19, 'end_to_end_ms': 4.16, 'fps_inference': 456.8}
+1560.4s 42 yolo11n one2one_e2e None None
+1560.6s 43 # Paper #33 on its own data: ours vs. the paper
+1560.6s 44 
+1560.6s 45 | Metric | Paper (page) | coco_gpu0 | coco_gpu1 |
+1560.6s 46 |---|---|---|---|
+1560.6s 47 | YOLO26-N: COCO AP50-95, NMS head (%) | 40.9 (p.8, Table 2) | 40.81 |  |
+1560.6s 48 | YOLO26-N: COCO AP50-95, NMS-free head (%) | 40.1 (e2e) (p.8, Table 2) | 40.06 |  |
+1560.6s 49 | YOLO26-N: T4 TensorRT FP16, NMS-free, inference ms | 1.7 (p.8, Table 2) | 2.52 |  |
+1560.6s 50 | YOLO26-N: CPU ONNX ms (end to end) | 38.9 (p.8, Table 2) | 96.64 |  |
+1560.6s 51 | YOLO26-S: COCO AP50-95, NMS head (%) | 48.6 (p.8, Table 2) | 48.62 |  |
+1560.6s 52 | YOLO26-S: COCO AP50-95, NMS-free head (%) | 47.8 (e2e) (p.8, Table 2) | 47.78 |  |
+1560.6s 53 | YOLO26-S: T4 TensorRT FP16, NMS-free, inference ms | 2.5 (p.8, Table 2) | 2.64 |  |
+1560.6s 54 | YOLO26-S: CPU ONNX ms (end to end) | 87.2 (p.8, Table 2) | 134.05 |  |
+1560.6s 55 | YOLO26-M: COCO AP50-95, NMS head (%) | 53.1 (p.8, Table 2) |  | 53.09 |
+1560.6s 56 | YOLO26-M: COCO AP50-95, NMS-free head (%) | 52.5 (e2e) (p.8, Table 2) |  | 52.50 |
+1560.6s 57 | YOLO26-M: T4 TensorRT FP16, NMS-free, inference ms | 4.7 (p.8, Table 2) |  | 4.92 |
+1560.6s 58 | YOLO11-N (baseline): COCO AP50-95 (%) | 39.5 (Ultralytics docs; not in the paper) |  | 39.45 |
+1560.6s 59 | YOLO11-N: T4 TensorRT FP16, inference ms | 1.5 (Ultralytics docs) |  | 2.19 |
+1560.6s 60 
+1560.6s 61 Same data and split as the paper (its own published data / weights), so this IS a direct check of
+1560.6s 62 the paper's numbers. Remaining differences come from software versions, hardware and randomness.
+1560.6s 63 
+1560.6s 64 The paper copies these numbers from Ultralytics; this check is therefore a check of the released weights. TensorRT 'inference ms' is the model only (the paper's column); `end_to_end_ms` in results.json adds pre- and post-processing (NMS for the one-to-many head).
+1560.6s 65 
+1578.8s 66 packed /kaggle/working/paper33_check_outputs.zip 87.2 MB
+1596.7s 67 packed /kaggle/working/paper33_check_results.zip 87.2 MB (no weights: for GitHub weights/)
+1601.8s 68 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+1601.8s 69 cells[i][c] = re.sub('\\\\\|', '|', cell)
+1602.0s 70 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+1602.0s 71 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+1602.8s 72 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+1602.9s 73 [NbConvertApp] Writing 149900 bytes to __notebook__.ipynb
+1605.4s 74 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+1606.3s 75 [NbConvertApp] Writing 923953 bytes to __results__.html
