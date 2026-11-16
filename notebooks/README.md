@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-File example : 01_eda, 02_det_train, 03_ocr_train, 04_eval
-=======
 # notebooks/ — finished Kaggle runs, one folder per member
 
 Every notebook here is the **finished** run downloaded from Kaggle (all cells run, outputs kept), so anyone can see
@@ -11,11 +8,10 @@ keep it, is `paperNN_run.log`.
 
 | Member | Notebooks |
 |---|---|
-| [MD.Rokib.Hasan.Oli](MD.Rokib.Hasan.Oli/) | paper02, paper06, paper08, paper23, paper24 (+ `.log` files) |
-| [Md.Yousuf](Md.Yousuf/) | paper03, paper20, paper27, paper28 |
-| [Md.Rakibul.Hasan](Md.Rakibul.Hasan/) | paper11 |
-| Tashfia.Adiba.Zaman.Nizhum | paper1, paper10, paper31,paper32 |
+| [MD.Rokib.Hasan.Oli](MD.Rokib.Hasan.Oli/) | paper02, paper06, paper08, paper19, paper23, paper24, paper33, paper34, paper35, paper36 (+ `.log` files); `paper33_check_run`, `paper35_check_run` = original-paper checks |
+| [Md.Yousuf](Md.Yousuf/) | paper03, paper20, paper26 (+ `.log`), paper27, paper28 |
+| [Md.Rakibul.Hasan](Md.Rakibul.Hasan/) | paper11, paper18, paper21 |
+| [Tashfia.Adiba.Zaman.Nizhum](Tashfia.Adiba.Zaman.Nizhum/) | `papers01_10_22_31_32_run.ipynb` (one notebook for papers 1, 10, 22, 31 and 32) |
 
 How to get the file from Kaggle: open your notebook version → **File → Download notebook** (or the ⋮ menu of the
 version → Download). See [CONTRIBUTING.md](../CONTRIBUTING.md).
->>>>>>> b2e8c6800e4ff5030314c2d4fd0cba5b64ea80f5

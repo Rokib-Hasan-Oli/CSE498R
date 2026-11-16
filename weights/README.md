@@ -23,10 +23,16 @@ Each paper's results package lives in **`weights/paperNN/<Member>/`**. This is t
 | #3 Cloud hybrid YOLO + Haar | Md. Yousuf | [`paper03/Md.Yousuf`](paper03/Md.Yousuf/) | v1.0 (still valid: detection only) |
 | #6 YOLOv8 + EasyOCR | MD. Rokib Hasan Oli | [`paper06/MD.Rokib.Hasan.Oli`](paper06/MD.Rokib.Hasan.Oli/) | v1.1 |
 | #8 CNN + GFP-GAN | MD. Rokib Hasan Oli | [`paper08/MD.Rokib.Hasan.Oli`](paper08/MD.Rokib.Hasan.Oli/) | v1.1 |
+| #19 LPLCv2 legibility | MD. Rokib Hasan Oli | [`paper19/MD.Rokib.Hasan.Oli`](paper19/MD.Rokib.Hasan.Oli/) | v1.1 |
 | #20 Plate super-resolution | Md. Yousuf | [`paper20/Md.Yousuf`](paper20/Md.Yousuf/) | v1.0 (re-run on v1.1 needed) |
 | #23 Near-duplicates | MD. Rokib Hasan Oli | [`paper23/MD.Rokib.Hasan.Oli`](paper23/MD.Rokib.Hasan.Oli/) | v1.1 |
 | #24 Model fusion | MD. Rokib Hasan Oli | [`paper24/MD.Rokib.Hasan.Oli`](paper24/MD.Rokib.Hasan.Oli/) | v1.1 |
+| #26 YOLOv12 | Md. Yousuf | [`paper26/Md.Yousuf`](paper26/Md.Yousuf/) | v1.1 |
 | #27 YOLOv10 | Md. Yousuf | [`paper27/Md.Yousuf`](paper27/Md.Yousuf/) | v1.0 (character models: re-run on v1.1) |
 | #28 YOLOv9 | Md. Yousuf | [`paper28/Md.Yousuf`](paper28/Md.Yousuf/) | v1.0 (still valid: detection only) |
+| #33 YOLO26 | MD. Rokib Hasan Oli | [`paper33/MD.Rokib.Hasan.Oli`](paper33/MD.Rokib.Hasan.Oli/) | v1.1 |
+| #34 SVTRv2 | MD. Rokib Hasan Oli | [`paper34/MD.Rokib.Hasan.Oli`](paper34/MD.Rokib.Hasan.Oli/) | v1.1 |
+| #35 HVI-CIDNet low light | MD. Rokib Hasan Oli | [`paper35/MD.Rokib.Hasan.Oli`](paper35/MD.Rokib.Hasan.Oli/) | v1.1 |
+| #36 SAHI slicing | MD. Rokib Hasan Oli | [`paper36/MD.Rokib.Hasan.Oli`](paper36/MD.Rokib.Hasan.Oli/) | v1.1 |
 
 How to add a package: see [CONTRIBUTING.md](../CONTRIBUTING.md#3-where-each-file-goes).

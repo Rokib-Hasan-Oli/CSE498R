@@ -1,12 +1,9 @@
-<<<<<<< HEAD
-PDF, Doc, LaTeX File
-=======
 # report/ — written reports, reading notes and report sources, one folder per member
 
 | Member | Contents |
 |---|---|
-| [MD.Rokib.Hasan.Oli](MD.Rokib.Hasan.Oli/) | `paperNN/` for 02, 06, 08, 23, 24: `paperNN_notes.md` (reading notes), `source/` (scripts, figures and numbers that build the study report PDF), `archive/` (old v1.0-run report, where there is one) |
-| [Md.Yousuf](Md.Yousuf/) | `Paper03_Report.md`, `Paper20_Report.md`, `Paper27_Report.md`, `Paper28_Report.md` (full technical reports) |
+| [MD.Rokib.Hasan.Oli](MD.Rokib.Hasan.Oli/) | `paperNN/` for 02, 06, 08, 19, 23, 24, 33, 34, 35, 36: `paperNN_notes.md` (reading notes), `source/` (scripts, figures and numbers that build the study report PDF), `archive/` (old v1.0-run report, where there is one) |
+| [Md.Yousuf](Md.Yousuf/) | `Paper03_Report.md`, `Paper20_Report.md`, `Paper26_Report.md`, `Paper27_Report.md`, `Paper28_Report.md` (full technical reports) |
 | Md.Rakibul.Hasan | none yet |
 | Tashfia.Adiba.Zaman.Nizhum | none yet |
 
@@ -26,4 +23,3 @@ report/<Member>/paperNN/
 Notes about `source/` folders: the scripts read the run's `results.zip` and `paperNN_outputs.zip` from the
 author's PC (team Drive copies), and the Bangla font they use (Nirmala UI, `fonts/nirmala.ttf`) is a Windows font
 that is **not** in the repo (licence). Copy `C:\Windows\Fonts\Nirmala.ttf` into `source/fonts/` to rebuild a PDF.
->>>>>>> b2e8c6800e4ff5030314c2d4fd0cba5b64ea80f5

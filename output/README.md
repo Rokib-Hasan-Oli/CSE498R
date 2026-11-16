@@ -8,7 +8,10 @@
 |---|---|---|
 | `paper03_outputs.zip` | Md. Yousuf | 41 MB |
 | `paper11_outputs.zip` | Md Rakibul Hasan | 74 MB |
+| `paper18_outputs.zip` | Md Rakibul Hasan | 55 MB |
 | `paper20_outputs.zip` | Md. Yousuf | 60 MB |
+| `paper21_outputs.zip` | Md Rakibul Hasan | 322 MB |
+| `paper26_outputs.zip` | Md. Yousuf | 260 MB |
 | `paper27_outputs.zip` | Md. Yousuf | 249 MB |
 | `paper28_outputs.zip` | Md. Yousuf | 216 MB |
 

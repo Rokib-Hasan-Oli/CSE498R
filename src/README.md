@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-File Example : detect.py, ocr.py, postprocess.py, pipeline.py, track_video.py
-=======
 # src/ — code to run each paper again, one folder per member
 
 Each `src/<Member>/paperNN/` folder holds the **Kaggle kit** for one paper:
@@ -30,6 +27,5 @@ The `.py` files are copies of the shared kit, so each paper folder is complete o
 
 | Member | Papers |
 |---|---|
-| [MD.Rokib.Hasan.Oli](MD.Rokib.Hasan.Oli/) | [paper02](MD.Rokib.Hasan.Oli/paper02/), [paper06](MD.Rokib.Hasan.Oli/paper06/), [paper08](MD.Rokib.Hasan.Oli/paper08/), [paper23](MD.Rokib.Hasan.Oli/paper23/), [paper24](MD.Rokib.Hasan.Oli/paper24/) |
+| [MD.Rokib.Hasan.Oli](MD.Rokib.Hasan.Oli/) | [paper02](MD.Rokib.Hasan.Oli/paper02/), [paper06](MD.Rokib.Hasan.Oli/paper06/), [paper08](MD.Rokib.Hasan.Oli/paper08/), [paper23](MD.Rokib.Hasan.Oli/paper23/), [paper24](MD.Rokib.Hasan.Oli/paper24/), [paper19](MD.Rokib.Hasan.Oli/paper19/), [paper33](MD.Rokib.Hasan.Oli/paper33/), [paper34](MD.Rokib.Hasan.Oli/paper34/), [paper35](MD.Rokib.Hasan.Oli/paper35/), [paper36](MD.Rokib.Hasan.Oli/paper36/) |
 | Md.Yousuf · Md.Rakibul.Hasan · Tashfia.Adiba.Zaman.Nizhum | not uploaded yet: add your `kaggle/` folder and guides in the same layout |
->>>>>>> b2e8c6800e4ff5030314c2d4fd0cba5b64ea80f5
