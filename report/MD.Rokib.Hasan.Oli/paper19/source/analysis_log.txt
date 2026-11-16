@@ -1,0 +1,175 @@
+{
+ "gate_reproduced": true,
+ "majority": {
+  "4class_%": 30.57,
+  "quality_%": 57.91
+ },
+ "strong": {
+  "fallback_exact_%": 88.63,
+  "fallback_val_exact_%": 84.99,
+  "chars_exact_%": 86.79,
+  "agree_share_%": 72.81,
+  "exact_when_agree_%": 97.26,
+  "exact_when_disagree_%": 65.54,
+  "w_free": [
+   -5.877,
+   1.919,
+   2.248,
+   0.046,
+   0.987,
+   0.66,
+   1.0
+  ],
+  "w_free_cls": [
+   -5.889,
+   1.898,
+   2.258,
+   0.072,
+   0.974,
+   0.666,
+   1.0,
+   0.085,
+   -0.533,
+   0.556,
+   -0.107,
+   -0.252
+  ],
+  "char-YOLO confidence": {
+   "100%": 88.63,
+   "90%": 95.22,
+   "80%": 96.35,
+   "70%": 96.27,
+   "60%": 96.42,
+   "50%": 96.93,
+   "AURC_error_%": 3.58,
+   "wrong_caught_of_rejected_20%": 55,
+   "wrong_total": 74,
+   "AUROC": 0.8489
+  },
+  "free signals (val-fitted)": {
+   "100%": 88.63,
+   "90%": 95.22,
+   "80%": 96.74,
+   "70%": 97.15,
+   "60%": 96.93,
+   "50%": 97.24,
+   "AURC_error_%": 3.1,
+   "wrong_caught_of_rejected_20%": 57,
+   "wrong_total": 74,
+   "AUROC": 0.8718
+  },
+  "cls_b4_ce": {
+   "100%": 88.63,
+   "90%": 91.13,
+   "80%": 93.47,
+   "70%": 93.64,
+   "60%": 94.63,
+   "50%": 94.79,
+   "AURC_error_%": 5.03,
+   "wrong_caught_of_rejected_20%": 40,
+   "wrong_total": 74,
+   "AUROC": 0.7425
+  },
+  "cls_qf_ema": {
+   "100%": 88.63,
+   "90%": 91.3,
+   "80%": 92.13,
+   "70%": 92.76,
+   "60%": 93.61,
+   "50%": 95.4,
+   "AURC_error_%": 5.69,
+   "wrong_caught_of_rejected_20%": 33,
+   "wrong_total": 74,
+   "AUROC": 0.721
+  },
+  "free signals + classifiers (val-fitted)": {
+   "100%": 88.63,
+   "90%": 95.05,
+   "80%": 96.93,
+   "70%": 97.15,
+   "60%": 97.44,
+   "50%": 97.55,
+   "AURC_error_%": 2.86,
+   "wrong_caught_of_rejected_20%": 58,
+   "wrong_total": 74,
+   "AUROC": 0.8788
+  },
+  "oracle": {
+   "100%": 88.63,
+   "90%": 98.46,
+   "80%": 100.0,
+   "70%": 100.0,
+   "60%": 100.0,
+   "50%": 100.0,
+   "AURC_error_%": 0.68,
+   "wrong_caught_of_rejected_20%": 74,
+   "wrong_total": 74,
+   "AUROC": 1.0
+  },
+  "boot_cls_vs_free": {
+   "d80_ci95": [
+    -5.19,
+    -1.73
+   ],
+   "dAURC_ci95": [
+    0.67,
+    3.25
+   ],
+   "p_cls_better_80": 0.0
+  },
+  "boot_freecls_vs_free": {
+   "d80_ci95": [
+    -0.19,
+    0.58
+   ],
+   "dAURC_ci95": [
+    -0.53,
+    -0.03
+   ],
+   "p_cls_better_80": 0.5295
+  },
+  "chars alone: own confidence": {
+   "100%": 86.79,
+   "90%": 94.54,
+   "80%": 95.97,
+   "70%": 95.83,
+   "60%": 96.16,
+   "50%": 96.63,
+   "AURC_error_%": 4.36,
+   "wrong_caught_of_rejected_20%": 65,
+   "wrong_total": 86,
+   "AUROC": 0.8584
+  },
+  "chars alone: cls_b4_ce": {
+   "100%": 86.79,
+   "90%": 89.08,
+   "80%": 91.36,
+   "70%": 91.89,
+   "60%": 93.09,
+   "50%": 92.94,
+   "AURC_error_%": 6.2,
+   "wrong_caught_of_rejected_20%": 41,
+   "wrong_total": 86,
+   "AUROC": 0.7236
+  }
+ }
+}
+ocr_confidence                                80%  84.45  50%  91.72  AURC   9.65  AUROC 0.837
+cls_b4_ema                                    80%  80.81  50%  88.04  AURC  12.10  AUROC 0.767
+cls_b4_ce                                     80%  81.00  50%  88.65  AURC  12.09  AUROC 0.766
+cls_qf_ema                                    80%  80.81  50%  88.65  AURC  13.29  AUROC 0.758
+cls_qf_ce                                     80%  78.69  50%  86.50  AURC  14.72  AUROC 0.719
+cls_b4_ce x conf                              80%  81.19  50%  88.96  AURC  11.30  AUROC 0.778
+conf + layout                                 80%  85.03  50%  92.02  AURC   9.06  AUROC 0.853
+oracle                                        80%  91.75  50% 100.00  AURC   3.91  AUROC 1.000
+random                                        80%  74.09  50%  70.25  AURC  26.47  AUROC 0.482
+learned (val): conf + layout + classifiers    80%  85.41  50%  93.25  AURC   8.39  AUROC 0.869
+learned (val): conf + layout                  80%  85.03  50%  91.72  AURC   9.22  AUROC 0.848
+{"cls_b4_ce": {"d80_ci95": [-5.57, -1.34], "dAURC_ci95": [0.41, 4.61], "p_cls_better_80": 0.0005}, "cls_b4_ema": {"d80_ci95": [-5.57, -1.15], "dAURC_ci95": [0.45, 4.65], "p_cls_better_80": 0.0015}, "cls_qf_ema": {"d80_ci95": [-5.95, -1.16], "dAURC_ci95": [1.16, 6.46], "p_cls_better_80": 0.0005}, "cls_qf_ce": {"d80_ci95": [-7.87, -3.27], "dAURC_ci95": [2.48, 7.82], "p_cls_better_80": 0.0}, "conf + layout": {"d80_ci95": [0.0, 1.73], "dAURC_ci95": [-1.28, -0.11], "p_cls_better_80": 0.9625}, "learned (val): conf + layout + classifiers": {"d80_ci95": [-0.39, 2.5], "dAURC_ci95": [-2.05, -0.58], "p_cls_better_80": 0.905}, "classifiers_on_top_of_conf_layout": {"d80_ci95": [-0.77, 1.92], "dAURC_ci95": [-1.42, -0.34], "p_cls_better_80": 0.739}}
+kit_baseline4_ema [51.31, 51.15, 54.38] 52.28 1.82 gate80 [80.81, 81.19, 80.81] AUROC 0.7637 best [4, 4, 2]
+kit_baseline4_ce [51.92, 50.38, 54.69] 52.33 2.18 gate80 [81.0, 80.42, 80.81] AUROC 0.7611 best [4, 3, 2]
+kit_quality_ema [71.74, 71.58, 71.12] 71.48 0.32 gate80 [80.81, 80.81, 79.46] AUROC 0.7535 best [2, 2, 2]
+kit_quality_ce [70.81, 69.59, 70.81] 70.4 0.7 gate80 [78.69, 79.85, 79.65] AUROC 0.7324 best [1, 1, 2]
+balanced_baseline4_ema [49.62, 53.61] 51.61 2.82 gate80 [81.57, 80.81] AUROC 0.7741 best [6, 9]
+failure_quality_ce [72.04, 70.81, 71.12] 71.32 0.64 gate80 [80.81, 80.04, 78.89] AUROC 0.7475 best [2, 2, 1]
+text_baseline4_ema [49.31, 51.61] 50.46 1.63 gate80 [80.42, 80.42] AUROC 0.7669 best [3, 4]

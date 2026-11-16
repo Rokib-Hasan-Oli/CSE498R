@@ -1,0 +1,291 @@
+{
+ "run": "balanced_baseline4_ema_s1",
+ "variant": "balanced",
+ "task": "baseline4",
+ "loss": "ema",
+ "seed": 1,
+ "classes": [
+  "perfect",
+  "good",
+  "poor",
+  "illegible"
+ ],
+ "epochs_run": 26,
+ "best_epoch": 6,
+ "minutes": 5.4,
+ "val": {
+  "micro_F1_%": 57.7,
+  "macro_F1_%": 55.6,
+  "per_class_F1_%": [
+   76.44,
+   29.46,
+   56.68,
+   59.82
+  ],
+  "confusion": [
+   [
+    146,
+    24,
+    27,
+    4
+   ],
+   [
+    18,
+    38,
+    81,
+    25
+   ],
+   [
+    14,
+    27,
+    159,
+    72
+   ],
+   [
+    3,
+    7,
+    22,
+    99
+   ]
+  ]
+ },
+ "test": {
+  "micro_F1_%": 49.62,
+  "macro_F1_%": 49.55,
+  "per_class_F1_%": [
+   66.84,
+   34.13,
+   40.7,
+   56.54
+  ],
+  "confusion": [
+   [
+    125,
+    29,
+    39,
+    6
+   ],
+   [
+    26,
+    50,
+    76,
+    26
+   ],
+   [
+    23,
+    32,
+    81,
+    40
+   ],
+   [
+    1,
+    4,
+    26,
+    67
+   ]
+  ]
+ },
+ "log": [
+  {
+   "epoch": 1,
+   "train_loss": 1.325,
+   "val_acc": 46.21,
+   "sec_train": 26.3,
+   "sec_all": 27.4
+  },
+  {
+   "epoch": 2,
+   "train_loss": 1.1184,
+   "val_acc": 51.44,
+   "sec_train": 11.7,
+   "sec_all": 12.3
+  },
+  {
+   "epoch": 3,
+   "train_loss": 1.0097,
+   "val_acc": 54.96,
+   "sec_train": 11.4,
+   "sec_all": 12.1
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.9474,
+   "val_acc": 56.53,
+   "sec_train": 11.2,
+   "sec_all": 11.9
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.8865,
+   "val_acc": 57.57,
+   "sec_train": 10.9,
+   "sec_all": 11.6
+  },
+  {
+   "epoch": 6,
+   "train_loss": 0.8184,
+   "val_acc": 57.7,
+   "sec_train": 11.0,
+   "sec_all": 11.7
+  },
+  {
+   "epoch": 7,
+   "train_loss": 0.7419,
+   "val_acc": 56.4,
+   "sec_train": 11.2,
+   "sec_all": 11.9
+  },
+  {
+   "epoch": 8,
+   "train_loss": 0.6976,
+   "val_acc": 55.74,
+   "sec_train": 11.1,
+   "sec_all": 11.7
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.6295,
+   "val_acc": 55.35,
+   "sec_train": 11.0,
+   "sec_all": 11.6
+  },
+  {
+   "epoch": 10,
+   "train_loss": 0.5702,
+   "val_acc": 56.66,
+   "sec_train": 10.8,
+   "sec_all": 11.5
+  },
+  {
+   "epoch": 11,
+   "train_loss": 0.5191,
+   "val_acc": 55.22,
+   "sec_train": 10.8,
+   "sec_all": 11.4
+  },
+  {
+   "epoch": 12,
+   "train_loss": 0.4973,
+   "val_acc": 54.44,
+   "sec_train": 10.9,
+   "sec_all": 11.6
+  },
+  {
+   "epoch": 13,
+   "train_loss": 0.4255,
+   "val_acc": 55.22,
+   "sec_train": 10.8,
+   "sec_all": 11.5
+  },
+  {
+   "epoch": 14,
+   "train_loss": 0.4085,
+   "val_acc": 54.18,
+   "sec_train": 10.8,
+   "sec_all": 11.5
+  },
+  {
+   "epoch": 15,
+   "train_loss": 0.3767,
+   "val_acc": 51.83,
+   "sec_train": 10.9,
+   "sec_all": 11.6
+  },
+  {
+   "epoch": 16,
+   "train_loss": 0.3456,
+   "val_acc": 53.52,
+   "sec_train": 10.8,
+   "sec_all": 11.4
+  },
+  {
+   "epoch": 17,
+   "train_loss": 0.3046,
+   "val_acc": 54.31,
+   "sec_train": 10.9,
+   "sec_all": 11.6
+  },
+  {
+   "epoch": 18,
+   "train_loss": 0.2898,
+   "val_acc": 53.79,
+   "sec_train": 10.8,
+   "sec_all": 11.4
+  },
+  {
+   "epoch": 19,
+   "train_loss": 0.2769,
+   "val_acc": 53.79,
+   "sec_train": 10.9,
+   "sec_all": 11.6
+  },
+  {
+   "epoch": 20,
+   "train_loss": 0.2583,
+   "val_acc": 53.0,
+   "sec_train": 11.0,
+   "sec_all": 11.7
+  },
+  {
+   "epoch": 21,
+   "train_loss": 0.2197,
+   "val_acc": 51.83,
+   "sec_train": 10.9,
+   "sec_all": 11.6
+  },
+  {
+   "epoch": 22,
+   "train_loss": 0.2276,
+   "val_acc": 53.79,
+   "sec_train": 11.6,
+   "sec_all": 12.2
+  },
+  {
+   "epoch": 23,
+   "train_loss": 0.2126,
+   "val_acc": 51.7,
+   "sec_train": 11.4,
+   "sec_all": 12.1
+  },
+  {
+   "epoch": 24,
+   "train_loss": 0.1974,
+   "val_acc": 54.31,
+   "sec_train": 11.5,
+   "sec_all": 12.2
+  },
+  {
+   "epoch": 25,
+   "train_loss": 0.1911,
+   "val_acc": 54.7,
+   "sec_train": 11.3,
+   "sec_all": 11.9
+  },
+  {
+   "epoch": 26,
+   "train_loss": 0.1816,
+   "val_acc": 53.92,
+   "sec_train": 11.3,
+   "sec_all": 11.9
+  }
+ ],
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "test_quality_from_4class": {
+  "micro_F1_%": 68.66,
+  "macro_F1_%": 68.66,
+  "per_class_F1_%": [
+   68.81,
+   68.52
+  ],
+  "confusion": [
+   [
+    225,
+    152
+   ],
+   [
+    52,
+    222
+   ]
+  ]
+ }
+}

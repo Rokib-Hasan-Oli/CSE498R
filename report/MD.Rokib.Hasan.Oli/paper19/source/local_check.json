@@ -1,0 +1,106 @@
+{
+ "dataset_version": "1.1",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "torch": "2.13.0+cu130",
+ "classifiers": {
+  "cls_b4_ema": {
+   "test_rows": 651,
+   "max_abs_prob_diff": 0.00084,
+   "mean_abs_prob_diff": 0.000223,
+   "argmax_agree_%": 100.0,
+   "local_micro_F1_%": 51.31,
+   "kaggle_micro_F1_%": 51.31,
+   "local_per_class": [
+    69.4,
+    27.56,
+    44.6,
+    57.97
+   ],
+   "kaggle_per_class": [
+    69.4,
+    27.56,
+    44.6,
+    57.97
+   ],
+   "sha256": "80db39d3f1d9471c90fae949a5886b3a610db787dc095b9bb3d6e02f31f150a4"
+  },
+  "cls_b4_ce": {
+   "test_rows": 651,
+   "max_abs_prob_diff": 0.00111,
+   "mean_abs_prob_diff": 0.000224,
+   "argmax_agree_%": 100.0,
+   "local_micro_F1_%": 51.92,
+   "kaggle_micro_F1_%": 51.92,
+   "local_per_class": [
+    70.42,
+    30.66,
+    45.19,
+    57.14
+   ],
+   "kaggle_per_class": [
+    70.42,
+    30.66,
+    45.19,
+    57.14
+   ],
+   "sha256": "75e72b9972200215ee0c0f67e04302bbbc0945523d88007cf0fd3a1769d8bd23"
+  },
+  "cls_qf_ema": {
+   "test_rows": 651,
+   "max_abs_prob_diff": 0.00096,
+   "mean_abs_prob_diff": 0.000149,
+   "argmax_agree_%": 100.0,
+   "local_micro_F1_%": 71.74,
+   "kaggle_micro_F1_%": 71.74,
+   "local_per_class": [
+    73.33,
+    69.93
+   ],
+   "kaggle_per_class": [
+    73.33,
+    69.93
+   ],
+   "sha256": "eddb6279a30ee09c5b5459ec072261c28d4cce292bcf37bb8db319c55fa2e240"
+  },
+  "cls_qf_ce": {
+   "test_rows": 651,
+   "max_abs_prob_diff": 0.00058,
+   "mean_abs_prob_diff": 0.000133,
+   "argmax_agree_%": 100.0,
+   "local_micro_F1_%": 70.81,
+   "kaggle_micro_F1_%": 70.81,
+   "local_per_class": [
+    71.47,
+    70.13
+   ],
+   "kaggle_per_class": [
+    71.47,
+    70.13
+   ],
+   "sha256": "8e2f8e384a6ee1edb84f9a89e8b6fe94c69a6cf229c1cef5d9ff9401c2d96365"
+  }
+ },
+ "crnn": {
+  "sha256": "0110631e3be91b45db0c432ee40ae25246c68cc4587842055367e75310b5f033",
+  "test_plates": 651,
+  "test_same_text_as_kaggle": 648,
+  "test_max_conf_diff": 0.0637,
+  "local_test_exact_%": 73.43,
+  "local_val_exact_%": 62.27,
+  "val_same_text_as_p24_run": 766,
+  "val_plates": 766
+ },
+ "speed_ms_batch1": {
+  "classifier_gpu_fp32": 3.2,
+  "classifier_gpu_fp16": 6.25,
+  "crnn_gpu_fp32": 4.56,
+  "crnn_gpu_fp16": 5.38,
+  "classifier_cpu4": 19.85,
+  "crnn_cpu4": 16.43,
+  "cpu": "Intel Core Ultra 7 265K, 4 threads"
+ },
+ "params_M": {
+  "classifier": 23.51,
+  "crnn": 7.69
+ }
+}
