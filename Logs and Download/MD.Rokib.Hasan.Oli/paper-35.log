@@ -1,0 +1,151 @@
+6.3s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.3s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.3s 3 0.00s - to python to disable frozen modules.
+6.3s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+6.9s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.9s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.9s 7 0.00s - to python to disable frozen modules.
+6.9s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+18.6s 9 torch 2.11.0+cu128 | GPUs: ['Tesla T4', 'Tesla T4']
+18.6s 10 ====================================================================================================
+18.6s 11 FULL RUN (FAST = False): planned about 4 h. A training job that ends after a few minutes FAILED:
+18.6s 12 read the '----- ... failed' lines below the cell and logs/<run>.log.
+18.6s 13 ====================================================================================================
+18.6s 14 Writing /kaggle/working/lprkit/common.py
+18.6s 15 Writing /kaggle/working/lprkit/vocab.py
+18.6s 16 Writing /kaggle/working/lprkit/metrics.py
+18.6s 17 Writing /kaggle/working/lprkit/report.py
+18.7s 18 Writing /kaggle/working/lprkit/det.py
+18.7s 19 Writing /kaggle/working/lprkit/rec.py
+18.7s 20 Writing /kaggle/working/lprkit/seq.py
+18.7s 21 Writing /kaggle/working/lprkit/ved.py
+18.7s 22 Writing /kaggle/working/lprkit/p35_lowlight.py
+18.8s 23 dataset not attached -> downloading it from the team Drive (https://drive.google.com/drive/folders/11psdzW5Cpr7tXwqzqNxNt3LA-qeDSOQl)
+20.1s 24 0.00 / 3.38 GB
+27.7s 25 0.49 / 3.38 GB
+32.5s 26 0.98 / 3.38 GB
+38.6s 27 1.46 / 3.38 GB
+44.8s 28 1.95 / 3.38 GB
+52.0s 29 2.44 / 3.38 GB
+69.3s 30 2.93 / 3.38 GB
+76.6s 31 unpacking ...
+99.6s 32 dataset ready: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+99.8s 33 dataset: /tmp/498r_data/BanglaLPR_AllInOne_v1_1
+99.8s 34 det|test|human                           1153
+99.8s 35 det|train|auto                           4507
+99.8s 36 det|train|human                          4067
+99.8s 37 det|val|human                            896
+99.8s 38 e2e|test                                 204
+99.8s 39 extras_fog|test                          26
+99.8s 40 extras_fog|train                         267
+99.8s 41 extras_fog|val                           59
+99.8s 42 leaky_kuet|detection|fair_test           540
+99.8s 43 leaky_kuet|detection|fair_train          1758
+99.8s 44 leaky_kuet|detection|fair_val            311
+99.8s 45 leaky_kuet|detection|test|copy           27
+99.8s 46 leaky_kuet|detection|test|unique         526
+99.8s 47 leaky_kuet|detection|test_clean          474
+99.8s 48 leaky_kuet|detection|test_dup            79
+99.8s 49 leaky_kuet|detection|train|copy          3752
+99.8s 50 leaky_kuet|detection|train|unique        1868
+99.8s 51 leaky_kuet|detection|val|copy            26
+99.8s 52 leaky_kuet|detection|val|unique          251
+99.8s 53 leaky_kuet|recognition|fair_left_out_same_plate_as_test 315
+99.8s 54 leaky_kuet|recognition|fair_test         194
+99.8s 55 leaky_kuet|recognition|fair_train        660
+99.8s 56 leaky_kuet|recognition|fair_val          122
+99.8s 57 leaky_kuet|recognition|test|unique       194
+99.8s 58 leaky_kuet|recognition|test_clean        80
+99.8s 59 leaky_kuet|recognition|test_dup          114
+99.8s 60 leaky_kuet|recognition|train|copy        2613
+99.8s 61 leaky_kuet|recognition|train|unique      778
+99.8s 62 leaky_kuet|recognition|val|copy          1
+99.8s 63 leaky_kuet|recognition|val|unique        319
+99.8s 64 ocr|test|human                           651
+99.8s 65 ocr|train|auto                           2136
+99.8s 66 ocr|train|human                          3471
+99.8s 67 ocr|val|human                            766
+99.8s 68 rec|test|human                           467
+99.8s 69 rec|train|auto                           2136
+99.8s 70 rec|train|auto_verified                  930
+99.8s 71 rec|train|human                          2399
+99.8s 72 rec|val|human                            536
+99.8s 73 path: /tmp/498r_data/BanglaLPR_AllInOne_v1_1/detection
+99.8s 74 train: images/train
+99.8s 75 val: images/val
+99.8s 76 test: images/test
+99.8s 77 nc: 1
+99.8s 78 names:
+99.8s 79 0: "plate"
+99.8s 80 
+100.1s 81 Creating new Ultralytics Settings v0.0.8 file ✅
+100.1s 82 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+100.1s 83 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+136.7s 84 HVI-CIDNet code ready at /kaggle/working/hvi_cidnet commit eb43d7d91e9a336c66856824ff9e4603ae41f408
+136.7s 85 
+136.7s 86 [start] det_v8s on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --model yolov8s.pt --name det_v8s --project /kaggle/working/runs --epochs 60 --imgsz 640 --batch 16 --fraction 1.0 --max-hours 3.2
+136.7s 87 [start] crnn on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/seq.py --model crnn --name crnn --project /kaggle/working/runs --epochs 60
+1706.8s 88 [done]  crnn code=0 after 26.2 min
+6616.9s 89 [done]  det_v8s code=0 after 108.0 min
+6617.0s 90 [start] lowlight on GPU 0: /usr/bin/python3 /kaggle/working/lprkit/p35_lowlight.py eval --det /kaggle/working/runs/det_v8s/weights/best.pt --ocr /kaggle/working/runs/crnn/model_full.pt --name lowlight --project /kaggle/working/runs
+6617.0s 91 [start] speed_det_v8s on GPU 1: /usr/bin/python3 /kaggle/working/lprkit/det.py --data /kaggle/working/yaml/detection_all.yaml --name det_v8s --project /kaggle/working/runs --imgsz 640 --fps-only --trt
+6947.0s 92 [done]  speed_det_v8s code=0 after 5.5 min
+7317.0s 93 [done]  lowlight code=0 after 11.7 min
+7317.0s 94 none       {'night': (0.9441, 90.14, 0), 'clear200': (0.9916, 99.5, 0), 'all_gated': (0.985, 98.12, 0)} | read: {'night': 61.54, 'all_gated': 73.43} | ms: {'photo_640': 0.01, 'crop_64x192': 0.01}
+7317.0s 95 gamma      {'night': (0.9384, 90.14, 71), 'clear200': (0.9896, 99.5, 200), 'all_gated': (0.985, 98.12, 20)} | read: {'night': 44.62, 'all_gated': 72.96} | ms: {'photo_640': 0.64, 'crop_64x192': 0.04}
+7317.0s 96 clahe      {'night': (0.961, 90.14, 71), 'clear200': (0.9908, 99.5, 200), 'all_gated': (0.985, 98.12, 20)} | read: {'night': 61.54, 'all_gated': 73.58} | ms: {'photo_640': 9.78, 'crop_64x192': 0.4}
+7317.0s 97 hvi_gen    {'night': (0.9566, 90.14, 71), 'clear200': (0.9898, 99.5, 200), 'all_gated': (0.9849, 98.12, 20)} | read: {'night': 55.38, 'all_gated': 73.12} | ms: {'photo_640': 154.87, 'crop_64x192': 37.55}
+7317.0s 98 hvi_lolv2  {'night': (0.9465, 88.73, 71), 'clear200': (0.9913, 99.5, 200), 'all_gated': (0.9847, 98.02, 20)} | read: {'night': 56.92, 'all_gated': 73.12} | ms: {'photo_640': 153.11, 'crop_64x192': 24.86}
+7317.0s 99 skipped: {}
+7317.2s 100 # Paper #35: ours vs. the paper
+7317.2s 101 
+7317.2s 102 | Metric | Paper (page) | det_v8s | crnn | lowlight |
+7317.2s 103 |---|---|---|---|---|
+7317.2s 104 | Night photos: mAP50, no enhancement (%) | - |  |  | 94.4 |
+7317.2s 105 | Night photos: mAP50 after HVI-CIDNet generalization (%) | - |  |  | 95.7 |
+7317.2s 106 | Night photos: mAP50 after HVI-CIDNet LOLv2-Real (%) | - |  |  | 94.7 |
+7317.2s 107 | Night photos: mAP50 after CLAHE (%) | - |  |  | 96.1 |
+7317.2s 108 | Night photos: mAP50 after gamma 0.5 (%) | - |  |  | 93.8 |
+7317.2s 109 | Gain on night photos, HVI generalization (pp) | - |  |  | 1.25 |
+7317.2s 110 | Night photos: plates found after HVI (%) | - |  |  | 90.14 |
+7317.2s 111 | Whole test with the dark gate: mAP50 gain, HVI (pp) | - |  |  | -0.0100 |
+7317.2s 112 | Clear photos: mAP50 after HVI (does it hurt day?) (%) | - |  |  | 99.0 |
+7317.2s 113 | Night crops: plate exact, no enhancement (%) | - |  |  | 61.54 |
+7317.2s 114 | Night crops: plate exact after HVI (%) | - |  |  | 55.38 |
+7317.2s 115 | Gain on night crops, HVI (pp) | - |  |  | -6.16 |
+7317.2s 116 | HVI-CIDNet ms per 640x640 photo (T4) | 53 ms per LOLv2 image (GPU not named) (p.7, Table 3) |  |  | 154.87 |
+7317.2s 117 | HVI-CIDNet ms per plate crop (T4) | - |  |  | 37.55 |
+7317.2s 118 | HVI-CIDNet params (M) | 1.88 (7.57 GFLOPs at 256x256) (p.6, Table 1) |  |  | 1.98 |
+7317.2s 119 | Plate detector mAP50, all test (%) | - | 98.5 |  |  |
+7317.2s 120 | CRNN plate exact, all test (%) | - |  | 73.43 |  |
+7317.2s 121 | LOLv2-Real PSNR / SSIM (paper only, see the check) | 24.111 / 0.871 (p.6, Table 1) |  |  |  |
+7317.2s 122 
+7317.2s 123 The paper used its own data; our numbers are on the 498R All-in-One test split (different data),
+7317.2s 124 so the comparison shows the direction and size of the gap, not a head-to-head result.
+7317.2s 125 
+7317.2s 126 The paper scores image quality (PSNR / SSIM against a well-lit photo of the same scene) on LOL; we have no well-lit twin of our night photos, so we score what we care about: plates found and plates read.
+7317.2s 127 
+7317.2s 128 ## Results by condition: detectors (test mAP50 %)
+7317.2s 129 
+7317.2s 130 | Run | all test | clear | night | blurry | small plates | rain (synthetic) | fog (synthetic) | false alarms on plate-free photos (%) |
+7317.2s 131 |---|---|---|---|---|---|---|---|---|
+7317.2s 132 | det_v8s | 98.5 | 99.0 | 94.3 | 95.2 | 84.5 | 82.5 | 97.9 | 5.62 |
+7317.2s 133 
+7317.2s 134 ## Results by condition: plate readers (plate exact %)
+7317.2s 135 
+7317.2s 136 | Run | all test | clear | night | blurry | fog (real fog copies) | rain (synthetic) |
+7317.2s 137 |---|---|---|---|---|---|---|
+7317.2s 138 | crnn | 73.43 | 77.50 | 61.54 | 64.29 | 50.00 | 67.13 |
+7317.2s 139 
+7317.2s 140 Condition subsets are fixed for the whole team (detection/conditions.json, ocr/conditions.json); rain and detection-fog copies are synthetic.
+7317.2s 141 
+7325.5s 142 packed /kaggle/working/paper35_outputs.zip 158.2 MB
+7325.5s 143 packed /kaggle/working/paper35_results.zip 1.2 MB (no weights: for GitHub weights/)
+7329.9s 144 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+7329.9s 145 cells[i][c] = re.sub('\\\\\|', '|', cell)
+7330.1s 146 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+7330.1s 147 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+7330.8s 148 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+7330.9s 149 [NbConvertApp] Writing 158027 bytes to __notebook__.ipynb
+7333.4s 150 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+7334.2s 151 [NbConvertApp] Writing 953064 bytes to __results__.html
