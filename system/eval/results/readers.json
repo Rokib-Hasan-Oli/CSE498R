@@ -1,0 +1,242 @@
+{
+ "p02_lpnr_v12n": {
+  "paper": 2,
+  "kind": "charyolo",
+  "file": "p02_lpnr_v12n.pt",
+  "val": {
+   "plates": 766,
+   "plate_exact_%": 80.55,
+   "CER_%": 3.56,
+   "char_acc_%": 96.44,
+   "token_acc_%": 96.94,
+   "WER_%": 6.41,
+   "valid_format_%": 86.16
+  },
+  "test": {
+   "plates": 651,
+   "plate_exact_%": 87.71,
+   "CER_%": 2.14,
+   "char_acc_%": 97.86,
+   "token_acc_%": 97.91,
+   "WER_%": 3.71,
+   "valid_format_%": 92.17
+  },
+  "ms_per_plate_batch1": 8.93
+ },
+ "p11_chars_v8n": {
+  "paper": 11,
+  "kind": "charyolo",
+  "file": "p11_chars_v8n.pt",
+  "val": {
+   "plates": 766,
+   "plate_exact_%": 80.81,
+   "CER_%": 4.56,
+   "char_acc_%": 95.44,
+   "token_acc_%": 96.38,
+   "WER_%": 6.29,
+   "valid_format_%": 87.73
+  },
+  "test": {
+   "plates": 651,
+   "plate_exact_%": 86.18,
+   "CER_%": 2.71,
+   "char_acc_%": 97.29,
+   "token_acc_%": 97.28,
+   "WER_%": 4.75,
+   "valid_format_%": 91.4
+  },
+  "ms_per_plate_batch1": 5.41
+ },
+ "p18_slot": {
+  "paper": 18,
+  "kind": "slot",
+  "file": "p18_slot.pt",
+  "val": {
+   "plates": 766,
+   "plate_exact_%": 47.65,
+   "CER_%": 17.11,
+   "char_acc_%": 82.89,
+   "token_acc_%": 86.2,
+   "WER_%": 20.49,
+   "valid_format_%": 91.91
+  },
+  "test": {
+   "plates": 651,
+   "plate_exact_%": 57.6,
+   "CER_%": 11.42,
+   "char_acc_%": 88.58,
+   "token_acc_%": 89.28,
+   "WER_%": 15.34,
+   "valid_format_%": 92.32
+  },
+  "ms_per_plate_batch1": 0.97
+ },
+ "p20_crnn_hr": {
+  "paper": 20,
+  "kind": "crnn",
+  "file": "p20_crnn_hr.pt",
+  "val": {
+   "plates": 766,
+   "plate_exact_%": 65.01,
+   "CER_%": 10.18,
+   "char_acc_%": 89.82,
+   "token_acc_%": 93.11,
+   "WER_%": 11.82,
+   "valid_format_%": 93.21
+  },
+  "test": {
+   "plates": 651,
+   "plate_exact_%": 75.73,
+   "CER_%": 5.54,
+   "char_acc_%": 94.46,
+   "token_acc_%": 95.09,
+   "WER_%": 8.24,
+   "valid_format_%": 94.78
+  },
+  "ms_per_plate_batch1": 4.49
+ },
+ "p27_chars_v8n": {
+  "paper": 27,
+  "kind": "charyolo",
+  "file": "p27_chars_v8n.pt",
+  "val": {
+   "plates": 766,
+   "plate_exact_%": 80.29,
+   "CER_%": 4.46,
+   "char_acc_%": 95.54,
+   "token_acc_%": 96.61,
+   "WER_%": 6.52,
+   "valid_format_%": 87.47
+  },
+  "test": {
+   "plates": 651,
+   "plate_exact_%": 86.02,
+   "CER_%": 2.34,
+   "char_acc_%": 97.66,
+   "token_acc_%": 97.44,
+   "WER_%": 4.72,
+   "valid_format_%": 91.4
+  },
+  "ms_per_plate_batch1": 5.45
+ },
+ "p27_chars_v10n": {
+  "paper": 27,
+  "kind": "charyolo",
+  "file": "p27_chars_v10n.pt",
+  "val": {
+   "plates": 766,
+   "plate_exact_%": 77.55,
+   "CER_%": 5.32,
+   "char_acc_%": 94.68,
+   "token_acc_%": 96.04,
+   "WER_%": 7.42,
+   "valid_format_%": 84.46
+  },
+  "test": {
+   "plates": 651,
+   "plate_exact_%": 83.72,
+   "CER_%": 2.87,
+   "char_acc_%": 97.13,
+   "token_acc_%": 97.3,
+   "WER_%": 5.17,
+   "valid_format_%": 89.09
+  },
+  "ms_per_plate_batch1": 5.81
+ },
+ "p23_rec_fair": {
+  "paper": 23,
+  "kind": "charyolo",
+  "file": "p23_rec_fair.pt",
+  "val": {
+   "plates": 766,
+   "plate_exact_%": 41.12,
+   "CER_%": 23.49,
+   "char_acc_%": 76.51,
+   "token_acc_%": 83.75,
+   "WER_%": 29.57,
+   "valid_format_%": 60.31
+  },
+  "test": {
+   "plates": 651,
+   "plate_exact_%": 62.37,
+   "CER_%": 13.81,
+   "char_acc_%": 86.19,
+   "token_acc_%": 90.75,
+   "WER_%": 17.22,
+   "valid_format_%": 75.88
+  },
+  "ms_per_plate_batch1": 5.23
+ },
+ "p34_svtrv2_t": {
+  "paper": 34,
+  "kind": "svtrv2",
+  "file": "p34_svtrv2_t.onnx",
+  "val": {
+   "plates": 766,
+   "plate_exact_%": 73.76,
+   "CER_%": 5.47,
+   "char_acc_%": 94.53,
+   "token_acc_%": 94.81,
+   "WER_%": 8.38,
+   "valid_format_%": 95.82
+  },
+  "test": {
+   "plates": 651,
+   "plate_exact_%": 81.26,
+   "CER_%": 2.49,
+   "char_acc_%": 97.51,
+   "token_acc_%": 97.16,
+   "WER_%": 5.14,
+   "valid_format_%": 96.93
+  },
+  "ms_per_plate_batch1": 8.19
+ },
+ "p34_svtrv2_s": {
+  "paper": 34,
+  "kind": "svtrv2",
+  "file": "p34_svtrv2_s.onnx",
+  "val": {
+   "plates": 766,
+   "plate_exact_%": 75.33,
+   "CER_%": 5.24,
+   "char_acc_%": 94.76,
+   "token_acc_%": 95.26,
+   "WER_%": 7.84,
+   "valid_format_%": 94.26
+  },
+  "test": {
+   "plates": 651,
+   "plate_exact_%": 81.87,
+   "CER_%": 3.08,
+   "char_acc_%": 96.92,
+   "token_acc_%": 97.11,
+   "WER_%": 5.14,
+   "valid_format_%": 96.16
+  },
+  "ms_per_plate_batch1": 13.99
+ },
+ "p19_crnn": {
+  "paper": 19,
+  "kind": "crnn",
+  "file": "p19_crnn_fp16.pt",
+  "val": {
+   "plates": 766,
+   "plate_exact_%": 62.27,
+   "CER_%": 10.9,
+   "char_acc_%": 89.1,
+   "token_acc_%": 92.92,
+   "WER_%": 12.39,
+   "valid_format_%": 93.99
+  },
+  "test": {
+   "plates": 651,
+   "plate_exact_%": 73.43,
+   "CER_%": 5.52,
+   "char_acc_%": 94.48,
+   "token_acc_%": 95.07,
+   "WER_%": 8.62,
+   "valid_format_%": 95.08
+  },
+  "ms_per_plate_batch1": 4.41
+ }
+}

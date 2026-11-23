@@ -1,0 +1,7 @@
+D:\498R\_dataset_build\venv\Lib\site-packages\torch\nn\modules\conv.py:560: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\native\Convolution.cpp:1102.)
+  return F.conv2d(
+D:\498R\BanglaLPR_System\eval\..\lpr\readers.py:294: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:219.)
+  xs.append(torch.from_numpy(np.ascontiguousarray(rgb)).permute(2, 0, 1).float() / 255.0)
+v1 e2e {'plates': 204, 'plate_exact_%': 89.22, 'CER_%': 5.26, 'char_acc_%': 94.74, 'token_acc_%': 94.3, 'WER_%': 6.62, 'plate_found_%': 96.08, 'retry_used_photos': 0, 'ms_per_photo_mean': 56.5, 'ms_per_photo_median': 51.7, 'fps_mean': 17.7}
+v2 e2e {'plates': 204, 'plate_exact_%': 92.65, 'CER_%': 3.21, 'char_acc_%': 96.79, 'token_acc_%': 96.24, 'WER_%': 3.95, 'plate_found_%': 97.06, 'retry_used_photos': 8, 'ms_per_photo_mean': 49.9, 'ms_per_photo_median': 37.4, 'fps_mean': 20.0}
+{'v2_vs_v1_e2e': {'fixed': 9, 'broken': 2, 'p_mcnemar': 0.0654}}

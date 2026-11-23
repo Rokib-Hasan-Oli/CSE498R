@@ -1,0 +1,156 @@
+{
+ "v1": {
+  "clear": {
+   "plates": 480,
+   "plate_exact_%": 93.75,
+   "CER_%": 1.71,
+   "char_acc_%": 98.29,
+   "token_acc_%": 98.45,
+   "WER_%": 2.07
+  },
+  "night": {
+   "plates": 65,
+   "plate_exact_%": 80.0,
+   "CER_%": 5.69,
+   "char_acc_%": 94.31,
+   "token_acc_%": 94.29,
+   "WER_%": 10.33
+  },
+  "blurry": {
+   "plates": 112,
+   "plate_exact_%": 80.36,
+   "CER_%": 1.37,
+   "char_acc_%": 98.63,
+   "token_acc_%": 97.4,
+   "WER_%": 3.99
+  },
+  "by_source": {
+   "anpr": {
+    "plates": 184,
+    "plate_exact_%": 89.13,
+    "CER_%": 2.85,
+    "char_acc_%": 97.15,
+    "token_acc_%": 96.8,
+    "WER_%": 3.97
+   },
+   "blpd": {
+    "plates": 30,
+    "plate_exact_%": 83.33,
+    "CER_%": 4.43,
+    "char_acc_%": 95.57,
+    "token_acc_%": 96.55,
+    "WER_%": 5.67
+   },
+   "kuet": {
+    "plates": 183,
+    "plate_exact_%": 87.43,
+    "CER_%": 0.86,
+    "char_acc_%": 99.14,
+    "token_acc_%": 98.36,
+    "WER_%": 2.52
+   },
+   "lpdba": {
+    "plates": 202,
+    "plate_exact_%": 97.52,
+    "CER_%": 0.88,
+    "char_acc_%": 99.12,
+    "token_acc_%": 99.66,
+    "WER_%": 0.63
+   },
+   "nightlpbd": {
+    "plates": 52,
+    "plate_exact_%": 76.92,
+    "CER_%": 7.1,
+    "char_acc_%": 92.9,
+    "token_acc_%": 93.24,
+    "WER_%": 12.29
+   }
+  },
+  "errors": {
+   "wrong digit": 26,
+   "invalid layout": 13,
+   "wrong letter": 11,
+   "wrong district": 9,
+   "wrong digit+district+letter": 2,
+   "wrong digit+district": 2,
+   "wrong digit+letter": 2
+  }
+ },
+ "v2": {
+  "clear": {
+   "plates": 480,
+   "plate_exact_%": 95.0,
+   "CER_%": 0.89,
+   "char_acc_%": 99.11,
+   "token_acc_%": 99.21,
+   "WER_%": 1.36
+  },
+  "night": {
+   "plates": 65,
+   "plate_exact_%": 84.62,
+   "CER_%": 4.55,
+   "char_acc_%": 95.45,
+   "token_acc_%": 97.32,
+   "WER_%": 4.67
+  },
+  "blurry": {
+   "plates": 112,
+   "plate_exact_%": 82.14,
+   "CER_%": 1.26,
+   "char_acc_%": 98.74,
+   "token_acc_%": 97.6,
+   "WER_%": 3.62
+  },
+  "by_source": {
+   "anpr": {
+    "plates": 184,
+    "plate_exact_%": 91.3,
+    "CER_%": 1.51,
+    "char_acc_%": 98.49,
+    "token_acc_%": 98.43,
+    "WER_%": 2.68
+   },
+   "blpd": {
+    "plates": 30,
+    "plate_exact_%": 83.33,
+    "CER_%": 3.02,
+    "char_acc_%": 96.98,
+    "token_acc_%": 98.08,
+    "WER_%": 3.55
+   },
+   "kuet": {
+    "plates": 183,
+    "plate_exact_%": 88.52,
+    "CER_%": 0.8,
+    "char_acc_%": 99.2,
+    "token_acc_%": 98.48,
+    "WER_%": 2.3
+   },
+   "lpdba": {
+    "plates": 202,
+    "plate_exact_%": 98.51,
+    "CER_%": 0.3,
+    "char_acc_%": 99.7,
+    "token_acc_%": 99.83,
+    "WER_%": 0.32
+   },
+   "nightlpbd": {
+    "plates": 52,
+    "plate_exact_%": 82.69,
+    "CER_%": 5.76,
+    "char_acc_%": 94.24,
+    "token_acc_%": 96.85,
+    "WER_%": 5.51
+   }
+  },
+  "errors": {
+   "wrong digit": 25,
+   "wrong letter": 13,
+   "wrong district": 8,
+   "invalid layout": 3,
+   "wrong district+letter": 2,
+   "wrong digit+letter": 2,
+   "wrong digit+district+letter": 1
+  }
+ }
+}

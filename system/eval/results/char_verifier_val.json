@@ -1,0 +1,36 @@
+{
+ "split": "val",
+ "primary": "p11_chars_v8n",
+ "auroc_yolo_conf": 0.839,
+ "p08": {
+  "agreement_mean": 0.891,
+  "auroc": 0.733,
+  "below_0.8": {
+   "share_%": 15.5,
+   "exact_%": 46.2
+  },
+  "at_least_0.8": {
+   "share_%": 84.5,
+   "exact_%": 87.2
+  }
+ },
+ "p10": {
+  "agreement_mean": 0.938,
+  "auroc": 0.738,
+  "below_0.8": {
+   "share_%": 9.9,
+   "exact_%": 34.2
+  },
+  "at_least_0.8": {
+   "share_%": 90.1,
+   "exact_%": 85.9
+  }
+ },
+ "mean_p08_p10": {
+  "auroc": 0.765,
+  "below_0.8": {
+   "share_%": 11.0,
+   "exact_%": 33.3
+  }
+ }
+}

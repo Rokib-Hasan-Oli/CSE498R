@@ -1,0 +1,126 @@
+{
+ "device": "gpu",
+ "v1": {
+  "ocr_test_crops": {
+   "plates": 651,
+   "plate_exact_%": 90.02,
+   "CER_%": 2.03,
+   "char_acc_%": 97.97,
+   "token_acc_%": 97.84,
+   "WER_%": 3.23,
+   "ms_per_plate": 14.54,
+   "status": {
+    "likely": {
+     "plates": 103,
+     "share_%": 15.8,
+     "exact_%": 82.52
+    },
+    "review": {
+     "plates": 40,
+     "share_%": 6.1,
+     "exact_%": 32.5
+    },
+    "verified": {
+     "plates": 508,
+     "share_%": 78.0,
+     "exact_%": 96.06
+    }
+   }
+  },
+  "e2e_photos": {
+   "plates": 204,
+   "plate_exact_%": 89.22,
+   "CER_%": 5.26,
+   "char_acc_%": 94.74,
+   "token_acc_%": 94.3,
+   "WER_%": 6.62,
+   "plate_found_%": 96.08,
+   "retry_used_photos": 0,
+   "ms_per_photo_mean": 20.5,
+   "ms_per_photo_median": 18.7,
+   "fps_mean": 48.8,
+   "by_source": {
+    "blpd_ext": {
+     "plates": 144,
+     "plate_exact_%": 96.53,
+     "CER_%": 0.86,
+     "char_acc_%": 99.14,
+     "token_acc_%": 99.6,
+     "WER_%": 0.75
+    },
+    "nightlpbd": {
+     "plates": 60,
+     "plate_exact_%": 71.67,
+     "CER_%": 17.6,
+     "char_acc_%": 82.4,
+     "token_acc_%": 81.3,
+     "WER_%": 21.27
+    }
+   }
+  }
+ },
+ "v2": {
+  "ocr_test_crops": {
+   "plates": 651,
+   "plate_exact_%": 91.71,
+   "CER_%": 1.29,
+   "char_acc_%": 98.71,
+   "token_acc_%": 98.74,
+   "WER_%": 2.1,
+   "ms_per_plate": 15.56,
+   "status": {
+    "review": {
+     "plates": 33,
+     "share_%": 5.1,
+     "exact_%": 24.24
+    },
+    "verified": {
+     "plates": 618,
+     "share_%": 94.9,
+     "exact_%": 95.31
+    }
+   }
+  },
+  "e2e_photos": {
+   "plates": 204,
+   "plate_exact_%": 92.65,
+   "CER_%": 3.21,
+   "char_acc_%": 96.79,
+   "token_acc_%": 96.24,
+   "WER_%": 3.95,
+   "plate_found_%": 97.06,
+   "retry_used_photos": 8,
+   "ms_per_photo_mean": 24.0,
+   "ms_per_photo_median": 17.4,
+   "fps_mean": 41.7,
+   "by_source": {
+    "blpd_ext": {
+     "plates": 144,
+     "plate_exact_%": 96.53,
+     "CER_%": 0.86,
+     "char_acc_%": 99.14,
+     "token_acc_%": 99.6,
+     "WER_%": 0.75
+    },
+    "nightlpbd": {
+     "plates": 60,
+     "plate_exact_%": 83.33,
+     "CER_%": 9.82,
+     "char_acc_%": 90.18,
+     "token_acc_%": 87.99,
+     "WER_%": 11.94
+    }
+   }
+  }
+ },
+ "v2_vs_v1_ocr": {
+  "fixed": 12,
+  "broken": 1,
+  "p_mcnemar": 0.0034
+ },
+ "v2_vs_v1_e2e": {
+  "fixed": 9,
+  "broken": 2,
+  "p_mcnemar": 0.0654
+ }
+}

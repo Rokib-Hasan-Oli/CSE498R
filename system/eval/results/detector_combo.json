@@ -1,0 +1,366 @@
+{
+ "val": {
+  "p18_v8n_576": {
+   "plates": 850,
+   "found_%": 96.35,
+   "extra_box_%": 7.25,
+   "missed_photos": 9
+  },
+  "p18_v8n_576 +CLAHE retry": {
+   "plates": 850,
+   "found_%": 96.47,
+   "extra_box_%": 7.24,
+   "missed_photos": 8
+  },
+  "p28_v9s": {
+   "plates": 850,
+   "found_%": 95.41,
+   "extra_box_%": 7.53,
+   "missed_photos": 9
+  },
+  "p28_v9s +CLAHE retry": {
+   "plates": 850,
+   "found_%": 95.41,
+   "extra_box_%": 7.95,
+   "missed_photos": 9
+  },
+  "p27_v10n": {
+   "plates": 850,
+   "found_%": 94.94,
+   "extra_box_%": 5.61,
+   "missed_photos": 12
+  },
+  "p27_v10n +CLAHE retry": {
+   "plates": 850,
+   "found_%": 95.06,
+   "extra_box_%": 5.83,
+   "missed_photos": 11
+  },
+  "p27_v10s": {
+   "plates": 850,
+   "found_%": 95.41,
+   "extra_box_%": 6.89,
+   "missed_photos": 11
+  },
+  "p27_v10s +CLAHE retry": {
+   "plates": 850,
+   "found_%": 95.41,
+   "extra_box_%": 7.42,
+   "missed_photos": 11
+  },
+  "p06_det_v8n": {
+   "plates": 850,
+   "found_%": 96.24,
+   "extra_box_%": 7.57,
+   "missed_photos": 16
+  },
+  "p06_det_v8n +CLAHE retry": {
+   "plates": 850,
+   "found_%": 96.35,
+   "extra_box_%": 7.98,
+   "missed_photos": 14
+  },
+  "p06_det_v8s": {
+   "plates": 850,
+   "found_%": 96.35,
+   "extra_box_%": 8.29,
+   "missed_photos": 10
+  },
+  "p06_det_v8s +CLAHE retry": {
+   "plates": 850,
+   "found_%": 96.59,
+   "extra_box_%": 8.47,
+   "missed_photos": 9
+  },
+  "p35_det_v8s": {
+   "plates": 850,
+   "found_%": 96.35,
+   "extra_box_%": 9.2,
+   "missed_photos": 8
+  },
+  "p35_det_v8s +CLAHE retry": {
+   "plates": 850,
+   "found_%": 96.47,
+   "extra_box_%": 9.19,
+   "missed_photos": 7
+  },
+  "p21_v9s": {
+   "plates": 850,
+   "found_%": 95.41,
+   "extra_box_%": 7.53,
+   "missed_photos": 9
+  },
+  "p21_v9s +CLAHE retry": {
+   "plates": 850,
+   "found_%": 95.41,
+   "extra_box_%": 7.95,
+   "missed_photos": 9
+  },
+  "p18_v8n_576 -> p28_v9s on miss": {
+   "plates": 850,
+   "found_%": 96.71,
+   "extra_box_%": 7.33,
+   "missed_photos": 6
+  },
+  "p18_v8n_576 -> p28_v9s (+CLAHE) on miss": {
+   "plates": 850,
+   "found_%": 96.71,
+   "extra_box_%": 7.74,
+   "missed_photos": 6
+  },
+  "p18_v8n_576 -> p27_v10n on miss": {
+   "plates": 850,
+   "found_%": 96.82,
+   "extra_box_%": 7.42,
+   "missed_photos": 5
+  },
+  "p18_v8n_576 -> p27_v10n (+CLAHE) on miss": {
+   "plates": 850,
+   "found_%": 96.82,
+   "extra_box_%": 7.53,
+   "missed_photos": 5
+  },
+  "p18_v8n_576 -> p27_v10s on miss": {
+   "plates": 850,
+   "found_%": 96.82,
+   "extra_box_%": 7.22,
+   "missed_photos": 5
+  },
+  "p18_v8n_576 -> p27_v10s (+CLAHE) on miss": {
+   "plates": 850,
+   "found_%": 96.82,
+   "extra_box_%": 7.63,
+   "missed_photos": 5
+  },
+  "p18_v8n_576 -> p06_det_v8n on miss": {
+   "plates": 850,
+   "found_%": 96.82,
+   "extra_box_%": 7.42,
+   "missed_photos": 6
+  },
+  "p18_v8n_576 -> p06_det_v8n (+CLAHE) on miss": {
+   "plates": 850,
+   "found_%": 96.94,
+   "extra_box_%": 7.52,
+   "missed_photos": 5
+  },
+  "p18_v8n_576 -> p06_det_v8s on miss": {
+   "plates": 850,
+   "found_%": 96.94,
+   "extra_box_%": 7.21,
+   "missed_photos": 4
+  },
+  "p18_v8n_576 -> p06_det_v8s (+CLAHE) on miss": {
+   "plates": 850,
+   "found_%": 97.18,
+   "extra_box_%": 7.3,
+   "missed_photos": 3
+  },
+  "p18_v8n_576 -> p35_det_v8s on miss": {
+   "plates": 850,
+   "found_%": 97.06,
+   "extra_box_%": 7.61,
+   "missed_photos": 4
+  },
+  "p18_v8n_576 -> p35_det_v8s (+CLAHE) on miss": {
+   "plates": 850,
+   "found_%": 97.06,
+   "extra_box_%": 7.61,
+   "missed_photos": 4
+  },
+  "p18_v8n_576 -> p21_v9s on miss": {
+   "plates": 850,
+   "found_%": 96.71,
+   "extra_box_%": 7.33,
+   "missed_photos": 6
+  },
+  "p18_v8n_576 -> p21_v9s (+CLAHE) on miss": {
+   "plates": 850,
+   "found_%": 96.71,
+   "extra_box_%": 7.74,
+   "missed_photos": 6
+  }
+ },
+ "test": {
+  "p18_v8n_576": {
+   "plates": 1011,
+   "found_%": 97.82,
+   "extra_box_%": 8.0,
+   "missed_photos": 8
+  },
+  "p18_v8n_576 +CLAHE retry": {
+   "plates": 1011,
+   "found_%": 97.82,
+   "extra_box_%": 8.43,
+   "missed_photos": 6
+  },
+  "p28_v9s": {
+   "plates": 1011,
+   "found_%": 97.73,
+   "extra_box_%": 8.09,
+   "missed_photos": 9
+  },
+  "p28_v9s +CLAHE retry": {
+   "plates": 1011,
+   "found_%": 97.73,
+   "extra_box_%": 8.35,
+   "missed_photos": 8
+  },
+  "p27_v10n": {
+   "plates": 1011,
+   "found_%": 97.33,
+   "extra_box_%": 5.84,
+   "missed_photos": 10
+  },
+  "p27_v10n +CLAHE retry": {
+   "plates": 1011,
+   "found_%": 97.33,
+   "extra_box_%": 6.02,
+   "missed_photos": 9
+  },
+  "p27_v10s": {
+   "plates": 1011,
+   "found_%": 96.83,
+   "extra_box_%": 8.16,
+   "missed_photos": 13
+  },
+  "p27_v10s +CLAHE retry": {
+   "plates": 1011,
+   "found_%": 97.03,
+   "extra_box_%": 8.32,
+   "missed_photos": 9
+  },
+  "p06_det_v8n": {
+   "plates": 1011,
+   "found_%": 95.85,
+   "extra_box_%": 9.1,
+   "missed_photos": 12
+  },
+  "p06_det_v8n +CLAHE retry": {
+   "plates": 1011,
+   "found_%": 95.85,
+   "extra_box_%": 9.18,
+   "missed_photos": 12
+  },
+  "p06_det_v8s": {
+   "plates": 1011,
+   "found_%": 96.93,
+   "extra_box_%": 10.5,
+   "missed_photos": 11
+  },
+  "p06_det_v8s +CLAHE retry": {
+   "plates": 1011,
+   "found_%": 96.93,
+   "extra_box_%": 10.5,
+   "missed_photos": 11
+  },
+  "p35_det_v8s": {
+   "plates": 1011,
+   "found_%": 98.12,
+   "extra_box_%": 9.41,
+   "missed_photos": 6
+  },
+  "p35_det_v8s +CLAHE retry": {
+   "plates": 1011,
+   "found_%": 98.12,
+   "extra_box_%": 9.74,
+   "missed_photos": 6
+  },
+  "p21_v9s": {
+   "plates": 1011,
+   "found_%": 97.73,
+   "extra_box_%": 8.09,
+   "missed_photos": 9
+  },
+  "p21_v9s +CLAHE retry": {
+   "plates": 1011,
+   "found_%": 97.73,
+   "extra_box_%": 8.35,
+   "missed_photos": 8
+  },
+  "p18_v8n_576 -> p28_v9s on miss": {
+   "plates": 1011,
+   "found_%": 97.92,
+   "extra_box_%": 8.25,
+   "missed_photos": 5
+  },
+  "p18_v8n_576 -> p28_v9s (+CLAHE) on miss": {
+   "plates": 1011,
+   "found_%": 97.92,
+   "extra_box_%": 8.42,
+   "missed_photos": 4
+  },
+  "p18_v8n_576 -> p27_v10n on miss": {
+   "plates": 1011,
+   "found_%": 97.92,
+   "extra_box_%": 8.16,
+   "missed_photos": 5
+  },
+  "p18_v8n_576 -> p27_v10n (+CLAHE) on miss": {
+   "plates": 1011,
+   "found_%": 97.92,
+   "extra_box_%": 8.33,
+   "missed_photos": 4
+  },
+  "p18_v8n_576 -> p27_v10s on miss": {
+   "plates": 1011,
+   "found_%": 98.02,
+   "extra_box_%": 8.24,
+   "missed_photos": 6
+  },
+  "p18_v8n_576 -> p27_v10s (+CLAHE) on miss": {
+   "plates": 1011,
+   "found_%": 98.12,
+   "extra_box_%": 8.4,
+   "missed_photos": 3
+  },
+  "p18_v8n_576 -> p06_det_v8n on miss": {
+   "plates": 1011,
+   "found_%": 98.02,
+   "extra_box_%": 8.41,
+   "missed_photos": 5
+  },
+  "p18_v8n_576 -> p06_det_v8n (+CLAHE) on miss": {
+   "plates": 1011,
+   "found_%": 98.02,
+   "extra_box_%": 8.49,
+   "missed_photos": 5
+  },
+  "p18_v8n_576 -> p06_det_v8s on miss": {
+   "plates": 1011,
+   "found_%": 97.92,
+   "extra_box_%": 8.67,
+   "missed_photos": 6
+  },
+  "p18_v8n_576 -> p06_det_v8s (+CLAHE) on miss": {
+   "plates": 1011,
+   "found_%": 97.92,
+   "extra_box_%": 8.67,
+   "missed_photos": 6
+  },
+  "p18_v8n_576 -> p35_det_v8s on miss": {
+   "plates": 1011,
+   "found_%": 98.02,
+   "extra_box_%": 8.24,
+   "missed_photos": 5
+  },
+  "p18_v8n_576 -> p35_det_v8s (+CLAHE) on miss": {
+   "plates": 1011,
+   "found_%": 98.02,
+   "extra_box_%": 8.58,
+   "missed_photos": 5
+  },
+  "p18_v8n_576 -> p21_v9s on miss": {
+   "plates": 1011,
+   "found_%": 97.92,
+   "extra_box_%": 8.25,
+   "missed_photos": 5
+  },
+  "p18_v8n_576 -> p21_v9s (+CLAHE) on miss": {
+   "plates": 1011,
+   "found_%": 97.92,
+   "extra_box_%": 8.42,
+   "missed_photos": 4
+  }
+ }
+}

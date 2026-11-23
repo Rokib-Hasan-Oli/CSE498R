@@ -1,0 +1,178 @@
+{
+ "plates": {
+  "train": {
+   "crops": 5607,
+   "different_plate_texts": 3817
+  },
+  "val": {
+   "crops": 766,
+   "different_plate_texts": 409
+  },
+  "test": {
+   "crops": 651,
+   "different_plate_texts": 302
+  },
+  "e2e": {
+   "crops": 204,
+   "different_plate_texts": 159
+  }
+ },
+ "same_plate_text_in_two_splits": {
+  "train-val": {
+   "texts": 1,
+   "crops_in_val": 2,
+   "share_of_val_%": 0.26
+  },
+  "train-test": {
+   "texts": 0,
+   "crops_in_test": 0,
+   "share_of_test_%": 0.0
+  },
+  "val-test": {
+   "texts": 0,
+   "crops_in_test": 0,
+   "share_of_test_%": 0.0
+  },
+  "train-e2e": {
+   "texts": 0,
+   "crops_in_e2e": 0,
+   "share_of_e2e_%": 0.0
+  },
+  "val-e2e": {
+   "texts": 0,
+   "crops_in_e2e": 0,
+   "share_of_e2e_%": 0.0
+  },
+  "test-e2e": {
+   "texts": 149,
+   "crops_in_e2e": 194,
+   "share_of_e2e_%": 95.1
+  }
+ },
+ "layout_valid_%": {
+  "train": 100.0,
+  "val": 100.0,
+  "test": 100.0
+ },
+ "invalid_examples": {
+  "train": [],
+  "val": [],
+  "test": []
+ },
+ "source_mix_%": {
+  "train": {
+   "zenodo25k": 38.1,
+   "lpdba": 23.0,
+   "anpr": 19.1,
+   "kuet": 16.2,
+   "blpd": 2.3,
+   "nightlpbd": 1.2
+  },
+  "val": {
+   "lpdba": 36.6,
+   "anpr": 30.0,
+   "kuet": 26.1,
+   "nightlpbd": 4.0,
+   "blpd": 3.3
+  },
+  "test": {
+   "lpdba": 31.0,
+   "anpr": 28.3,
+   "kuet": 28.1,
+   "nightlpbd": 8.0,
+   "blpd": 4.6
+  }
+ },
+ "label_source": {
+  "train": {
+   "human": 3471,
+   "auto": 2136
+  },
+  "val": {
+   "human": 766
+  },
+  "test": {
+   "human": 651
+  }
+ },
+ "districts": {
+  "train": {
+   "different": 68,
+   "top3_%": {
+    "ঢাকা metro": 68.8,
+    "চট্ট metro": 3.6,
+    "খুলনা metro": 2.9
+   }
+  },
+  "val": {
+   "different": 60,
+   "top3_%": {
+    "ঢাকা metro": 50.9,
+    "খুলনা metro": 4.7,
+    "চট্ট metro": 4.4
+   }
+  },
+  "test": {
+   "different": 38,
+   "top3_%": {
+    "ঢাকা metro": 58.2,
+    "খুলনা metro": 9.2,
+    "চট্ট metro": 5.2
+   }
+  }
+ },
+ "test_districts_with_under_10_train_crops": {
+  "districts": 5,
+  "test_crops": 11
+ },
+ "letters": {
+  "train": {
+   "different": 28,
+   "top5_%": {
+    "গ": 40.8,
+    "হ": 13.1,
+    "ল": 12.5,
+    "চ": 9.0,
+    "ঘ": 6.2
+   }
+  },
+  "val": {
+   "different": 20,
+   "top5_%": {
+    "গ": 24.7,
+    "ল": 18.9,
+    "হ": 18.3,
+    "ব": 9.7,
+    "ট": 5.7
+   }
+  },
+  "test": {
+   "different": 20,
+   "top5_%": {
+    "গ": 35.0,
+    "হ": 12.7,
+    "ব": 11.7,
+    "ট": 11.2,
+    "ল": 10.8
+   }
+  }
+ },
+ "test_letters_with_under_20_train_crops": {
+  "ঠ": [
+   15,
+   1
+  ],
+  "অ": [
+   16,
+   1
+  ],
+  "ঢ": [
+   8,
+   1
+  ],
+  "ছ": [
+   16,
+   2
+  ]
+ }
+}
