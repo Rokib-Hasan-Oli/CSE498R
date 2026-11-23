@@ -1,0 +1,12 @@
+# Made by the apps at run time or by the Android build on the author's PC: never commit these.
+webapp/data/
+V3/records/
+android/.gradle/
+android/app/build/
+android/apk/
+android/onnx/
+android/desktop-test/out/
+android/local.properties
+android/app/src/*/assets/*.onnx
+# APKs (140-216 MB) go to the GitHub Releases page, not into git.
+*.apk
