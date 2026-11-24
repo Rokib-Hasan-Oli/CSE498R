@@ -54,6 +54,7 @@ CSE498R/
 ├── report/<Member>/     ← written reports, reading notes, report sources
 ├── results/             ← team results table (ours vs. the papers, all members)
 ├── output/              ← full Kaggle output zips (Git LFS, 40–250 MB each)
+├── system/              ← BanglaLPR V1 / V2 / V3: our combined plate reader, web apps, Android app source
 └── requirements.txt     ← packages to load the models locally
 ```
 
@@ -122,6 +123,18 @@ versions or different test sets are not directly comparable.
 
 Full guide, with a README template and the upload steps: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
+## 🚗 BanglaLPR system: V1, V2, V3
+
+Our working plate reader, built from the team's trained models (no new training; every choice made on the validation split, then scored once on the test split). Details: **[system/README.md](system/README.md)**.
+
+| Version | Built from | Plate exact: 651 test crops / 204 test photos | Character accuracy (photos) | Speed GPU / CPU |
+|---|---|---|---|---|
+| [V1](system/V1/README.md) (31 Oct 2026) | papers 3, 20, 18, 11, 2, 8, 10 | 90.02 % / 89.22 % | 94.74 % | 48.8 / 17.7 FPS |
+| [V2](system/V2/README.md) (31 Oct 2026) | V1 + papers 27, 28, 21, 35, 23, 6, 19, 34 | 91.71 % / 92.65 % | 96.79 % | 41.7 / 20.0 FPS |
+| [V3](system/V3/README.md) (13 + 22 Nov 2026) | the V2 engine + plate-picture records, export, night mode | same as V2 (night mode: night crops 84.62 → 86.15 %) | 96.79 % | as V2 |
+
+Offline Android apps `BanglaLPR_V1.apk`, `BanglaLPR_V2.apk`, `BanglaLPR_V3.apk`: [Releases page](https://github.com/Rokib-Hasan-Oli/CSE498R/releases/tag/apps-2026-11-23).
+
 ## 📦 Where the big files are
 
 | What | Where |
@@ -129,6 +142,7 @@ Full guide, with a README template and the upload steps: **[CONTRIBUTING.md](CON
 | Dataset v1.1 (zip) | Team Drive folder [All In One 1.1](https://drive.google.com/drive/folders/11psdzW5Cpr7tXwqzqNxNt3LA-qeDSOQl), or the Kaggle dataset `498r-bangla-lpr-all-in-one`. The notebooks download it by themselves |
 | Full run outputs (`paperNN_outputs.zip`, every `last.pt`) | Team Drive `498R / weights / paperNN /`; some are also in [output/](output/README.md) (Git LFS) |
 | Models over 100 MB | Team Drive |
+| Android apps (APK, 147-216 MB) | [Releases page](https://github.com/Rokib-Hasan-Oli/CSE498R/releases/tag/apps-2026-11-23) |
 
 ## 🧪 Using a trained model
 
