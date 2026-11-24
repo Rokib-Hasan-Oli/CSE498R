@@ -1,0 +1,5 @@
+﻿loaded v2 in 0.7 s
+A. 651 test crops: plate exact 91.71 %, char acc 98.71 %, same text as Python 100.00 %, 24.1 ms/plate (PC CPU)
+   status verified  94.9 % of plates, 95.31 % exact
+   status review     5.1 % of plates, 24.24 % exact
+B. 204 whole photos: found 97.06 %, plate exact 92.65 %, char acc 96.79 %, same text as Python 100.00 %, 57.6 ms/photo = 17.3 FPS (PC CPU, 8 threads)
