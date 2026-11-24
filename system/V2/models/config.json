@@ -1,0 +1,88 @@
+{
+ "name": "BanglaLPR V2 (multi-reader verify)",
+ "built_from_papers": [
+  27,
+  28,
+  21,
+  35,
+  23,
+  6,
+  19,
+  34
+ ],
+ "builds_on": "v1",
+ "detector": {
+  "file": "p18_v8n_576.pt",
+  "imgsz": 576,
+  "conf": 0.25,
+  "paper": 18,
+  "why": "kept from V1: on val it finds more plates (96.35 %) than any V2-paper detector alone (94.94-96.35 %)"
+ },
+ "retry": [
+  {
+   "file": "p06_det_v8s.pt",
+   "imgsz": 640,
+   "conf": 0.25,
+   "clahe": false,
+   "paper": 6
+  },
+  {
+   "file": "p06_det_v8s.pt",
+   "imgsz": 640,
+   "conf": 0.35,
+   "clahe": true,
+   "paper": 35
+  }
+ ],
+ "retry_why": "only when V1's detector finds nothing: the paper #6 YOLOv8s, then the same on a CLAHE-enhanced copy (paper #35 low-light study: enhance only on a miss); best of 14 detector strategies on val: 97.18 % plates found, 3 photos missed (V1: 96.35 %, 9)",
+ "readers": [
+  {
+   "name": "p11_chars_v8n",
+   "kind": "charyolo",
+   "file": "p11_chars_v8n.pt",
+   "imgsz": 320,
+   "paper": 11,
+   "role": "primary (from V1)"
+  },
+  {
+   "name": "p27_chars_v8n",
+   "kind": "charyolo",
+   "file": "p27_chars_v8n.pt",
+   "imgsz": 320,
+   "paper": 27,
+   "role": "always-on second reader"
+  },
+  {
+   "name": "p02_lpnr_v12n",
+   "kind": "charyolo",
+   "file": "p02_lpnr_v12n.pt",
+   "imgsz": 640,
+   "paper": 2,
+   "role": "helper (from V1)"
+  },
+  {
+   "name": "p34_svtrv2_s",
+   "kind": "svtrv2",
+   "file": "p34_svtrv2_s.onnx",
+   "paper": 34,
+   "role": "helper"
+  },
+  {
+   "name": "p34_svtrv2_t",
+   "kind": "svtrv2",
+   "file": "p34_svtrv2_t.onnx",
+   "paper": 34,
+   "role": "helper"
+  }
+ ],
+ "rule": "verify",
+ "status_reader": null,
+ "char_verifiers": [],
+ "tiny_upscale": {
+  "min_h": 32,
+  "method": "bicubic"
+ },
+ "evaluation_protocol": "paper #23: leakage-free grouped split (no plate in two splits), every choice on val, test touched once; paper #19: status from reader agreement (beat the legibility classifier as a gate)",
+ "chosen_on": "OCR val (766 crops) over 2,000+ reader combinations x rules; detection val (896 photos) over 30 detector strategies",
+ "version": "v2"
+}
