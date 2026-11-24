@@ -1,0 +1,70 @@
+{
+ "name": "BanglaLPR V1 (Bangla cascade)",
+ "built_from_papers": [
+  3,
+  20,
+  18,
+  11,
+  2,
+  8,
+  10
+ ],
+ "detector": {
+  "file": "p18_v8n_576.pt",
+  "imgsz": 576,
+  "conf": 0.25,
+  "paper": 18,
+  "why": "highest val mAP50 of the six V1-paper detectors (96.92), 3.0 M parameters"
+ },
+ "readers": [
+  {
+   "name": "p11_chars_v8n",
+   "kind": "charyolo",
+   "file": "p11_chars_v8n.pt",
+   "imgsz": 320,
+   "paper": 11,
+   "role": "primary"
+  },
+  {
+   "name": "p02_lpnr_v12n",
+   "kind": "charyolo",
+   "file": "p02_lpnr_v12n.pt",
+   "imgsz": 640,
+   "paper": 2,
+   "role": "helper"
+  },
+  {
+   "name": "p18_slot",
+   "kind": "slot",
+   "file": "p18_slot.pt",
+   "H": 64,
+   "W": 128,
+   "stack": false,
+   "paper": 18,
+   "role": "helper"
+  }
+ ],
+ "rule": "fallback",
+ "status_reader": {
+  "name": "p20_crnn_hr",
+  "kind": "crnn",
+  "file": "p20_crnn_hr.pt",
+  "H": 48,
+  "W": 256,
+  "stack": true,
+  "paper": 20
+ },
+ "char_verifiers": [
+  "p08",
+  "p10"
+ ],
+ "char_agreement_min": 0.8,
+ "tiny_upscale": {
+  "min_h": 32,
+  "method": "bicubic",
+  "why": "paper #20 SR model tested on val plates shrunk to 24 / 32 px: SR 12.9 / 28.9 % vs bicubic 19.6 / 34.3 %"
+ },
+ "retry": [],
+ "chosen_on": "OCR val (766 crops) for readers and rule; detection val (896 photos) for the detector; all choices before looking at test",
+ "version": "v1"
+}

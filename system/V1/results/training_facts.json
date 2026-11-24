@@ -1,0 +1,134 @@
+{
+ "p18_v8n_576.pt": {
+  "member": "Md Rakibul Hasan",
+  "source_zip": "docs/Md Rakibul Hasan/18_An Embedded Real-Time License Plate Recognition System for Complex Traffic Scenes/After train/paper18_outputs.zip",
+  "run_date_utc": "2026-10-26 12:36",
+  "dataset_version": "1.1",
+  "gpu": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "start_weights": "yolov8n.pt",
+  "epochs": 60,
+  "epochs_run": 60,
+  "imgsz": 576,
+  "batch": 16,
+  "optimizer": "SGD",
+  "train_minutes": 79.1,
+  "run_test_score": 0.9901
+ },
+ "p11_chars_v8n.pt": {
+  "member": "Md Rakibul Hasan",
+  "source_zip": "docs/Md Rakibul Hasan/11_Real-time Bangla License Plate Recognition System for Low Resource Video-based Applications/After Train/paper11_outputs.zip",
+  "run_date_utc": "2026-10-22 06:52",
+  "dataset_version": "1.1",
+  "gpu": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "start_weights": "yolov8n.pt",
+  "epochs": 50,
+  "epochs_run": 50,
+  "imgsz": 320,
+  "batch": 32,
+  "optimizer": "SGD",
+  "train_minutes": 17.6,
+  "run_test_score": 86.18
+ },
+ "p02_lpnr_v12n.pt": {
+  "member": "MD. Rokib Hasan Oli",
+  "source_zip": "docs/Rokib Hasna/2_Cascaded YOLO-based approach for Bangladeshi license plate identification and number recognition/After train/for_drive/paper02_outputs.zip",
+  "run_date_utc": "2026-10-21 17:03",
+  "dataset_version": "1.1",
+  "gpu": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "start_weights": "yolo12n.pt",
+  "epochs": 70,
+  "epochs_run": 70,
+  "imgsz": 640,
+  "batch": 16,
+  "optimizer": "SGD",
+  "train_minutes": 94.4,
+  "run_test_score": 87.71
+ },
+ "p18_slot.pt": {
+  "member": "Md Rakibul Hasan",
+  "source_zip": "docs/Md Rakibul Hasan/18_An Embedded Real-Time License Plate Recognition System for Complex Traffic Scenes/After train/paper18_outputs.zip",
+  "run_date_utc": "2026-10-26 12:36",
+  "dataset_version": "1.1",
+  "gpu": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "start_weights": null,
+  "epochs": 100,
+  "epochs_run": null,
+  "imgsz": [
+   64,
+   128
+  ],
+  "batch": 64,
+  "optimizer": "AdamW + OneCycle",
+  "train_minutes": 42.7,
+  "run_test_score": 57.6
+ },
+ "p20_crnn_hr.pt": {
+  "member": "Md. Yousuf",
+  "source_zip": "docs/Md Yousuf/20_Toward Advancing License Plate Super-Resolution in Real-World Scenarios - A Dataset and Benchmark/After Train/paper20_outputs.zip",
+  "run_date_utc": "2026-10-19 04:29",
+  "dataset_version": "1.0 (older kit without the dataset_version field)",
+  "gpu": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "start_weights": null,
+  "epochs": 60,
+  "epochs_run": null,
+  "imgsz": [
+   48,
+   256
+  ],
+  "batch": 64,
+  "optimizer": "AdamW + OneCycle",
+  "train_minutes": 19.3,
+  "run_test_score": 74.04
+ },
+ "p08_cnn28.pt": {
+  "member": "MD. Rokib Hasan Oli",
+  "source_zip": "docs/Rokib Hasna/8_Bengali License Plate Recognition - Unveiling Clarity with CNN and GFP-GAN/After Train/github_upload/weights/paper08/MD.Rokib.Hasan.Oli/paper08_results.zip",
+  "run_date_utc": "2026-10-22 03:38",
+  "dataset_version": "1.1",
+  "gpu": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "start_weights": "cnn",
+  "epochs": 40,
+  "epochs_run": 40,
+  "imgsz": 28,
+  "batch": 1,
+  "optimizer": "Adam (eps 1e-7, Keras default)",
+  "train_minutes": 151.8,
+  "run_test_score": null
+ },
+ "p10_char_cnn32.pt": {
+  "member": "Tashfia Adiba Zaman Nizhum",
+  "source_zip": "docs/Tashfia Adiba Zaman Nizhum/10_BLPnet - A new DNN model and Bengali OCR engine for Automatic License Plate Recognition/After Train/results.zip",
+  "run_date_utc": "2026-10-30 02:18 (file time in zip)",
+  "dataset_version": "1.1",
+  "gpu": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "start_weights": null,
+  "epochs": 40,
+  "epochs_run": 40,
+  "imgsz": 32,
+  "batch": 32,
+  "optimizer": null,
+  "train_minutes": 38.66864921768332,
+  "run_test_score": null
+ }
+}
