@@ -1,0 +1,158 @@
+{
+ "date": "2026-11-22 19:53",
+ "part0": {
+  "feature": "mean grey of the top third of the photo (lpr.pipeline.night_level)",
+  "best_threshold_on_val": 90.6,
+  "val_night_caught_%": 71.1,
+  "val_day_flagged_%": 15.9,
+  "test_night_caught_%": 64.9,
+  "test_day_flagged_%": 14.2,
+  "night_photos": {
+   "val": 83,
+   "test": 74
+  }
+ },
+ "part1": {
+  "emulation_check": "120/120",
+  "val|v2": {
+   "night_crops": 46,
+   "night_exact_%": 82.61,
+   "all_crops": 766,
+   "all_exact_%": 89.69,
+   "night_verified_%": 84.78,
+   "night_verified_right_%": 94.87,
+   "night_review_%": 15.22
+  },
+  "val|vote5": {
+   "night_crops": 46,
+   "night_exact_%": 82.61,
+   "all_crops": 766,
+   "all_exact_%": 89.56,
+   "night_verified_%": 84.78,
+   "night_verified_right_%": 94.87,
+   "night_review_%": 15.22
+  },
+  "val|clahe_on_doubt": {
+   "night_crops": 46,
+   "night_exact_%": 84.78,
+   "all_crops": 766,
+   "all_exact_%": 90.21,
+   "night_verified_%": 91.3,
+   "night_verified_right_%": 90.48,
+   "night_review_%": 8.7
+  },
+  "val|vote10": {
+   "night_crops": 46,
+   "night_exact_%": 86.96,
+   "all_crops": 766,
+   "all_exact_%": 90.47,
+   "night_verified_%": 91.3,
+   "night_verified_right_%": 92.86,
+   "night_review_%": 8.7
+  },
+  "picked_on_val": "vote10",
+  "test|v2": {
+   "night_crops": 65,
+   "night_exact_%": 84.62,
+   "all_crops": 651,
+   "all_exact_%": 91.71,
+   "night_verified_%": 83.08,
+   "night_verified_right_%": 100.0,
+   "night_review_%": 16.92
+  },
+  "test|vote10": {
+   "night_crops": 65,
+   "night_exact_%": 86.15,
+   "all_crops": 651,
+   "all_exact_%": 92.32,
+   "night_verified_%": 90.77,
+   "night_verified_right_%": 91.53,
+   "night_review_%": 9.23
+  },
+  "test_paired_night": {
+   "n": 65,
+   "v2_%": 84.62,
+   "night_%": 86.15,
+   "only_night_right": 1,
+   "only_v2_right": 0,
+   "p_mcnemar": 1.0
+  },
+  "test_paired_all": {
+   "n": 651,
+   "v2_%": 91.71,
+   "night_%": 92.32,
+   "only_night_right": 5,
+   "only_v2_right": 1,
+   "p_mcnemar": 0.2188
+  }
+ },
+ "part2": {
+  "val_night_photos": 83,
+  "conf_0.25": {
+   "plates": 80,
+   "found": 79,
+   "found_%": 98.75,
+   "extra_boxes": 3
+  },
+  "conf_0.15": {
+   "plates": 80,
+   "found": 79,
+   "found_%": 98.75,
+   "extra_boxes": 4
+  },
+  "conf_0.1": {
+   "plates": 80,
+   "found": 79,
+   "found_%": 98.75,
+   "extra_boxes": 7
+  },
+  "picked_on_val": 0.25
+ },
+ "part3": {
+  "v2|night": {
+   "photos": 60,
+   "exact_%": 83.33,
+   "found_%": 90.0,
+   "verified_%": 75.0,
+   "ms_per_photo": 32.5
+  },
+  "v2|day": {
+   "photos": 144,
+   "exact_%": 96.53,
+   "found_%": 100.0,
+   "verified_%": 97.92,
+   "ms_per_photo": 21.8
+  },
+  "night_mode|night": {
+   "photos": 60,
+   "exact_%": 83.33,
+   "found_%": 90.0,
+   "verified_%": 85.0,
+   "ms_per_photo": 90.2
+  },
+  "night_mode|day": {
+   "photos": 144,
+   "exact_%": 97.92,
+   "found_%": 100.0,
+   "verified_%": 100.0,
+   "ms_per_photo": 95.1
+  },
+  "paired|night": {
+   "n": 60,
+   "v2_%": 83.33,
+   "night_%": 83.33,
+   "only_night_right": 0,
+   "only_v2_right": 0,
+   "p_mcnemar": 1.0
+  },
+  "paired|day": {
+   "n": 144,
+   "v2_%": 96.53,
+   "night_%": 97.92,
+   "only_night_right": 2,
+   "only_v2_right": 0,
+   "p_mcnemar": 0.5
+  }
+ },
+ "minutes": 2.2
+}

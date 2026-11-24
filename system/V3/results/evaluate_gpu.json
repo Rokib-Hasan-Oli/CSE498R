@@ -1,0 +1,33 @@
+{
+ "version": "v2",
+ "device": "gpu",
+ "ocr_test_crops": {
+  "plates": 651,
+  "plate_exact_%": 91.71,
+  "CER_%": 1.29,
+  "char_acc_%": 98.71,
+  "token_acc_%": 98.74,
+  "WER_%": 2.1,
+  "status": {
+   "verified": {
+    "plates": 618,
+    "exact_%": 95.31
+   },
+   "review": {
+    "plates": 33,
+    "exact_%": 24.24
+   }
+  }
+ },
+ "e2e_photos": {
+  "plates": 204,
+  "plate_exact_%": 92.65,
+  "CER_%": 3.21,
+  "char_acc_%": 96.79,
+  "token_acc_%": 96.24,
+  "WER_%": 3.95,
+  "plate_found_%": 97.06,
+  "ms_per_photo_mean": 25.8,
+  "fps_mean": 38.8
+ }
+}
