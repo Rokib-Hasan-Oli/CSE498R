@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f2b21">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>BanglaLPR Mobile</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/static/icon-192.png">
+<link rel="apple-touch-icon" href="/static/icon-192.png">
+<style>
+  :root { --bg:#f2f5f2; --panel:#fff; --ink:#15201a; --muted:#5f6d65; --line:#dde4de; --green:#006a4e; --green-soft:#e2f1eb;
+          --red:#d3243a; --red-soft:#fbe5e8; --amber:#b86e00; --amber-soft:#fff0d8;
+          --bn:'Nirmala UI','Hind Siliguri','Noto Sans Bengali','Vrinda',sans-serif; --sans:system-ui,'Segoe UI',Roboto,sans-serif; }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html,body { margin:0; height:100%; background:var(--bg); color:var(--ink); font:15px/1.45 var(--sans); }
+  .bn { font-family:var(--bn); }
+  header { position:sticky; top:0; z-index:5; background:#0f2b21; color:#fff; padding:calc(10px + env(safe-area-inset-top)) 14px 10px;
+           display:flex; align-items:center; gap:10px; }
+  header h1 { font-size:18px; margin:0; flex:1; }
+  header .dot { width:9px; height:9px; border-radius:50%; background:#888; display:inline-block; margin-right:6px; }
+  header .dot.ok { background:#3ccf91; } header .dot.bad { background:#ff5a6a; }
+  .seg { display:flex; background:rgba(255,255,255,.12); border-radius:10px; padding:3px; }
+  .seg button { border:0; background:none; color:#cfe3d9; font-weight:700; padding:6px 14px; border-radius:8px; font-size:14px; }
+  .seg button.on { background:#fff; color:var(--green); }
+  main { padding:12px 12px calc(84px + env(safe-area-inset-bottom)); }
+  .view { display:none; } .view.on { display:block; }
+  nav { position:fixed; bottom:0; left:0; right:0; z-index:5; background:var(--panel); border-top:1px solid var(--line);
+        display:grid; grid-template-columns:repeat(4,1fr); padding-bottom:env(safe-area-inset-bottom); }
+  nav button { border:0; background:none; padding:9px 0 10px; color:var(--muted); font-size:12px; font-weight:600; display:flex;
+               flex-direction:column; align-items:center; gap:3px; }
+  nav button svg { width:24px; height:24px; }
+  nav button.on { color:var(--green); }
+  .card { background:var(--panel); border-radius:14px; padding:14px; box-shadow:0 1px 3px rgba(0,0,0,.06); margin-bottom:12px; }
+  .big-btn { width:100%; border:0; border-radius:14px; padding:16px; font-size:17px; font-weight:700; background:var(--green); color:#fff; }
+  .big-btn.stop { background:var(--red); }
+  .row { display:flex; gap:10px; } .row > * { flex:1; }
+  .ghost { width:100%; border:1.5px solid var(--green); border-radius:14px; padding:14px; font-size:16px; font-weight:700;
+           background:#fff; color:var(--green); text-align:center; display:block; }
+  .cam { position:relative; background:#0b1510; border-radius:14px; overflow:hidden; aspect-ratio:3/4; margin-bottom:12px; }
+  .cam video { width:100%; height:100%; object-fit:cover; display:block; }
+  .cam canvas { position:absolute; inset:0; width:100%; height:100%; }
+  .cam .hint { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#9fb5aa; text-align:center; padding:20px; }
+  .cam .stat { position:absolute; left:8px; top:8px; background:rgba(0,0,0,.55); color:#fff; font-size:11.5px; padding:3px 8px; border-radius:6px; }
+  .last { text-align:center; }
+  .last .t { font-family:var(--bn); font-size:28px; font-weight:700; line-height:1.25; }
+  .last .e { color:var(--muted); font-size:13.5px; }
+  .chip { display:inline-block; font-size:12px; font-weight:700; padding:2px 9px; border-radius:99px; background:#eef1ee; color:var(--muted); margin:2px; }
+  .chip.verified { background:var(--green-soft); color:var(--green); } .chip.likely { background:var(--amber-soft); color:var(--amber); }
+  .chip.review { background:var(--red-soft); color:var(--red); } .chip.hit { background:var(--red); color:#fff; }
+  .plate { display:flex; gap:12px; align-items:center; padding:10px 0; border-top:1px solid var(--line); }
+  .plate:first-child { border-top:0; }
+  .plate img { width:96px; border-radius:6px; border:1px solid var(--line); }
+  .plate .t { font-family:var(--bn); font-size:20px; font-weight:700; line-height:1.2; }
+  .plate .e { color:var(--muted); font-size:12.5px; }
+  .plate.hit { background:var(--red-soft); border-radius:10px; padding:10px; }
+  .photo-out img.annot { width:100%; border-radius:10px; display:block; margin-bottom:8px; }
+  .muted { color:var(--muted); font-size:13px; }
+  input.search { width:100%; padding:12px; border-radius:12px; border:1px solid var(--line); font-size:15px; margin-bottom:10px; }
+  .kpis { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:8px; }
+  .kpis div { background:#f4f7f4; border-radius:10px; padding:8px 10px; } .kpis b { display:block; font-size:19px; } .kpis span { font-size:11.5px; color:var(--muted); }
+  .alert { position:fixed; left:12px; right:12px; top:calc(64px + env(safe-area-inset-top)); z-index:9; background:var(--red); color:#fff;
+           border-radius:14px; padding:14px; font-weight:700; display:none; box-shadow:0 6px 20px rgba(0,0,0,.25); }
+  .alert.show { display:block; } .alert .bn { font-size:22px; display:block; }
+  .toast { position:fixed; left:12px; right:12px; bottom:calc(92px + env(safe-area-inset-bottom)); background:#0f2b21; color:#fff; padding:12px 14px;
+           border-radius:12px; opacity:0; transition:opacity .2s; pointer-events:none; z-index:9; font-size:14px; }
+  .toast.show { opacity:1; } .toast.err { background:var(--red); }
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="dot" id="dot"></span>BanglaLPR</h1>
+  <div class="seg" id="ver"><button data-v="v1">V1</button><button data-v="v2" class="on">V2</button></div>
+</header>
+<div class="alert" id="alert"></div>
+
+<main>
+  <!-- SCAN -->
+  <section class="view on" id="v-scan">
+    <div class="cam"><video id="video" playsinline muted></video><canvas id="ov"></canvas>
+      <div class="hint" id="cam-hint">Point the back camera at a number plate and tap Start.</div>
+      <div class="stat" id="cam-stat" hidden></div></div>
+    <button class="big-btn" id="scan-btn">Start scanning</button>
+    <div class="card last" id="last" style="margin-top:12px">
+      <div class="muted">Last plate</div><div class="t">—</div><div class="e"></div><div id="last-chips"></div>
+    </div>
+  </section>
+
+  <!-- PHOTO -->
+  <section class="view" id="v-photo">
+    <div class="row" style="margin-bottom:12px">
+      <label class="big-btn" style="text-align:center">Take photo<input id="cap" type="file" accept="image/*" capture="environment" hidden></label>
+      <label class="ghost">Gallery<input id="gal" type="file" accept="image/*" hidden></label>
+    </div>
+    <div id="photo-out" class="photo-out"><div class="card muted">Take a photo of a vehicle's number plate. The photo goes to the BanglaLPR
+      server on your PC, which runs the model you picked (V1 or V2) and saves the result.</div></div>
+  </section>
+
+  <!-- HISTORY -->
+  <section class="view" id="v-hist">
+    <input class="search" id="q" placeholder="Search plate… (Bangla or English)">
+    <div class="card" id="hist"><div class="muted">Loading…</div></div>
+  </section>
+
+  <!-- INFO -->
+  <section class="view" id="v-info">
+    <div id="info"></div>
+    <div class="card"><b>Install on your phone</b><p class="muted">Chrome menu ⋮ → <b>Add to Home screen</b> (or <b>Install app</b>).
+      The app opens full screen with its own icon. The models run on the PC server; the phone must be on the same Wi-Fi
+      and the server started with <code>--phone</code>.</p></div>
+    <div class="card"><a class="ghost" href="/">Open the full web app</a></div>
+  </section>
+</main>
+
+<nav id="nav">
+  <button data-v="scan" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2"/><rect x="7" y="9" width="10" height="6" rx="1"/></svg>Scan</button>
+  <button data-v="photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Photo</button>
+  <button data-v="hist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>History</button>
+  <button data-v="info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>Models</button>
+</nav>
+<div class="toast" id="toast"></div>
+<script src="/static/mobile.js"></script>
+</body>
+</html>
